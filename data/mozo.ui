@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.19.0 -->
 <interface>
   <requires lib="gtk+" version="3.14"/>
   <object class="GtkUIManager" id="uimanager1">
@@ -160,8 +159,6 @@
                           <object class="GtkScrolledWindow" id="scrolledwindow3">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="hscrollbar_policy">automatic</property>
-                            <property name="vscrollbar_policy">automatic</property>
                             <property name="shadow_type">in</property>
                             <child>
                               <object class="GtkTreeView" id="menu_tree">
@@ -379,6 +376,36 @@
                                         <property name="expand">False</property>
                                         <property name="fill">False</property>
                                         <property name="position">2</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkButton" id="properties_button">
+                                        <property name="label">gtk-properties</property>
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="receives_default">True</property>
+                                        <property name="use_stock">True</property>
+                                        <signal name="clicked" handler="on_properties_button_clicked" swapped="no"/>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">False</property>
+                                        <property name="position">3</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkButton" id="delete_button">
+                                        <property name="label">gtk-delete</property>
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="receives_default">True</property>
+                                        <property name="use_stock">True</property>
+                                        <signal name="clicked" handler="on_delete_button_clicked" swapped="no"/>
+                                      </object>
+                                      <packing>
+                                        <property name="expand">False</property>
+                                        <property name="fill">False</property>
+                                        <property name="position">4</property>
                                       </packing>
                                     </child>
                                   </object>
