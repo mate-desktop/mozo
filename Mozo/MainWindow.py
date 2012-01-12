@@ -122,11 +122,11 @@ class MainWindow:
 			for item in item_tree.get_model():
 				found = False
 				if update_type != matemenu.TYPE_SEPARATOR:
-				if item[3].get_type() == matemenu.TYPE_ENTRY and item[3].get_desktop_file_id() == item_id:
-					found = True
-					if item[3].get_type() == matemenu.TYPE_DIRECTORY and item[3].get_desktop_file_path() and update_type == matemenu.TYPE_DIRECTORY:
-					if os.path.split(item[3].get_desktop_file_path())[1] == item_id:
+					if item[3].get_type() == matemenu.TYPE_ENTRY and item[3].get_desktop_file_id() == item_id:
 						found = True
+					if item[3].get_type() == matemenu.TYPE_DIRECTORY and item[3].get_desktop_file_path() and update_type == matemenu.TYPE_DIRECTORY:
+						if os.path.split(item[3].get_desktop_file_path())[1] == item_id:
+							found = True
 				if item[3].get_type() == matemenu.TYPE_SEPARATOR:
 					if not isinstance(item_id, tuple):
 						#we may not skip the increment via "continue"
