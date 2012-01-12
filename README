@@ -1,5 +1,5 @@
-Mozo 0.13.2
-================
+Mozo 1.1.0
+==========
 
 Mozo is a menu editor for MATE using the freedesktop.org menu
 specification.
@@ -7,11 +7,11 @@ specification.
 Installation
 ============
 
-See the 'INSTALL' file.
+See http://wiki.mate-desktop.org.
 
 How to report bugs
 ==================
 
-Bugs should be filed in MATE's bugzilla 
-(http://bugzilla.mate.org/enter_bug.cgi?product=mozo) You will
-need to create an account for yourself.
+Bugs should be filed in MATE's bug tracker 
+(https://github.com/Perberos/Mate-Desktop-Environment/issues) You will
+need to create an account on github for yourself.
