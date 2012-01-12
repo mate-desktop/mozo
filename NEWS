@@ -58,7 +58,7 @@ Version 0.12.2
 ==============
 
 Misc
-	* Use the display name from X-MATE-FullName when
+	* Use the display name from X-GNOME-FullName when
 	  possible (Vincent Untz)
 
 Translations
@@ -94,7 +94,7 @@ Version 0.11.9
 ==============
 
 Misc
-	* Remove libmateui dependency (Andreas Proschofsky)
+	* Remove libgnomeui dependency (Andreas Proschofsky)
 
 Translations
 
@@ -279,7 +279,7 @@ Version 0.11.0
 Travis Watkins:
 
 	* respond to show/hide immediately
-	* use mate-desktop-item-edit for all menu and item editing
+	* use gnome-desktop-item-edit for all menu and item editing
 
 Translations
 
@@ -340,7 +340,7 @@ Translations
 Version 0.10.0
 ==============
 
-	* fix crashed caused by new mate-menus
+	* fix crashed caused by new gnome-menus
 	* potentially fix crash on solaris
 	* make help button and F1 work
 
@@ -379,7 +379,7 @@ Version 0.9.90
 ==============
 
 	* small HIG fixes
-	* depend on mate-menus 2.15.4 or newer
+	* depend on gnome-menus 2.15.4 or newer
 
 Translations
 	* Esteve Blanch Sanmartí (ca)
@@ -392,7 +392,7 @@ Version 0.9.2
 =============
 
 	* various bug fixes
-	* depend on mate-menus 2.14.1 or newer (doesn't exist yet!)
+	* depend on gnome-menus 2.14.1 or newer (doesn't exist yet!)
 
 Translations
 	* Alexander Shopov (bg)
@@ -423,7 +423,7 @@ version 0.9.1
 	* resigned to be HIG compliant
 	* undo/redo support
 	* better support for legacy dirs
-	* drag-and-drop of .desktop files and executables from caja
+	* drag-and-drop of .desktop files and executables from nautilus
 	creates menu items
 	* various bug fixes
 
@@ -431,4 +431,4 @@ version 0.9.1
 Version 0.9
 ===========
 
-	Use mate-menus instead of pyxdg.
+	Use gnome-menus instead of pyxdg.

@@ -1,139 +1,135 @@
 # Persian translation of mozo.
+# Copyright (C) 2010-2011 Iranian Free Software Users Group (IFSUG.org) translation team.
 # Copyright (C) 2006 Sharif FarsiWeb, Inc.
 # This file is distributed under the same license as the mozo package.
 # Meelad Zakaria <meelad@farsiweb.info>, 2006.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2010,2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-06 14:49+0200\n"
-"PO-Revision-Date: 2006-08-15 21:05+0330\n"
-"Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
-"Language-Team: Persian\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mozo&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-03 00:31+0000\n"
+"PO-Revision-Date: 2011-04-22 23:51+0330\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Language-Team: Persian <translate@ifsug.org>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: ../Mozo/MainWindow.py:161
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "نام"
 
-#: ../Mozo/MainWindow.py:177
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "نمایش"
 
-#: ../Mozo/MainWindow.py:185
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "مورد"
 
-#: ../Mozo/DialogHandler.py:145 ../Mozo/DialogHandler.py:182
-#: ../Mozo/DialogHandler.py:337 ../Mozo/DialogHandler.py:368
-msgid "A name is required."
-msgstr "دادن نام ضروری است."
+#: ../data/mozo.desktop.in.in.h:1
+msgid "Change which applications are shown on the main menu"
+msgstr "تغییر اینکه کدام یک از برنامه‌ها در منوی اصلی نمایش داده شوند"
 
-#: ../Mozo/DialogHandler.py:148 ../Mozo/DialogHandler.py:185
-msgid "A command is required."
-msgstr "دادن فرمان ضروری است."
+#: ../data/mozo.desktop.in.in.h:2
+#: ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr "منوی اصلی"
 
-#: ../mozo.desktop.in.h:1
-msgid "Add, change, remove menu entries"
-msgstr "اضافه کردن، تغییر دادن یا حذف مداخل منو"
-
-#: ../mozo.desktop.in.h:2 ../mozo.glade.h:9
-msgid "Menu Layout"
-msgstr "چیدمان منو"
-
-#: ../mozo.glade.h:1
-msgid "Mozo Menu Editor"
-msgstr "ویرایشگر منوی آلاکارته"
-
-#: ../mozo.glade.h:2
-msgid "Browse..."
-msgstr "مرور..."
-
-#: ../mozo.glade.h:3
-msgid "Command:"
-msgstr "فرمان:"
-
-#: ../mozo.glade.h:4
-msgid "Comment:"
-msgstr "توضیح:"
-
-#: ../mozo.glade.h:5
-msgid "Copyright © 2006 Travis Watkins"
-msgstr "Copyright © 2006 Travis Watkins"
-
-#: ../mozo.glade.h:6
-msgid "Icon:"
-msgstr "شمایل:"
-
-#: ../mozo.glade.h:7
+#: ../data/mozo.ui.h:1
 msgid "It_ems:"
 msgstr "_موارد:"
 
-#: ../mozo.glade.h:8
-msgid "Menu Item Properties"
-msgstr "ویژگی‌های این مورد در منو"
-
-#: ../mozo.glade.h:10
-msgid "Menu Properties"
-msgstr "ویژگی‌های منو"
-
-#: ../mozo.glade.h:11
+#: ../data/mozo.ui.h:3
 msgid "Move Down"
 msgstr "جابه‌جایی به پایین"
 
-#: ../mozo.glade.h:12
+#: ../data/mozo.ui.h:4
 msgid "Move Up"
 msgstr "جابه‌جایی به بالا"
 
-#: ../mozo.glade.h:13
-msgid "Name:"
-msgstr "نام:"
-
-#: ../mozo.glade.h:14
+#: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
 msgstr "مورد _جدید"
 
-#: ../mozo.glade.h:15
+#: ../data/mozo.ui.h:6
 msgid "New _Separator"
 msgstr "ج_داساز جدید"
 
-#: ../mozo.glade.h:16
+#: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
 msgstr "برگرداندن چیدمان پیش‌فرض منو"
 
-#: ../mozo.glade.h:17
+#: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
 msgstr "تغییرات بازگشت داده شود؟"
 
-#: ../mozo.glade.h:18
+#: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
-msgstr "تنظیمات همهٔ منوها به حالت اصلی بازگشت داده شود؟"
+msgstr "تنظیمات همه‌ی منوها به حالت اصلی بازگشت داده شود؟"
 
-#: ../mozo.glade.h:19
-msgid "Run command in a terminal"
-msgstr "اجرای فرمان در پایانه"
-
-#: ../mozo.glade.h:20
-msgid "Simple fd.o compliant menu editor"
-msgstr "ویرایشگر منوی سادهٔ سازگار با fd.o"
-
-#: ../mozo.glade.h:21
+#: ../data/mozo.ui.h:10
 msgid "_Menus:"
 msgstr "_منوها:"
 
-#: ../mozo.glade.h:22
+#: ../data/mozo.ui.h:11
 msgid "_New Menu"
 msgstr "منوی _جدید"
 
-#: ../mozo.glade.h:23
+#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "_بازگشت به حالت اصلی"
 
-#. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../mozo.glade.h:25
-msgid "translator-credits"
-msgstr "میلاد زکریا <meelad@farsiweb.info>"
+#~ msgid "A name is required."
+#~ msgstr "دادن نام ضروری است."
 
+#~ msgid "A command is required."
+#~ msgstr "دادن فرمان ضروری است."
+
+#~ msgid "Add, change, remove menu entries"
+#~ msgstr "اضافه کردن، تغییر دادن یا حذف مداخل منو"
+
+#~ msgid "Menu Layout"
+#~ msgstr "چیدمان منو"
+
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "ویرایشگر منوی آلاکارته"
+
+#~ msgid "Browse..."
+#~ msgstr "مرور..."
+
+#~ msgid "Command:"
+#~ msgstr "فرمان:"
+
+#~ msgid "Comment:"
+#~ msgstr "توضیح:"
+
+#~ msgid "Copyright © 2006 Travis Watkins"
+#~ msgstr "Copyright © 2006 Travis Watkins"
+
+#~ msgid "Icon:"
+#~ msgstr "شمایل:"
+
+#~ msgid "Menu Item Properties"
+#~ msgstr "ویژگی‌های این مورد در منو"
+
+#~ msgid "Menu Properties"
+#~ msgstr "ویژگی‌های منو"
+
+#~ msgid "Name:"
+#~ msgstr "نام:"
+
+#~ msgid "Run command in a terminal"
+#~ msgstr "اجرای فرمان در پایانه"
+
+#~ msgid "Simple fd.o compliant menu editor"
+#~ msgstr "ویرایشگر منوی سادهٔ سازگار با fd.o"
+
+#~ msgid "translator-credits"
+#~ msgstr "میلاد زکریا <meelad@farsiweb.info>"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=mozo&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mozo&component=general\n"
 "POT-Creation-Date: 2007-02-25 08:16+0900\n"
 "PO-Revision-Date: 2010-03-07 01:51+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"

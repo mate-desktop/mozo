@@ -1,20 +1,21 @@
-# Low German translation for mozo.
-# Copyright (C) 2009 mozo's COPYRIGHT HOLDER
+# Afrikaans translation for mozo.
 # This file is distributed under the same license as the mozo package.
-# Nils-Christoph Fiedler <linux@medienkompanie.de>, 2009.
-#
+# F Wolff <friedel@translate.org.za>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mozo&component=general\n"
-"POT-Creation-Date: 2009-09-15 12:03+0000\n"
-"PO-Revision-Date: 2009-08-27 12:23+0100\n"
-"Last-Translator: Nils-Christoph Fiedler <linux@medienkompanie.de>\n"
-"Language-Team: Low German <nds-lowgerman@lists.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: "
+"http://bugzilla.gnome.org/enter_bug.cgi?product=mozo&component=general\n"
+"POT-Creation-Date: 2011-01-26 22:44+0000\n"
+"PO-Revision-Date: 2011-01-30 00:50+0200\n"
+"Last-Translator: F Wolff <friedel@translate.org.za>\n"
+"Language-Team: translate-discuss-af@lists.sourceforge.net\n"
+"Language: af\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0-beta4\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -22,60 +23,60 @@ msgstr "Naam"
 
 #: ../Mozo/MainWindow.py:180
 msgid "Show"
-msgstr "Opwiesen"
+msgstr "Wys"
 
 #: ../Mozo/MainWindow.py:188
 msgid "Item"
-msgstr "Element"
+msgstr "Item"
 
 #: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
-msgstr "Programme de Hööftmenü todeelen"
+msgstr "Verander watter toepassings wys op die hoofkieslys"
 
 #: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Hööftmenü"
+msgstr "Hoofkieslys"
 
 #: ../data/mozo.ui.h:1
 msgid "It_ems:"
-msgstr "El_emente:"
+msgstr "It_ems:"
 
 #: ../data/mozo.ui.h:3
 msgid "Move Down"
-msgstr "Hochbewegen"
+msgstr "Skuif af"
 
 #: ../data/mozo.ui.h:4
 msgid "Move Up"
-msgstr "Runnerbewegen"
+msgstr "Skuif op"
 
 #: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
-msgstr "Ne_eis Element"
+msgstr "Nu_we item"
 
 #: ../data/mozo.ui.h:6
 msgid "New _Separator"
-msgstr "Nüer _Deeler"
+msgstr "Nuwe _skeier"
 
 #: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
-msgstr "Dat ole Utsehn vum Menü wedder herstellen"
+msgstr "Stel terug na verstek kieslysuitleg"
 
 #: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
-msgstr "Ännerungen torüchnehmen?"
+msgstr "Stel terug?"
 
 #: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
-msgstr "All Menüs torüchsetten?"
+msgstr "Stel alle kieslyste terug na die oorspronklike instellings?"
 
 #: ../data/mozo.ui.h:10
 msgid "_Menus:"
-msgstr "_Menüs:"
+msgstr "_Kieslyste:"
 
 #: ../data/mozo.ui.h:11
 msgid "_New Menu"
-msgstr "_Neeis Menü"
+msgstr "_Nuwe kieslys"
 
 #: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
-msgstr "_Torüchsetten to'm Original"
+msgstr "Stel te_rug na oorspro"

@@ -10,8 +10,8 @@ CLEANFILES += mozo
 DISTCLEANFILES = ChangeLog
 
 mozo: mozo.in
-	sed -e s!\@PYTHON\@!@PYTHON@!		\
-	    -e s!\@PYOPTIONS\@!-OOt!		\
+	$(AM_V_GEN)sed -e s!\@PYTHON\@!@PYTHON@!	\
+	    -e s!\@PYOPTIONS\@!-OOt!			\
 	    < $< > $@
 mozo: Makefile
 

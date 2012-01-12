@@ -37,8 +37,8 @@ class MenuEditor:
 
 	def __loadMenus(self):
 		self.applications = Menu()
-		self.applications.tree = matemenu.lookup_tree('mate-applications.menu', matemenu.FLAGS_SHOW_EMPTY|matemenu.FLAGS_INCLUDE_EXCLUDED|matemenu.FLAGS_INCLUDE_NODISPLAY|matemenu.FLAGS_SHOW_ALL_SEPARATORS)
-		self.applications.visible_tree = matemenu.lookup_tree('mate-applications.menu')
+		self.applications.tree = matemenu.lookup_tree('applications.menu', matemenu.FLAGS_SHOW_EMPTY|matemenu.FLAGS_INCLUDE_EXCLUDED|matemenu.FLAGS_INCLUDE_NODISPLAY|matemenu.FLAGS_SHOW_ALL_SEPARATORS)
+		self.applications.visible_tree = matemenu.lookup_tree('applications.menu')
 		self.applications.tree.sort_key = matemenu.SORT_DISPLAY_NAME
 		self.applications.visible_tree.sort_key = matemenu.SORT_DISPLAY_NAME
 		self.applications.path = os.path.join(util.getUserMenuPath(), self.applications.tree.get_menu_file())
@@ -48,22 +48,10 @@ class MenuEditor:
 			self.applications.dom = xml.dom.minidom.parse(self.applications.path)
 		self.__remove_whilespace_nodes(self.applications.dom)
 
-		self.settings = Menu()
-		self.settings.tree = matemenu.lookup_tree('mate-settings.menu', matemenu.FLAGS_SHOW_EMPTY|matemenu.FLAGS_INCLUDE_EXCLUDED|matemenu.FLAGS_INCLUDE_NODISPLAY|matemenu.FLAGS_SHOW_ALL_SEPARATORS)
-		self.settings.visible_tree = matemenu.lookup_tree('mate-settings.menu')
-		self.settings.tree.sort_key = matemenu.SORT_DISPLAY_NAME
-		self.settings.visible_tree.sort_key = matemenu.SORT_DISPLAY_NAME
-		self.settings.path = os.path.join(util.getUserMenuPath(), self.settings.tree.get_menu_file())
-		if not os.path.isfile(self.settings.path):
-			self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree))
-		else:
-			self.settings.dom = xml.dom.minidom.parse(self.settings.path)
-		self.__remove_whilespace_nodes(self.settings.dom)
-
 		self.save(True)
 
 	def save(self, from_loading=False):
-		for menu in ('applications', 'settings'):
+		for menu in ('applications',):
 			fd = open(getattr(self, menu).path, 'w')
 			fd.write(re.sub("\n[\s]*([^\n<]*)\n[\s]*</", "\\1</", getattr(self, menu).dom.toprettyxml().replace('<?xml version="1.0" ?>\n', '')))
 			fd.close()
@@ -85,7 +73,7 @@ class MenuEditor:
 				os.unlink(file_path)
 
 	def revert(self):
-		for name in ('applications', 'settings'):
+		for name in ('applications',):
 			menu = getattr(self, name)
 			self.revertTree(menu.tree.root)
 			path = os.path.join(util.getUserMenuPath(), menu.tree.get_menu_file())
@@ -126,7 +114,7 @@ class MenuEditor:
 			os.unlink(file_path)
 			redo.append(redo_path)
 		#reload DOM to make changes stick
-		for name in ('applications', 'settings'):
+		for name in ('applications',):
 			menu = getattr(self, name)
 			if not os.path.isfile(menu.path):
 				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
@@ -150,7 +138,7 @@ class MenuEditor:
 			os.unlink(file_path)
 			undo.append(undo_path)
 		#reload DOM to make changes stick
-		for name in ('applications', 'settings'):
+		for name in ('applications',):
 			menu = getattr(self, name)
 			if not os.path.isfile(menu.path):
 				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
@@ -162,7 +150,6 @@ class MenuEditor:
 	def getMenus(self, parent=None):
 		if parent == None:
 			yield self.applications.tree.root
-			yield self.settings.tree.root
 		else:
 			for menu in parent.get_contents():
 				if menu.get_type() == matemenu.TYPE_DIRECTORY:
@@ -289,7 +276,7 @@ class MenuEditor:
 		#erase Categories in new file
 		keyfile.set('Categories', ('',))
 		keyfile.set('Hidden', False)
-		file_id = util.getUniqueFileId(item.get_name(), '.desktop')
+		file_id = util.getUniqueFileId(item.get_name().replace(os.sep, '-'), '.desktop')
 		out_path = os.path.join(util.getUserItemPath(), file_id)
 		keyfile.write(open(out_path, 'w'))
 		self.__addItem(new_parent, file_id, dom)
@@ -343,13 +330,20 @@ class MenuEditor:
 		self.save()
 
 	def moveSeparator(self, separator, new_parent, before=None, after=None):
+		undo = []
+		# remove the original separator if its parent is not the new destination
+		if separator.get_parent() != new_parent:
+			self.deleteSeparator(separator)
+			undo.append(separator)
+		# this adds the new separator to the specified position
 		self.__positionItem(new_parent, separator, before, after)
-		self.__addUndo([self.__getMenu(new_parent),])
+		undo.append(self.__getMenu(new_parent))
+		self.__addUndo(undo)
 		self.save()
 
 	def deleteItem(self, item):
-		self.__writeItem(item, hidden=True)
 		self.__addUndo([item,])
+		self.__writeItem(item, hidden=True)
 		self.save()
 
 	def deleteMenu(self, menu):
@@ -430,31 +424,13 @@ class MenuEditor:
 			self.__undo[-1].append(undo_path)
 
 	def __getMenu(self, item):
-		root = item.get_parent()
-		if not root:
-			#already at the top
-			root = item
-		else:
-			while True:
-				if root.get_parent():
-					root = root.get_parent()
-				else:
-					break
-		if root.menu_id == self.applications.tree.root.menu_id:
-			return self.applications
-		return self.settings
+		return self.applications
 
 	def __findMenu(self, menu_id, parent=None):
 		if parent == None:
-			menu = self.__findMenu(menu_id, self.applications.tree.root)
-			if menu != None:
-				return menu
-			else:
-				return self.__findMenu(menu_id, self.settings.tree.root)
+			return self.__findMenu(menu_id, self.applications.tree.root)
 		if menu_id == self.applications.tree.root.menu_id:
 			return self.applications.tree.root
-		if menu_id == self.settings.tree.root.menu_id:
-			return self.settings.tree.root
 		for item in parent.get_contents():
 			if item.get_type() == matemenu.TYPE_DIRECTORY:
 				if item.menu_id == menu_id:
@@ -469,8 +445,6 @@ class MenuEditor:
 		menu = self.__getMenu(item)
 		if menu == self.applications:
 			root = self.applications.visible_tree.root
-		elif menu == self.settings:
-			root = self.settings.visible_tree.root
 		if item.get_type() == matemenu.TYPE_DIRECTORY:
 			if self.__findMenu(item.menu_id, root) == None:
 				return False
@@ -690,18 +664,21 @@ class MenuEditor:
 		self.__addXmlFilename(xml_parent, dom, file_id, 'Exclude')
 
 	def __positionItem(self, parent, item, before=None, after=None):
-		if not before and not after:
-			return
 		if after:
 			index = parent.contents.index(after) + 1
 		elif before:
 			index = parent.contents.index(before)
+		else:
+			# append the item to the list
+			index = len(parent.contents)
 		contents = parent.contents
 		#if this is a move to a new parent you can't remove the item
-		try:
+		if item in contents:
+			# decrease the destination index, if we shorten the list
+			if (before and (contents.index(item) < index)) \
+					or (after and (contents.index(item) < index - 1)):
+				index -= 1
 			contents.remove(item)
-		except:
-			pass
 		contents.insert(index, item)
 		layout = self.__createLayout(contents)
 		dom = self.__getMenu(parent).dom

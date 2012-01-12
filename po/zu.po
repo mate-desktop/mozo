@@ -1,81 +1,84 @@
-# Low German translation for mozo.
-# Copyright (C) 2009 mozo's COPYRIGHT HOLDER
+# Zulu translation for mozo.
+# Copyright (C) 2011 mozo's COPYRIGHT HOLDER
 # This file is distributed under the same license as the mozo package.
-# Nils-Christoph Fiedler <linux@medienkompanie.de>, 2009.
-#
+# Priscilla Mahlangu <priny@translate.org.za>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=mozo&component=general\n"
-"POT-Creation-Date: 2009-09-15 12:03+0000\n"
-"PO-Revision-Date: 2009-08-27 12:23+0100\n"
-"Last-Translator: Nils-Christoph Fiedler <linux@medienkompanie.de>\n"
-"Language-Team: Low German <nds-lowgerman@lists.sourceforge.net>\n"
+"product=mozo&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-06-22 12:29+0000\n"
+"PO-Revision-Date: 2011-07-08 13:09+0200\n"
+"Last-Translator: Priscilla Mahlangu <priny@translate.org.za>\n"
+"Language-Team: translate.org.za\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Project-Style: mate\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
-msgstr "Naam"
+msgstr "Igama"
 
 #: ../Mozo/MainWindow.py:180
 msgid "Show"
-msgstr "Opwiesen"
+msgstr "Bonisa"
 
 #: ../Mozo/MainWindow.py:188
 msgid "Item"
-msgstr "Element"
+msgstr "Intwana"
 
 #: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
-msgstr "Programme de Hööftmenü todeelen"
+msgstr "Shintsha izisetshenziswa eziboniswa kwingqikithi yemenyu"
 
 #: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Hööftmenü"
+msgstr "Ingqikithi yemenyu"
 
 #: ../data/mozo.ui.h:1
 msgid "It_ems:"
-msgstr "El_emente:"
+msgstr "Izint_wana:"
 
 #: ../data/mozo.ui.h:3
 msgid "Move Down"
-msgstr "Hochbewegen"
+msgstr "Yisa phansi"
 
 #: ../data/mozo.ui.h:4
 msgid "Move Up"
-msgstr "Runnerbewegen"
+msgstr "Yisa phezulu"
 
 #: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
-msgstr "Ne_eis Element"
+msgstr "Intwana e_sha"
 
 #: ../data/mozo.ui.h:6
 msgid "New _Separator"
-msgstr "Nüer _Deeler"
+msgstr "I_sihlukanisi esisha"
 
 #: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
-msgstr "Dat ole Utsehn vum Menü wedder herstellen"
+msgstr "Buyisela isindlali semenyu yokuzenzakalela"
 
 #: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
-msgstr "Ännerungen torüchnehmen?"
+msgstr "Jikisa ushintsho?"
 
 #: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
-msgstr "All Menüs torüchsetten?"
+msgstr "Jikisa wonke amamenyu kwizilungiselelo zakuqala?"
 
 #: ../data/mozo.ui.h:10
 msgid "_Menus:"
-msgstr "_Menüs:"
+msgstr "Ama_menyu:"
 
 #: ../data/mozo.ui.h:11
 msgid "_New Menu"
-msgstr "_Neeis Menü"
+msgstr "Imenyu es_ha"
 
 #: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
-msgstr "_Torüchsetten to'm Original"
+msgstr "Jikisela kuya_kuqala"
