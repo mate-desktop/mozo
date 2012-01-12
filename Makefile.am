@@ -1,22 +1,22 @@
 ## Process this file with automake to produce Makefile.in
 
-SUBDIRS = data po Alacarte
+SUBDIRS = data po Mozo
 
 CLEANFILES=
 
-bin_SCRIPTS = alacarte
-CLEANFILES += alacarte
+bin_SCRIPTS = mozo
+CLEANFILES += mozo
 
 DISTCLEANFILES = ChangeLog
 
-alacarte: alacarte.in
+mozo: mozo.in
 	sed -e s!\@PYTHON\@!@PYTHON@!		\
 	    -e s!\@PYOPTIONS\@!-OOt!		\
 	    < $< > $@
-alacarte: Makefile
+mozo: Makefile
 
 EXTRA_DIST = \
-	alacarte.in \
+	mozo.in \
 	MAINTAINERS \
 	ChangeLog.pre-git
 

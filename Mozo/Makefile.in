@@ -31,7 +31,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = Alacarte
+subdir = Mozo
 DIST_COMMON = $(app_PYTHON) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -70,8 +70,8 @@ am__installdirs = "$(DESTDIR)$(appdir)" "$(DESTDIR)$(appdir)"
 py_compile = $(top_srcdir)/py-compile
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
-ALACARTE_CFLAGS = @ALACARTE_CFLAGS@
-ALACARTE_LIBS = @ALACARTE_LIBS@
+MOZO_CFLAGS = @MOZO_CFLAGS@
+MOZO_LIBS = @MOZO_LIBS@
 ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
@@ -197,7 +197,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-appdir = $(pythondir)/Alacarte
+appdir = $(pythondir)/Mozo
 app_PYTHON = __init__.py MainWindow.py MenuEditor.py util.py
 nodist_app_PYTHON = config.py
 CLEANFILES = config.py
@@ -214,9 +214,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am  $(am__confi
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu Alacarte/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu Mozo/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu Alacarte/Makefile
+	  $(AUTOMAKE) --gnu Mozo/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \

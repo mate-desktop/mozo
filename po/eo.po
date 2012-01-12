@@ -1,12 +1,12 @@
-# Esperanto translation for alacarte
+# Esperanto translation for mozo
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 # Dominique PELLÉ <dominique.pelle@free.fr>, 2006.
 # Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-05 12:07+0000\n"
 "PO-Revision-Date: 2010-06-05 12:04+0100\n"
@@ -19,68 +19,68 @@ msgstr ""
 "X-Launchpad-Export-Date: 2010-06-05 10:00+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../Alacarte/MainWindow.py:165
+#: ../Mozo/MainWindow.py:165
 msgid "Name"
 msgstr "Nomo"
 
-#: ../Alacarte/MainWindow.py:181
+#: ../Mozo/MainWindow.py:181
 msgid "Show"
 msgstr "Montri"
 
-#: ../Alacarte/MainWindow.py:189
+#: ../Mozo/MainWindow.py:189
 msgid "Item"
 msgstr "Menuero"
 
-#: ../data/alacarte.desktop.in.in.h:1
+#: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Ŝanĝi kiujn aplikaĵojn estas montritaj en la ĉefa menuo"
 
-#: ../data/alacarte.desktop.in.in.h:2
-#: ../data/alacarte.ui.h:2
+#: ../data/mozo.desktop.in.in.h:2
+#: ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Ĉefa menuo"
 
-#: ../data/alacarte.ui.h:1
+#: ../data/mozo.ui.h:1
 msgid "It_ems:"
 msgstr "M_enueroj:"
 
-#: ../data/alacarte.ui.h:3
+#: ../data/mozo.ui.h:3
 msgid "Move Down"
 msgstr "Movi suben"
 
-#: ../data/alacarte.ui.h:4
+#: ../data/mozo.ui.h:4
 msgid "Move Up"
 msgstr "Movi supren"
 
-#: ../data/alacarte.ui.h:5
+#: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
 msgstr "No_va menuero"
 
-#: ../data/alacarte.ui.h:6
+#: ../data/mozo.ui.h:6
 msgid "New _Separator"
 msgstr "Nova _apartigilo"
 
-#: ../data/alacarte.ui.h:7
+#: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
 msgstr "Restaŭri la defaŭltan menuan aranĝon"
 
-#: ../data/alacarte.ui.h:8
+#: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
 msgstr "Ĉu malfari ŝanĝojn?"
 
-#: ../data/alacarte.ui.h:9
+#: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Ĉu reagordi ĉiujn menuojn al originaj agordoj?"
 
-#: ../data/alacarte.ui.h:10
+#: ../data/mozo.ui.h:10
 msgid "_Menus:"
 msgstr "_Menuoj:"
 
-#: ../data/alacarte.ui.h:11
+#: ../data/mozo.ui.h:11
 msgid "_New Menu"
 msgstr "_Nova menuo"
 
-#: ../data/alacarte.ui.h:12
+#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "_Reagordi al la originala"
 

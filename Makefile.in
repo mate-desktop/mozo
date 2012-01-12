@@ -125,8 +125,8 @@ GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
 ACLOCAL = @ACLOCAL@
-ALACARTE_CFLAGS = @ALACARTE_CFLAGS@
-ALACARTE_LIBS = @ALACARTE_LIBS@
+MOZO_CFLAGS = @MOZO_CFLAGS@
+MOZO_LIBS = @MOZO_LIBS@
 ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
@@ -252,12 +252,12 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = data po Alacarte
-CLEANFILES = alacarte
-bin_SCRIPTS = alacarte
+SUBDIRS = data po Mozo
+CLEANFILES = mozo
+bin_SCRIPTS = mozo
 DISTCLEANFILES = ChangeLog
 EXTRA_DIST = \
-	alacarte.in \
+	mozo.in \
 	MAINTAINERS \
 	ChangeLog.pre-git
 
@@ -785,11 +785,11 @@ uninstall-am: uninstall-binSCRIPTS
 	uninstall uninstall-am uninstall-binSCRIPTS
 
 
-alacarte: alacarte.in
+mozo: mozo.in
 	sed -e s!\@PYTHON\@!@PYTHON@!		\
 	    -e s!\@PYOPTIONS\@!-OOt!		\
 	    < $< > $@
-alacarte: Makefile
+mozo: Makefile
 
 ChangeLog:
 	@echo Creating $@

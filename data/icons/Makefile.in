@@ -48,8 +48,8 @@ DIST_SOURCES =
 DATA = $(noinst_DATA)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
-ALACARTE_CFLAGS = @ALACARTE_CFLAGS@
-ALACARTE_LIBS = @ALACARTE_LIBS@
+MOZO_CFLAGS = @MOZO_CFLAGS@
+MOZO_LIBS = @MOZO_LIBS@
 ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
@@ -181,12 +181,12 @@ public_icons_themes = \
 	$(NULL)
 
 public_icons = \
-	hicolor_apps_16x16_alacarte.png \
-	hicolor_apps_22x22_alacarte.png \
-	hicolor_apps_24x24_alacarte.png \
-	hicolor_apps_32x32_alacarte.png \
-	hicolor_apps_48x48_alacarte.png \
-	hicolor_apps_256x256_alacarte.png \
+	hicolor_apps_16x16_mozo.png \
+	hicolor_apps_22x22_mozo.png \
+	hicolor_apps_24x24_mozo.png \
+	hicolor_apps_32x32_mozo.png \
+	hicolor_apps_48x48_mozo.png \
+	hicolor_apps_256x256_mozo.png \
 	$(NULL)
 
 private_icons = \

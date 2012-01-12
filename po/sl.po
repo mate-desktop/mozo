@@ -1,13 +1,13 @@
-# Slovenian translation for alacarte.
+# Slovenian translation for mozo.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 #
 # Matic Žgur <mr.zgur@gmail.com>, 2006 - 2007.
 # Matej Urbančič <mateju@svn.mate.org>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte master\n"
+"Project-Id-Version: mozo master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-28 03:25+0000\n"
 "PO-Revision-Date: 2010-04-15 08:45+0100\n"
@@ -21,68 +21,68 @@ msgstr ""
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Ime"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Pokaži"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Predmet"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Določitev programov, ki so prikazani v osnovnem meniju"
 
-#: ../alacarte.desktop.in.in.h:2
-#: ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2
+#: ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Glavni meni"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "_Predmeti:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Premakni navzdol"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Premakni navzgor"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "_Nov predmet"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Nova _ločilna črta"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Povrni privzeto postavitev menija"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Ali želite povrniti spremembe?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Ali želite povrniti vse menije na privzeto določeno obliko?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Meniji:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "Nov _meni"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Povrni na prvotne vrednosti"
 
@@ -110,8 +110,8 @@ msgstr "_Povrni na prvotne vrednosti"
 #~ msgid "Menu Editor"
 #~ msgstr "Urejevalnik menijev"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Urejevalnik menijev Alacarte"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Urejevalnik menijev Mozo"
 
 #~ msgid "Browse..."
 #~ msgstr "Prebrskaj ..."

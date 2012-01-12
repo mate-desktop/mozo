@@ -1,11 +1,11 @@
-# Croatian translation for alacarte
+# Croatian translation for mozo
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-03-11 00:25+0000\n"
 "PO-Revision-Date: 2007-03-14 22:54+0000\n"
@@ -19,66 +19,66 @@ msgstr ""
 "X-Launchpad-Export-Date: 2008-05-28 03:05+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../Alacarte/MainWindow.py:168
+#: ../Mozo/MainWindow.py:168
 msgid "Name"
 msgstr "Naziv"
 
-#: ../Alacarte/MainWindow.py:184
+#: ../Mozo/MainWindow.py:184
 msgid "Show"
 msgstr "Prikaži"
 
-#: ../Alacarte/MainWindow.py:192
+#: ../Mozo/MainWindow.py:192
 msgid "Item"
 msgstr "Stavka"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Izmjenite popis programa na ovom izborniku"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Glavni izbornik"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "_Stavke:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Pomakni dolje"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Pomakni gore"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "Nova _stavka"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Nova _razmaknica"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Vrati na uobičajeni raspored izbornika"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Vratiti promjene?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Vratiti sve izbornike na originalne postavke?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Izbornici:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "_Novi izbornik"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "Vrati na originalno"

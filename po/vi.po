@@ -4,9 +4,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte HEAD\n"
+"Project-Id-Version: mozo HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=alacarte&component=general\n"
+"product=mozo&component=general\n"
 "POT-Creation-Date: 2009-04-22 22:36+0000\n"
 "PO-Revision-Date: 2007-02-19 14:04+0700\n"
 "Last-Translator: Bùi Xuân Dương <buixuanduong1983@gmail.com>\n"
@@ -16,67 +16,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Tên"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Hiện"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Mục"
 
-#: ../data/alacarte.desktop.in.in.h:1
+#: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Thay đổi những ứng dụng hiển thị trong trình đơn chính"
 
-#: ../data/alacarte.desktop.in.in.h:2 ../data/alacarte.glade.h:2
+#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Trình đơn chính"
 
-#: ../data/alacarte.glade.h:1
+#: ../data/mozo.glade.h:1
 msgid "It_ems:"
 msgstr "_Mục:"
 
-#: ../data/alacarte.glade.h:3
+#: ../data/mozo.glade.h:3
 msgid "Move Down"
 msgstr "Đem xuống"
 
-#: ../data/alacarte.glade.h:4
+#: ../data/mozo.glade.h:4
 msgid "Move Up"
 msgstr "Đem lên"
 
-#: ../data/alacarte.glade.h:5
+#: ../data/mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "Mục mớ_i"
 
-#: ../data/alacarte.glade.h:6
+#: ../data/mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Thanh _ngăn cách mới"
 
-#: ../data/alacarte.glade.h:7
+#: ../data/mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Phục hồi bố cục trình đơn mặc định"
 
-#: ../data/alacarte.glade.h:8
+#: ../data/mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Bỏ qua các thay đổi?"
 
-#: ../data/alacarte.glade.h:9
+#: ../data/mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Hoàn nguyên thiết lập ban đầu của mọi trình đơn?"
 
-#: ../data/alacarte.glade.h:10
+#: ../data/mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Trình đơn:"
 
-#: ../data/alacarte.glade.h:11
+#: ../data/mozo.glade.h:11
 msgid "_New Menu"
 msgstr "Trình đơn mớ_i"
 
-#: ../data/alacarte.glade.h:12
+#: ../data/mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "H_oàn nguyên"
 
@@ -104,8 +104,8 @@ msgstr "H_oàn nguyên"
 #~ msgid "Menu Editor"
 #~ msgstr "Bộ sửa trình đơn"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Bộ sửa trình đơn Alacarte"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Bộ sửa trình đơn Mozo"
 
 #~ msgid "Browse..."
 #~ msgstr "Duyệt..."

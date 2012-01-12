@@ -1,14 +1,14 @@
 [Desktop Entry]
 _Name=Main Menu
 _Comment=Change which applications are shown on the main menu
-Exec=alacarte
+Exec=mozo
 Terminal=false
 Type=Application
 StartupNotify=false
 Categories=MATE;Settings;DesktopSettings;
 NotShowIn=KDE;
-Icon=alacarte
+Icon=mozo
 X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=alacarte
+X-MATE-Bugzilla-Product=mozo
 X-MATE-Bugzilla-Component=general
 X-MATE-Bugzilla-Version=@VERSION@

@@ -1,5 +1,5 @@
 # translation of as.po to Assamese
-# Translation of alacarte.head.po to Assamese
+# Translation of mozo.head.po to Assamese
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -20,67 +20,67 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "নাম"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "দেখুৱা"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "বস্তু"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "মূখ্য তালিকাত কোনবোৰ অনুপ্ৰয়োগ দেখুওৱা হ'ব সেইটো সলনি কৰক"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "মূখ্য তালিকা"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "বস্তু (_e):"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "তললৈ গমন কৰক"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "ওপৰলৈ গমন কৰক"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "নতুন বস্তু (_w)"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "নতুন বিভেদক (_S)"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "অবিকল্পিত তালিকা বিন্যাস পুনঃ প্ৰতিষ্ঠিষ্ঠিত কৰক"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "পৰিৱৰ্ত্তন প্ৰত্যাবৰ্ত্তন কৰোঁ?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "সকলো তালিকা প্ৰাথমিক অৱস্থাৰ পৰিবেশলৈ প্ৰত্যাবৰ্ত্তন কৰোঁ?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "তালিকাসমূহ (_M):"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "নতুন তালিকা (_N)"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "প্ৰাথমিক অৱস্থলৈ প্ৰত্যাবৰ্ত্তন (_R)"
 

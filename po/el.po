@@ -1,11 +1,11 @@
-# Greek, Modern (1453-) translation for alacarte
+# Greek, Modern (1453-) translation for mozo
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 # Kostas Papadimas <pkst@gmx.net>, 2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-08 10:49+0000\n"
 "PO-Revision-Date: 2008-10-07 16:39+0200\n"
@@ -15,68 +15,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:168
+#: ../Mozo/MainWindow.py:168
 msgid "Name"
 msgstr "Όνομα"
 
-#: ../Alacarte/MainWindow.py:184
+#: ../Mozo/MainWindow.py:184
 msgid "Show"
 msgstr "Προβολή"
 
-#: ../Alacarte/MainWindow.py:192
+#: ../Mozo/MainWindow.py:192
 msgid "Item"
 msgstr "Αντικείμενο"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Αλλαγή των εφαρμογών που εμφανίζονται στο κυρίως μενού"
 
-#: ../alacarte.desktop.in.in.h:2
-#: ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2
+#: ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Κυρίως μενού"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "Αντι_κείμενα:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Μετακίνηση κάτω"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Μετακίνηση πάνω"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "Νέ_ο αντικείμενο"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Νέο δια_χωριστικό"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Επαναφορά της προεπιλεγμένης διάταξης"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Επαναφορά αλλαγών;"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Επαναφορά όλων των μενού στις αρχικές τους ρυθμίσεις;"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Μενού:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "Νέο _μενού"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "Επανα_φορά στο αρχικό"
 
@@ -88,8 +88,8 @@ msgstr "Επανα_φορά στο αρχικό"
 #~ msgstr "Προσθήκη, αλλαγή ή απομάκρυνση αντικειμένων μενού"
 #~ msgid "Menu Layout"
 #~ msgstr "Διάταξη μενού"
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Επεξεργαστής μενού Alacarte"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Επεξεργαστής μενού Mozo"
 #~ msgid "Browse..."
 #~ msgstr "Περιήγηση..."
 #~ msgid "Command:"
@@ -111,7 +111,7 @@ msgstr "Επανα_φορά στο αρχικό"
 #~ msgid "Simple fd.o compliant menu editor"
 #~ msgstr "Ένας απλός επεξεργαστής μενού συμβατός με το freedesktop.org"
 #~ msgid "translator-credits"
-#~ msgstr "pkst@gnome.org"
+#~ msgstr "pkst@mate.org"
 #~ msgid "A menu can't be named \"Other\"."
 #~ msgstr "Ένα μενού δεν μπορεί να έχει το όνομα \"Other\"."
 #~ msgid "Loading..."

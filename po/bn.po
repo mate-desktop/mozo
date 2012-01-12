@@ -1,6 +1,6 @@
-# Bengali translation for alacarte
+# Bengali translation for mozo
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 # Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2006.
 # Maruf Ovee <maruf@ankur.org.bd>, 2009.
 # Sadia Afroz <sadia@ankur.org.bd>, 2010.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
 "Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=alacarte&component=general\n"
+"product=mozo&component=general\n"
 "POT-Creation-Date: 2009-12-14 15:28+0000\n"
 "PO-Revision-Date: 2010-03-09 12:15+0600\n"
 "Last-Translator: Sadia Afroz <sadia@ankur.org.bd>\n"
@@ -18,67 +18,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:164
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "নাম"
 
-#: ../Alacarte/MainWindow.py:180
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "প্রদর্শন"
 
-#: ../Alacarte/MainWindow.py:188
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "আইটেম"
 
-#: ../data/alacarte.desktop.in.in.h:1
+#: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "প্রধান মেনুতে কোন অ্যাপ্লিকেশনগুলো থাকবে তা পরিবর্তন করুন"
 
-#: ../data/alacarte.desktop.in.in.h:2 ../data/alacarte.ui.h:2
+#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "প্রধান মেনু"
 
-#: ../data/alacarte.ui.h:1
+#: ../data/mozo.ui.h:1
 msgid "It_ems:"
 msgstr "আইটেম: (_e)"
 
-#: ../data/alacarte.ui.h:3
+#: ../data/mozo.ui.h:3
 msgid "Move Down"
 msgstr "নিচে নামান"
 
-#: ../data/alacarte.ui.h:4
+#: ../data/mozo.ui.h:4
 msgid "Move Up"
 msgstr "উপরে উঠান"
 
-#: ../data/alacarte.ui.h:5
+#: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
 msgstr "নতুন আইটেম (_w)"
 
-#: ../data/alacarte.ui.h:6
+#: ../data/mozo.ui.h:6
 msgid "New _Separator"
 msgstr "নতুন বিভাজক (_S)"
 
-#: ../data/alacarte.ui.h:7
+#: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
 msgstr "পূর্বনির্ধারিত মেনু বহির্বিন্যাস পুনরুদ্ধার করুন"
 
-#: ../data/alacarte.ui.h:8
+#: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
 msgstr "পরিবর্তনগুলো কি বাদ দিতে চান?"
 
-#: ../data/alacarte.ui.h:9
+#: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
 msgstr "সকল মেনু কি আদি সেটিংসে ফিরিয়ে আনা হবে?"
 
-#: ../data/alacarte.ui.h:10
+#: ../data/mozo.ui.h:10
 msgid "_Menus:"
 msgstr "মেনু: (_M)"
 
-#: ../data/alacarte.ui.h:11
+#: ../data/mozo.ui.h:11
 msgid "_New Menu"
 msgstr "নতুন মেনু (_N)"
 
-#: ../data/alacarte.ui.h:12
+#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "আদি অবস্থায় ফিরে যান (_R)"
 
@@ -94,8 +94,8 @@ msgstr "আদি অবস্থায় ফিরে যান (_R)"
 #~ msgid "Menu Layout"
 #~ msgstr "মেনু বহির্বিন্যাস"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Alacarte মেনু সম্পাদক"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Mozo মেনু সম্পাদক"
 
 #~ msgid "Browse..."
 #~ msgstr "ব্রাউজ করুন..."

@@ -5,12 +5,12 @@ public_icons_themes = \
 	$(NULL)
 
 public_icons = \
-	hicolor_apps_16x16_alacarte.png \
-	hicolor_apps_22x22_alacarte.png \
-	hicolor_apps_24x24_alacarte.png \
-	hicolor_apps_32x32_alacarte.png \
-	hicolor_apps_48x48_alacarte.png \
-	hicolor_apps_256x256_alacarte.png \
+	hicolor_apps_16x16_mozo.png \
+	hicolor_apps_22x22_mozo.png \
+	hicolor_apps_24x24_mozo.png \
+	hicolor_apps_32x32_mozo.png \
+	hicolor_apps_48x48_mozo.png \
+	hicolor_apps_256x256_mozo.png \
 	$(NULL)
 
 private_icons = \

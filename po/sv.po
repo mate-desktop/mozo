@@ -1,4 +1,4 @@
-# Swedish messages for alacarte.
+# Swedish messages for mozo.
 # Copyright (C) 2006, 2007, 2009 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2006.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2009.
@@ -7,7 +7,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-07-07 12:09+0200\n"
 "PO-Revision-Date: 2009-07-07 13:16+0100\n"
@@ -17,68 +17,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:163
+#: ../Mozo/MainWindow.py:163
 msgid "Name"
 msgstr "Namn"
 
-#: ../Alacarte/MainWindow.py:179
+#: ../Mozo/MainWindow.py:179
 msgid "Show"
 msgstr "Visa"
 
-#: ../Alacarte/MainWindow.py:187
+#: ../Mozo/MainWindow.py:187
 msgid "Item"
 msgstr "Objekt"
 
-#: ../data/alacarte.desktop.in.in.h:1
+#: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Ändra vilka program som visas på huvudmenyn"
 
-#: ../data/alacarte.desktop.in.in.h:2
-#: ../data/alacarte.ui.h:2
+#: ../data/mozo.desktop.in.in.h:2
+#: ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Huvudmeny"
 
-#: ../data/alacarte.ui.h:1
+#: ../data/mozo.ui.h:1
 msgid "It_ems:"
 msgstr "Obje_kt:"
 
-#: ../data/alacarte.ui.h:3
+#: ../data/mozo.ui.h:3
 msgid "Move Down"
 msgstr "Flytta nedåt"
 
-#: ../data/alacarte.ui.h:4
+#: ../data/mozo.ui.h:4
 msgid "Move Up"
 msgstr "Flytta uppåt"
 
-#: ../data/alacarte.ui.h:5
+#: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
 msgstr "N_ytt objekt"
 
-#: ../data/alacarte.ui.h:6
+#: ../data/mozo.ui.h:6
 msgid "New _Separator"
 msgstr "Ny _avgränsare"
 
-#: ../data/alacarte.ui.h:7
+#: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
 msgstr "Återställ standardmenylayouten"
 
-#: ../data/alacarte.ui.h:8
+#: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
 msgstr "Återställ ändringar?"
 
-#: ../data/alacarte.ui.h:9
+#: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Återställ alla menyer till ursprungsinställningarna?"
 
-#: ../data/alacarte.ui.h:10
+#: ../data/mozo.ui.h:10
 msgid "_Menus:"
 msgstr "_Menyer:"
 
-#: ../data/alacarte.ui.h:11
+#: ../data/mozo.ui.h:11
 msgid "_New Menu"
 msgstr "_Ny meny"
 
-#: ../data/alacarte.ui.h:12
+#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "_Återställ till ursprunglig"
 
@@ -100,8 +100,8 @@ msgstr "_Återställ till ursprunglig"
 #~ msgstr "Ingen ikon"
 #~ msgid "Menu Editor"
 #~ msgstr "Menyredigerare"
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Menyredigeraren Alacarte"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Menyredigeraren Mozo"
 #~ msgid "Browse..."
 #~ msgstr "Bläddra..."
 #~ msgid "Command:"

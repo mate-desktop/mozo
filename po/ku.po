@@ -1,11 +1,11 @@
-# Kurdish translation for alacarte
+# Kurdish translation for mozo
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 # Erdal <erdal.ronahi@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-15 14:05+0200\n"
 "PO-Revision-Date: 2009-09-15 14:09+0200\n"
@@ -18,67 +18,67 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.4.0\n"
 
-#: ../Alacarte/MainWindow.py:164
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Nav"
 
-#: ../Alacarte/MainWindow.py:180
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Nîşandan"
 
-#: ../Alacarte/MainWindow.py:188
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Hêman"
 
-#: ../data/alacarte.desktop.in.in.h:1
+#: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr ""
 
-#: ../data/alacarte.desktop.in.in.h:2 ../data/alacarte.ui.h:2
+#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Pêşeka Bingehîn"
 
-#: ../data/alacarte.ui.h:1
+#: ../data/mozo.ui.h:1
 msgid "It_ems:"
 msgstr "Hê_man:"
 
-#: ../data/alacarte.ui.h:3
+#: ../data/mozo.ui.h:3
 msgid "Move Down"
 msgstr "Bikşîne Jêr"
 
-#: ../data/alacarte.ui.h:4
+#: ../data/mozo.ui.h:4
 msgid "Move Up"
 msgstr "Bikşîne Jor"
 
-#: ../data/alacarte.ui.h:5
+#: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
 msgstr "Hêmana _nû"
 
-#: ../data/alacarte.ui.h:6
+#: ../data/mozo.ui.h:6
 msgid "New _Separator"
 msgstr "V_eqetandeka nû"
 
-#: ../data/alacarte.ui.h:7
+#: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
 msgstr ""
 
-#: ../data/alacarte.ui.h:8
+#: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
 msgstr "Guherînan _paş de vegerîne?"
 
-#: ../data/alacarte.ui.h:9
+#: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Bila hemû pêşek vegere mîhengên sereke?"
 
-#: ../data/alacarte.ui.h:10
+#: ../data/mozo.ui.h:10
 msgid "_Menus:"
 msgstr "_Pêşek:"
 
-#: ../data/alacarte.ui.h:11
+#: ../data/mozo.ui.h:11
 msgid "_New Menu"
 msgstr "_Pêşeka nû"
 
-#: ../data/alacarte.ui.h:12
+#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "_Vegerîne Orjînalê"
 
@@ -100,8 +100,8 @@ msgstr "_Vegerîne Orjînalê"
 #~ msgid "translator-credits"
 #~ msgstr "Rêzan Tovjîn <rezan@bername.net>, 2006"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Pergalkerê Pêşeka Alacarte"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Pergalkerê Pêşeka Mozo"
 
 #~ msgid "Simple freedesktop.org Compliant Menu Editor"
 #~ msgstr "Edîtora Pêşekan a hesan û li gora freedesktop.org"

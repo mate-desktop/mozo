@@ -1,6 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
-appdir = $(pythondir)/Alacarte
+appdir = $(pythondir)/Mozo
 app_PYTHON = __init__.py MainWindow.py MenuEditor.py util.py
 nodist_app_PYTHON = config.py
 

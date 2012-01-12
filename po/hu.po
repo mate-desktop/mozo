@@ -1,12 +1,12 @@
-# Hungarian translation for alacarte
+# Hungarian translation for mozo
 # Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 #
 # Gabor Burján <buga@buvoshetes.hu>, 2006.
 # Gabor Kelemen <kelemeng@mate.hu>, 2006, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-12 04:30+0000\n"
 "PO-Revision-Date: 2007-03-09 13:06+0100\n"
@@ -18,67 +18,67 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Név"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Látható"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Elem"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "A főmenüben megjelenő alkalmazások módosítása"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Főmenü"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "_Elemek:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Lefelé"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Felfelé"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "Ú_j elem"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Új _elválasztó"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Az alapértelmezett menüelrendezés visszaállítása"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Visszavonja a módosításokat?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Visszaállítja a menük eredeti állapotát?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Menük:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "Új _menü"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Visszatérés az eredeti állapothoz"
 

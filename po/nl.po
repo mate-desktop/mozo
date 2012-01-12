@@ -1,12 +1,12 @@
-# Dutch translation of Alacarte.
+# Dutch translation of Mozo.
 # Copyright (C) 2005 Niels Abspoel <niels.abspoel@wanadoo.nl>
-# This file is distributed under the same license as the Alacarte package.
+# This file is distributed under the same license as the Mozo package.
 # Niels Abspoel <niels.abspoel@wanadoo.nl>, 2005.
 # Tino Meinen <a.t.meinen@chello.nl>, 2006, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Alacarte VERSION\n"
+"Project-Id-Version: Mozo VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-12 04:30+0000\n"
 "PO-Revision-Date: 2007-02-24 00:13+0100\n"
@@ -16,70 +16,70 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Naam"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Tonen"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Item"
 
 # instellen/wijzigen
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Instellen welke toepassingen in het hoofdmenu getoond worden"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Hoofdmenu"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "It_ems:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Naar beneden"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Naar boven"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "_Nieuw item"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Nieuw _scheidingsteken"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "De standaard menu-indeling herstellen"
 
 # wijzigingen/wijzigen
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Wijzigen ongedaan maken?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Alle oorspronkelijke menu-instellingen terugzetten?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Menus:"
 
 # waarom de _m en niet de _n hier? (tino)
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "Nieuw _menu"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Terugzetten"
 
@@ -113,8 +113,8 @@ msgstr "_Terugzetten"
 #~ msgid "Menu Editor"
 #~ msgstr "Menu-editor"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Alacarte menu-editor"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Mozo menu-editor"
 
 #~ msgid "Browse..."
 #~ msgstr "Bladeren..."

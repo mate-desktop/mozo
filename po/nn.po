@@ -1,13 +1,13 @@
-# Norwegian nynorsk translation of alacarte
-# Copyright (C) 2007 THE alacarte'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the alacarte package
-# Kjartan Maraas <kmaraas@gnome.org>, 2006, 2007.
+# Norwegian nynorsk translation of mozo
+# Copyright (C) 2007 THE mozo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package
+# Kjartan Maraas <kmaraas@mate.org>, 2006, 2007.
 # Eskild Hustvedt <i18n@zerodogg.org>, 2007
 # 
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte 0.11\n"
+"Project-Id-Version: mozo 0.11\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-11-02 13:59+0000\n"
 "PO-Revision-Date: 2007-12-07 20:18+0100\n"
@@ -17,67 +17,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Namn"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Vis"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Oppføring"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Endra kva program som vert viste i hovudmenyen"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Hovudmeny"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "Oppføring_ar:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Flytt ned"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Flytt opp"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "N_y oppføring"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Ny _separator"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Gjenopprett forvald menyutføring"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Angra endringer?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Set menyane tilbake til opphavleg tilstand?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Menyar:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "_Ny meny"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Angra alle endringar"
 
@@ -105,8 +105,8 @@ msgstr "_Angra alle endringar"
 #~ msgid "Menu Editor"
 #~ msgstr "Menyredigering"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Alacarte menyredigering"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Mozo menyredigering"
 
 #~ msgid "Browse..."
 #~ msgstr "Bla gjennom..."
@@ -143,5 +143,5 @@ msgstr "_Angra alle endringar"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
-#~ "Kjartan Maraas <kmaraas@gnome.org>\n"
+#~ "Kjartan Maraas <kmaraas@mate.org>\n"
 #~ "Eskild Hustvedt <i18n@zerodogg.org"

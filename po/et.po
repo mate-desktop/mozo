@@ -1,16 +1,16 @@
-# Alacarte eesti keele tõlge.
-# Estonian translation of Alacarte.
+# Mozo eesti keele tõlge.
+# Estonian translation of Mozo.
 #
 # Copyright (C) 2006 Free Software Foundation, Inc.
 # Copyright (C) 2007 The MATE Project.
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 #
 # Priit Laes <amd store20 com>, 2006.
 # Ivar Smolin <okul linux ee>, 2006, 2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte HEAD\n"
+"Project-Id-Version: mozo HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-12 04:30+0000\n"
 "PO-Revision-Date: 2007-02-16 14:27+0200\n"
@@ -20,67 +20,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Nimi"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Näita"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Kirje"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Peamenüüs näidatavate rakenduste valimine"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Peamenüü"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "_Elemendid:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Liiguta alla"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Liiguta üles"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "_Uus kirje"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "Uus _eraldaja"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Taasta vaikimisi menüüpaigutus"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Pöörata muudatused tagasi?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Taastada kõigi menüüde algseaded?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Menüüd:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "_Uus menüü"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Taasta algne seis"
 
@@ -108,8 +108,8 @@ msgstr "_Taasta algne seis"
 #~ msgid "Menu Editor"
 #~ msgstr "Menüüredaktor"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Alacarte menüüredaktor"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Mozo menüüredaktor"
 
 #~ msgid "Browse..."
 #~ msgstr "Sirvi..."

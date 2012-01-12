@@ -1,7 +1,7 @@
 # Translation of oc.po to Occitan
-# Occitan translation of alacarte.
+# Occitan translation of mozo.
 # Copyright (C) 2006, 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 #
 # Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008
 msgid ""
@@ -17,66 +17,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../Alacarte/MainWindow.py:168
+#: ../Mozo/MainWindow.py:168
 msgid "Name"
 msgstr "Nom"
 
-#: ../Alacarte/MainWindow.py:184
+#: ../Mozo/MainWindow.py:184
 msgid "Show"
 msgstr "Visualizar"
 
-#: ../Alacarte/MainWindow.py:192
+#: ../Mozo/MainWindow.py:192
 msgid "Item"
 msgstr "Element"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Modificar las aplicacions visualizadas dins lo menut principal"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Menut principal"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "E_lements :"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Davalar"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Montar"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "Element _novèl"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "_Separador novèl"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Restaurar la disposicion de menut per defaut"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Anullar las modificacions ?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Tornar a la configuracion predefinida de totes los menuts ?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Menuts :"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "Menut _novèl"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Tornar a l'original"

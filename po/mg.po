@@ -1,11 +1,11 @@
-# MALAGASY TRANSLATION OF ALACARTE.
+# MALAGASY TRANSLATION OF MOZO.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Thierry Randrianiriana <thierry@isvtec.com>, 2007.
 # Fano Rajaonarisoa <fano@isvtec.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: ALACARTE VERSION\n"
+"Project-Id-Version: MOZO VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-12 04:30+0000\n"
 "PO-Revision-Date: 2007-03-06 13:33+0300\n"
@@ -15,67 +15,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "Anarana"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "Asehoy"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "Singa"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Ovay ireo rindran'asa miseo amin'ny tolotra fototra"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "Tolotra Fototra"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "Sin_ga:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "Ampidino"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "Akaro"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "Singa _vaovao"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "_Mpampisaraka vaovao"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "Hamerina ny lamin'ny tolotra lasitra"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "Foanana ireo fanovana?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Averina amin'ny laminy taloha ny tolotra rehetra?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_Tolotra:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "_Tolotra vaovao"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_Averina amin'ny taloha"
 
@@ -91,8 +91,8 @@ msgstr "_Averina amin'ny taloha"
 #~ msgid "Menu Layout"
 #~ msgstr "Lamin'ny tolotra"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Mpanova tolotra Alacarte"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Mpanova tolotra Mozo"
 
 #~ msgid "Browse..."
 #~ msgstr "Zahavo..."

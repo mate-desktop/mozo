@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#   Alacarte Menu Editor - Simple fd.o Compliant Menu Editor
+#   Mozo Menu Editor - Simple fd.o Compliant Menu Editor
 #   Copyright (C) 2006  Travis Watkins, Heinrich Wendel
 #
 #   This library is free software; you can redistribute it and/or
@@ -18,7 +18,7 @@
 
 import os, re, xml.dom.minidom, locale
 import matemenu
-from Alacarte import util
+from Mozo import util
 
 class Menu:
 	tree = None

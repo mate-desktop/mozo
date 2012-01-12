@@ -34,7 +34,7 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 subdir = data
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(srcdir)/alacarte.desktop.in.in
+	$(srcdir)/mozo.desktop.in.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/acinclude.m4 \
 	$(top_srcdir)/configure.ac
@@ -42,7 +42,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
-CONFIG_CLEAN_FILES = alacarte.desktop.in
+CONFIG_CLEAN_FILES = mozo.desktop.in
 CONFIG_CLEAN_VPATH_FILES =
 SOURCES =
 DIST_SOURCES =
@@ -111,8 +111,8 @@ am__relativize = \
   done; \
   reldir="$$dir2"
 ACLOCAL = @ACLOCAL@
-ALACARTE_CFLAGS = @ALACARTE_CFLAGS@
-ALACARTE_LIBS = @ALACARTE_LIBS@
+MOZO_CFLAGS = @MOZO_CFLAGS@
+MOZO_LIBS = @MOZO_LIBS@
 ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
@@ -240,9 +240,9 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = icons
 desktopdir = $(datadir)/applications
-desktop_in_files = alacarte.desktop.in
+desktop_in_files = mozo.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-pkgdata_DATA = alacarte.ui
+pkgdata_DATA = mozo.ui
 CLEANFILES = $(desktop_DATA)
 EXTRA_DIST = $(pkgdata_DATA)
 all: all-recursive
@@ -278,7 +278,7 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-alacarte.desktop.in: $(top_builddir)/config.status $(srcdir)/alacarte.desktop.in.in
+mozo.desktop.in: $(top_builddir)/config.status $(srcdir)/mozo.desktop.in.in
 	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 install-desktopDATA: $(desktop_DATA)
 	@$(NORMAL_INSTALL)

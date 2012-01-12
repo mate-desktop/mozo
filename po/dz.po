@@ -19,68 +19,68 @@ msgstr ""
 "X-Poedit-Country: Bhutan\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "མིང་།"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "སྟོན།"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "རྣམ་གྲངས།"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "དཀར་ཆག་ངོ་མའི་ནང་ལུ་སྟོན་ཡོད་མི་ གློག་རིམ་ཚུ་བསྒྱུར་བཅོས་འབད།"
 
-#: ../alacarte.desktop.in.in.h:2
-#: ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2
+#: ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "དཀར་ཆག་ངོ་མ་"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "རྣམ་གྲངས་ཚུ་:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "མར་བཤུད།"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "ཡར་བཤུད།"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "རྣམ་གྲངས་གསརཔ།"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "དབྱེ་བྱེད་གསརཔ།(_S)"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "སྔོན་སྒྲིག་དཀར་ཆག་སྒྲིག་བཀོད་སླར་གསོ་འབད།"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "བསྒྱུར་བཅོས་ཚུ་རྒྱབ་ལོག།"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "དཀར་ཆག་ཆ་མཉམ་ འགོ་ཐོག་གི་སྒྲིག་སྟངས་ལུ་རྒྱབ་ལོག"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "དཀར་ཆག་ཚུ་:(_M)"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "དཀར་ཆག་གསརཔ།(_N)"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "འགོ་ཐོག་ལུ་རྒྱབ་ལོག(_R)"
 

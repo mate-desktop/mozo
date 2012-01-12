@@ -27,7 +27,7 @@
 	* LINGUAS:
 	* crh.po: Added Crimean Tatar translation on behalf of Reşat SABIQ.
 
-2009-02-09  Gil Forcada  <gforcada@gnome.org>
+2009-02-09  Gil Forcada  <gforcada@mate.org>
 
 	* ast.po: Added Asturian translation on behalf of Mikel González.
 	* LINGUAS: Added ast.
@@ -65,7 +65,7 @@
 
 ==================== 0.11.6 ====================
 
-2008-09-21 Og Maciel <ogmaciel@gnome.org>
+2008-09-21 Og Maciel <ogmaciel@mate.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation by Vladimir Melo.
 
@@ -103,7 +103,7 @@
 
 	* or.po: Updated Oriya Translation.
 
-2008-08-08  Simos Xenitellis  <simos@gnome.org>
+2008-08-08  Simos Xenitellis  <simos@mate.org>
 
 	* el.po: Updated Greek translation.
 
@@ -120,12 +120,12 @@
 
 	* ar.po: Updated Arabic Translation by Khaled Hosny.
 
-2008-07-20  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
+2008-07-20  Leonardo Ferreira Fontenelle  <leonardof@mate.org>
 
 	* pt_BR.po: Brazilian Portuguese translation improvements by Vladimir
 	Melo.
 
-2008-07-19  Gil Forcada  <gforcada@gnome.org>
+2008-07-19  Gil Forcada  <gforcada@mate.org>
 
 	* ps.po: Added Pashto translation by Zabeeh khan.
 	* LINGUAS: Added ps.
@@ -154,7 +154,7 @@
 
 	* ru.po: Updated Russian translation.
 
-2008-03-11  Gil Forcada  <gforcada@gnome.org>
+2008-03-11  Gil Forcada  <gforcada@mate.org>
 
 	* fur.po: Added Friulian translation on behalf of Massimo Furlani.
 	* LINGUAS: Added fur.
@@ -176,7 +176,7 @@
 
 	* es.po: Updated Spanish translation                   
 
-2008-02-17  Kjartan Maraas  <kmaraas@gnome.org>
+2008-02-17  Kjartan Maraas  <kmaraas@mate.org>
 
 	* POTFILES.in: Remove generated file.
 	* POTFILES.skip: Add it here.
@@ -209,7 +209,7 @@
 	  Shankar Prasad <svenkate@redhat.com>
 
 
-2007-12-08  Kjartan Maraas  <kmaraas@gnome.org>
+2007-12-08  Kjartan Maraas  <kmaraas@mate.org>
 
 	* nb.po: Updated Norwegian bokmål translation
 	* nn.po: Added Norwegian nynorsk translation from
@@ -220,7 +220,7 @@
 	* ga.po: Added Irish translation.
 	* LINGUAS: Added Irish.
 
-2007-11-16  ahmad riza h nst  <rizahnst@gnome.org>
+2007-11-16  ahmad riza h nst  <rizahnst@mate.org>
 
 	* id.po: Added Indonesian translation.
 	* LINGUAS: Added id.
@@ -267,7 +267,7 @@
 	* uz@cyrillic.po: Added Uzbek translation on behalf of Nurali
 	Abdurahmonov <mavnur@gmail.com>. Fixes #473831.
 
-2007-09-05  Kjartan Maraas  <kmaraas@gnome.org>
+2007-09-05  Kjartan Maraas  <kmaraas@mate.org>
 
 	* nb.po: Updated with correct header information.
 
@@ -275,7 +275,7 @@
 
 	* gl.po: Updated Galician Translation.
 
-2007-08-15  Adam Weinberger  <adamw@gnome.org>
+2007-08-15  Adam Weinberger  <adamw@mate.org>
 
 	* en_CA.po: Updated Canadian English translation.
 
@@ -344,11 +344,11 @@
 
 	* tr.po: Updated Turkish Translation
 
-2007-03-10  Ihar Hrachyshka  <iharh@gnome.org>
+2007-03-10  Ihar Hrachyshka  <iharh@mate.org>
 
 	* be@latin.po: Fixed Belarusian Latin translation.
 
-2007-03-09  Ihar Hrachyshka  <iharh@gnome.org>
+2007-03-09  Ihar Hrachyshka  <iharh@mate.org>
 
 	* be@latin.po: Added new Belarusian Latin translation.
 
@@ -356,7 +356,7 @@
 
 	* hu.po: Translation updated.
 
-2007-03-07  Simos Xenitellis  <simos@gnome.org>
+2007-03-07  Simos Xenitellis  <simos@mate.org>
 
 	* el.po: Updated Greek translation.
 
@@ -380,15 +380,15 @@
 
 	* it.po: Updated Italian translation by Milo Casagrande.
 
-2007-03-03  Vincent van Adrighem  <adrighem@gnome.org>
+2007-03-03  Vincent van Adrighem  <adrighem@mate.org>
 
 	* nl.po: Translation updated by Tino Meinen.
 
-2007-03-03  Vincent van Adrighem  <adrighem@gnome.org>
+2007-03-03  Vincent van Adrighem  <adrighem@mate.org>
 
 	* nl.po: Translation added by Tino Meinen.
 
-2007-03-03  Vincent van Adrighem  <adrighem@gnome.org>
+2007-03-03  Vincent van Adrighem  <adrighem@mate.org>
 
 	* nl.po: Translation added by Tino Meinen.
 
@@ -426,7 +426,7 @@
 	* zh_HK.po: Updated Traditional Chinese translation(Hong Kong).
 	* zh_TW.po: Updated Traditional Chinese translation(Taiwan).
 
-2007-02-21  Hendrik Richter  <hendrikr@gnome.org>
+2007-02-21  Hendrik Richter  <hendrikr@mate.org>
 
 	* de.po: Updated German translation.
 
@@ -474,7 +474,7 @@
 
 	* pt.po: Updated Portuguese translation.
 
-2007-02-14  Kjartan Maraas  <kmaraas@gnome.org>
+2007-02-14  Kjartan Maraas  <kmaraas@mate.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -500,7 +500,7 @@
 
 ==================== 0.11.3 ====================
 
-2007-02-12  Ihar Hrachyshka <iharh@gnome.org>
+2007-02-12  Ihar Hrachyshka <iharh@mate.org>
 
 	* be.po: Updated Belarusian translation.
 
@@ -516,7 +516,7 @@
 
 	* ca.po: Updated Catalan translation.
 
-2007-02-06  Vincent van Adrighem  <adrighem@gnome.org>
+2007-02-06  Vincent van Adrighem  <adrighem@mate.org>
 
 	* nl.po: Dutch translation updated by Tino Meinen.
 
@@ -524,7 +524,7 @@
 
 	* fr.po: Updated French translation by Robert-André Mauchin.
 
-2007-02-03  Ihar Hrachyshka <iharh@gnome.org>
+2007-02-03  Ihar Hrachyshka <iharh@mate.org>
 
 	* be.po: Added Belarusian translation.
 
@@ -541,7 +541,7 @@
 
 	* da.po: Updated Danish translation.
 
-2007-01-26  Hendrik Richter  <hendrikr@gnome.org>
+2007-01-26  Hendrik Richter  <hendrikr@mate.org>
 
 	* de.po: Updated German translation.
 
@@ -578,7 +578,7 @@
 	* bg.po: Updated Bulgarian translation by
 	Vladimir Petkov <vpetkov@i-space.org>
 
-2007-01-04  Guilherme de S. Pastore  <gpastore@gnome.org>
+2007-01-04  Guilherme de S. Pastore  <gpastore@mate.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation by Og Maciel.
 
@@ -590,7 +590,7 @@
 
  	 * mk.po: Updated Macedonian translation.
 
-2006-12-29  Adam Weinberger  <adamw@gnome.org>
+2006-12-29  Adam Weinberger  <adamw@mate.org>
 
 	* LINGUAS: Added en_CA.
 	* en_CA.po: Added Canadian English translation.
@@ -611,10 +611,10 @@
 
 	* ar.po: Updated Arabic Translation.
 
-2006-12-27  Kjartan Maraas  <kmaraas@gnome.org>
+2006-12-27  Kjartan Maraas  <kmaraas@mate.org>
 
 	* POTFILES.in: Add missing files.
-	* POTFILES.skip: Add alacarte.desktop.in
+	* POTFILES.skip: Add mozo.desktop.in
 	* nb.po: Updated Norwegian bokmål translation.
 
 2006-12-24  Djihed Afifi <djihed@gmail.com>
@@ -627,7 +627,7 @@
 	Alexandru Szasz <alexxed@gmail.com>
 	* LINGUAS: Added Romanian "ro".
 
-2006-12-08  Kjartan Maraas  <kmaraas@gnome.org>
+2006-12-08  Kjartan Maraas  <kmaraas@mate.org>
 
 	* nb.po: Updated Norwegian bokmål translation.
 
@@ -735,7 +735,7 @@
 
 	* LINGUAS: Add missing entries
 
-2006-08-31  Danilo Šegan  <danilo@gnome.org>
+2006-08-31  Danilo Šegan  <danilo@mate.org>
 
 	* sr.po, sr@Latn.po: Added Serbian.
 	* LINGUAS: Added Serbian (sr, sr@Latn).
@@ -832,7 +832,7 @@
 	* sl.po: Added Slovenian translation by Matic Žgur.
 	* LINGUAS: Added 'sl'
 
-2006-08-02  Kjartan Maraas  <kmaraas@gnome.org>
+2006-08-02  Kjartan Maraas  <kmaraas@mate.org>
 
 	* nb.po: Added Norwegian bokmål translation.
 
@@ -874,7 +874,7 @@
 	* LINGUAS:
 	* fr.po: Added French translation.
 
-2006-07-10  Kostas Papadimas <pkst@gnome.org>
+2006-07-10  Kostas Papadimas <pkst@mate.org>
 
 	* el.po: Added Greek translation.
 	 * LINGUAS: Added el
@@ -927,7 +927,7 @@
 	* hi.po: Added Hindi Translation
 	* LINUGAS: Added 'hi' to the list.
 
-2006-06-25  Vincent van Adrighem  <adrighem@gnome.org>
+2006-06-25  Vincent van Adrighem  <adrighem@mate.org>
 
 	* nl.po: Translation added by Tino Meinen.
 

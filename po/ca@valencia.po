@@ -1,6 +1,6 @@
-# Catalan translation for alacarte.
+# Catalan translation for mozo.
 # Copyright © 2006, 2007 The Free Software Foundation, Inc.
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 # Esteve Blanch Sanmartí <anakinjinn@gmail.com>, 2006, 2007.
 #
 msgid ""
@@ -15,67 +15,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:163
+#: ../Mozo/MainWindow.py:163
 msgid "Name"
 msgstr "Nom"
 
-#: ../Alacarte/MainWindow.py:179
+#: ../Mozo/MainWindow.py:179
 msgid "Show"
 msgstr "Mostra"
 
-#: ../Alacarte/MainWindow.py:187
+#: ../Mozo/MainWindow.py:187
 msgid "Item"
 msgstr "Element"
 
-#: ../data/alacarte.desktop.in.in.h:1
+#: ../data/mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "Canvia les aplicacions que es mostren al menú principal"
 
-#: ../data/alacarte.desktop.in.in.h:2 ../data/alacarte.ui.h:2
+#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: ../data/alacarte.ui.h:1
+#: ../data/mozo.ui.h:1
 msgid "It_ems:"
 msgstr "_Elements:"
 
-#: ../data/alacarte.ui.h:3
+#: ../data/mozo.ui.h:3
 msgid "Move Down"
 msgstr "Mou cap avall"
 
-#: ../data/alacarte.ui.h:4
+#: ../data/mozo.ui.h:4
 msgid "Move Up"
 msgstr "Mou cap amunt"
 
-#: ../data/alacarte.ui.h:5
+#: ../data/mozo.ui.h:5
 msgid "Ne_w Item"
 msgstr "Element no_u"
 
-#: ../data/alacarte.ui.h:6
+#: ../data/mozo.ui.h:6
 msgid "New _Separator"
 msgstr "_Separador nou"
 
-#: ../data/alacarte.ui.h:7
+#: ../data/mozo.ui.h:7
 msgid "Restore the default menu layout"
 msgstr "Restaura la disposició per defecte del menú"
 
-#: ../data/alacarte.ui.h:8
+#: ../data/mozo.ui.h:8
 msgid "Revert Changes?"
 msgstr "Voleu desfer els canvis?"
 
-#: ../data/alacarte.ui.h:9
+#: ../data/mozo.ui.h:9
 msgid "Revert all menus to original settings?"
 msgstr "Voleu tornar tots els menús a la configuració inicial?"
 
-#: ../data/alacarte.ui.h:10
+#: ../data/mozo.ui.h:10
 msgid "_Menus:"
 msgstr "_Menús:"
 
-#: ../data/alacarte.ui.h:11
+#: ../data/mozo.ui.h:11
 msgid "_New Menu"
 msgstr "_Menú nou"
 
-#: ../data/alacarte.ui.h:12
+#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "_Reverteix a l'original"
 

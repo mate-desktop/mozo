@@ -1,12 +1,12 @@
-# Telugu translation of alacarte
-# This file is distributed under the same license as the alacarte package.
+# Telugu translation of mozo
+# This file is distributed under the same license as the mozo package.
 # Copyright (C) 2006 Sree Ganesh <mrthottempudi@yahoo.com>
 # Copyright (C) 2006 Sunil Mohan Adapa <sunilmohan@swecha.org>
 # Copyright (C) 2007 Bharath Kumar <bharath@swecha.net>
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte.HEAD\n"
+"Project-Id-Version: mozo.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-08-05 13:38+0530\n"
 "PO-Revision-Date: 2007-08-03 11:46+0530\n"
@@ -16,67 +16,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "పేరు"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "చూపించు"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "అంశం"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "ముఖ్య జాబితాలో చూపబడిన కార్యక్షేత్రాలను మార్చుము"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "ముఖ్య జాబితా"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "అంశాలు:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "కిందికి కదుపు"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "పైకి కదుపు"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "కొత్త అంశం"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "కొత్త విభజన"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "అసలైన జాబితా అమరికను తిరిగి స్థాపించు"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "మార్పులను తీసివేయమంటారా?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "అన్ని జాబితాలను అసలైన అమరికకు మార్చమంటారా?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "_జాబితాలు:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "_కొత్త జాబితా"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "అసలైన అమరికకు మార్చు"
 
@@ -92,7 +92,7 @@ msgstr "జాబితా అంశాలను కలుపు, మార్�
 msgid "Menu Layout"
 msgstr "జాబితా అమరిక"
 
-msgid "Alacarte Menu Editor"
+msgid "Mozo Menu Editor"
 msgstr "జాబితా మార్చె అలాకార్తె "
 
 msgid "Browse..."

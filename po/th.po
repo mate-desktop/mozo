@@ -1,13 +1,13 @@
-# Thai translation of alacarte.
+# Thai translation of mozo.
 # Copyright (C) 2006-2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the alacarte package.
+# This file is distributed under the same license as the mozo package.
 #
 # Roys Hengwatanakul <roysheng@msn.com>, 2006.
 # Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2007.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte\n"
+"Project-Id-Version: mozo\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-12 12:51+0700\n"
 "PO-Revision-Date: 2007-02-12 12:52+0700\n"
@@ -17,67 +17,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "ชื่อ"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "แสดง"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "รายการ"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "ปรับเปลี่ยนการแสดงโปรแกรมในเมนูหลัก"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "เมนูหลัก"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "รา_ยการ:"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "ย้ายลง"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "ย้ายขึ้น"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "รายการใ_หม่"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "เส้นแ_บ่งใหม่"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "คืนโครงสร้างเมนูสู่สภาพเดิมที่กำหนดไว้"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "คืนสู่สภาพเดิมหรือไม่?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "คืนทุกเมนูกลับสู่ี่ค่าเดิมที่กำหนดไว้หรือไม่?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "เ_มนู:"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "เ_มนูใหม่"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "_คืนสู่สภาพเดิม"
 
@@ -105,8 +105,8 @@ msgstr "_คืนสู่สภาพเดิม"
 #~ msgid "Menu Editor"
 #~ msgstr "โปรแกรมแก้ไขเมนู"
 
-#~ msgid "Alacarte Menu Editor"
-#~ msgstr "Alacarte โปรแกรมแก้ไขเมนู"
+#~ msgid "Mozo Menu Editor"
+#~ msgstr "Mozo โปรแกรมแก้ไขเมนู"
 
 #~ msgid "Browse..."
 #~ msgstr "เรียกดู..."

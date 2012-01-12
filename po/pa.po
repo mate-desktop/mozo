@@ -1,4 +1,4 @@
-# translation of alacarte.HEAD.po to Punjabi
+# translation of mozo.HEAD.po to Punjabi
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -6,7 +6,7 @@
 # ASB <aalam@users.sf.net>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: alacarte.HEAD\n"
+"Project-Id-Version: mozo.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-12 04:30+0000\n"
 "PO-Revision-Date: 2007-08-27 07:14+0530\n"
@@ -18,67 +18,67 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../Alacarte/MainWindow.py:167
+#: ../Mozo/MainWindow.py:167
 msgid "Name"
 msgstr "ਨਾਂ"
 
-#: ../Alacarte/MainWindow.py:183
+#: ../Mozo/MainWindow.py:183
 msgid "Show"
 msgstr "ਵੇਖਾਓ"
 
-#: ../Alacarte/MainWindow.py:191
+#: ../Mozo/MainWindow.py:191
 msgid "Item"
 msgstr "ਆਈਟਮ"
 
-#: ../alacarte.desktop.in.in.h:1
+#: ../mozo.desktop.in.in.h:1
 msgid "Change which applications are shown on the main menu"
 msgstr "ਮੁੱਖ ਮੇਨੂ ਉੱਤੇ ਵੇਖਾਉਣ ਲਈ ਕਾਰਜ ਬਦਲੋ"
 
-#: ../alacarte.desktop.in.in.h:2 ../alacarte.glade.h:2
+#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
 msgid "Main Menu"
 msgstr "ਮੁੱਖ ਮੇਨੂ"
 
-#: ../alacarte.glade.h:1
+#: ../mozo.glade.h:1
 msgid "It_ems:"
 msgstr "ਆਈਟਮਾਂ(_e):"
 
-#: ../alacarte.glade.h:3
+#: ../mozo.glade.h:3
 msgid "Move Down"
 msgstr "ਹੇਠਾਂ ਭੇਜੋ"
 
-#: ../alacarte.glade.h:4
+#: ../mozo.glade.h:4
 msgid "Move Up"
 msgstr "ਉੱਤੇ ਭੇਜੋ"
 
-#: ../alacarte.glade.h:5
+#: ../mozo.glade.h:5
 msgid "Ne_w Item"
 msgstr "ਨਵੀਂ ਆਈਟਮ(_w)"
 
-#: ../alacarte.glade.h:6
+#: ../mozo.glade.h:6
 msgid "New _Separator"
 msgstr "ਨਵਾਂ ਸੈਪਰੇਟਰ(_S)"
 
-#: ../alacarte.glade.h:7
+#: ../mozo.glade.h:7
 msgid "Restore the default menu layout"
 msgstr "ਡਿਫਾਲਟ ਮੇਨੂ ਲੇਆਉਟ ਰੀ-ਸਟੋਰ"
 
-#: ../alacarte.glade.h:8
+#: ../mozo.glade.h:8
 msgid "Revert Changes?"
 msgstr "ਕੀ ਬਦਲਾਅ ਵਾਪਸ ਲੈਣੇ ਹਨ?"
 
-#: ../alacarte.glade.h:9
+#: ../mozo.glade.h:9
 msgid "Revert all menus to original settings?"
 msgstr "ਕੀ ਮੇਨੂ ਲਈ ਅਸਲੀ ਸੈਟਿੰਗ ਵਾਪਸ ਲੈਣੀ ਹੈ?"
 
-#: ../alacarte.glade.h:10
+#: ../mozo.glade.h:10
 msgid "_Menus:"
 msgstr "ਮੇਨੂ(_M):"
 
-#: ../alacarte.glade.h:11
+#: ../mozo.glade.h:11
 msgid "_New Menu"
 msgstr "ਨਵਾਂ ਮੇਨੂ(_N)"
 
-#: ../alacarte.glade.h:12
+#: ../mozo.glade.h:12
 msgid "_Revert to Original"
 msgstr "ਅਸਲੀ ਮੁੜ ਲਵੋ(_R)"
 

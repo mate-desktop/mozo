@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#   Alacarte Menu Editor - Simple fd.o Compliant Menu Editor
+#   Mozo Menu Editor - Simple fd.o Compliant Menu Editor
 #   Copyright (C) 2006  Travis Watkins
 #
 #   This library is free software; you can redistribute it and/or
@@ -22,22 +22,22 @@ import gettext
 import subprocess
 import urllib
 try:
-	from Alacarte import config
+	from Mozo import config
 	gettext.bindtextdomain(config.GETTEXT_PACKAGE,config.localedir)
 	gettext.textdomain(config.GETTEXT_PACKAGE)
 except:
 	pass
 _ = gettext.gettext
-from Alacarte.MenuEditor import MenuEditor
-from Alacarte import util
+from Mozo.MenuEditor import MenuEditor
+from Mozo import util
 
 class MainWindow:
 	timer = None
 	#hack to make editing menu properties work
 	allow_update = True
 	#drag-and-drop stuff
-	dnd_items = [('ALACARTE_ITEM_ROW', gtk.TARGET_SAME_APP, 0), ('text/plain', 0, 1)]
-	dnd_menus = [('ALACARTE_MENU_ROW', gtk.TARGET_SAME_APP, 0)]
+	dnd_items = [('MOZO_ITEM_ROW', gtk.TARGET_SAME_APP, 0), ('text/plain', 0, 1)]
+	dnd_menus = [('MOZO_MENU_ROW', gtk.TARGET_SAME_APP, 0)]
 	dnd_both = [dnd_items[0],] + dnd_menus
 	drag_data = None
 	edit_pool = []
@@ -46,10 +46,10 @@ class MainWindow:
 		self.file_path = datadir
 		self.version = version
 		self.editor = MenuEditor()
-		gtk.window_set_default_icon_name('alacarte')
+		gtk.window_set_default_icon_name('mozo')
 		self.tree = gtk.Builder()
 		self.tree.set_translation_domain(config.GETTEXT_PACKAGE)
-		self.tree.add_from_file(os.path.join(self.file_path, 'alacarte.ui'))
+		self.tree.add_from_file(os.path.join(self.file_path, 'mozo.ui'))
 		self.tree.connect_signals(self)
 		self.setupMenuTree()
 		self.setupItemTree()
@@ -294,7 +294,7 @@ class MainWindow:
 			menu_tree.get_selection().select_path((0,))
 		else:
 			parent = menus[iter][2]
-		file_path = os.path.join(util.getUserDirectoryPath(), util.getUniqueFileId('alacarte-made', '.directory'))
+		file_path = os.path.join(util.getUserDirectoryPath(), util.getUniqueFileId('mozo-made', '.directory'))
 		process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
 		gobject.timeout_add(100, self.waitForNewMenuProcess, process, parent.menu_id, file_path)
 
@@ -307,7 +307,7 @@ class MainWindow:
 			menu_tree.get_selection().select_path((0,))
 		else:
 			parent = menus[iter][2]
-		file_path = os.path.join(util.getUserItemPath(), util.getUniqueFileId('alacarte-made', '.desktop'))
+		file_path = os.path.join(util.getUserItemPath(), util.getUniqueFileId('mozo-made', '.desktop'))
 		process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
 		gobject.timeout_add(100, self.waitForNewItemProcess, process, parent.menu_id, file_path)
 
@@ -361,7 +361,7 @@ class MainWindow:
 			file_type = 'Item'
 		elif item.get_type() == matemenu.TYPE_DIRECTORY:
 			if item.get_desktop_file_path() == None:
-				file_path = util.getUniqueFileId('alacarte-made', '.directory')
+				file_path = util.getUniqueFileId('mozo-made', '.directory')
 				parser = util.DesktopParser(file_path, 'Directory')
 				parser.set('Name', item.get_name())
 				parser.set('Comment', item.get_comment())
@@ -408,7 +408,7 @@ class MainWindow:
 			if position not in types:
 				context.finish(False, False, etime)
 				return False
-			if selection.target in ('ALACARTE_ITEM_ROW', 'ALACARTE_MENU_ROW'):
+			if selection.target in ('MOZO_ITEM_ROW', 'MOZO_MENU_ROW'):
 				if self.drag_data == None:
 					return False
 				item = self.drag_data
@@ -496,7 +496,7 @@ class MainWindow:
 	def on_item_tree_drag_data_received(self, treeview, context, x, y, selection, info, etime):
 		items = treeview.get_model()
 		types = (gtk.TREE_VIEW_DROP_BEFORE,	gtk.TREE_VIEW_DROP_INTO_OR_BEFORE)
-		if selection.target == 'ALACARTE_ITEM_ROW':
+		if selection.target == 'MOZO_ITEM_ROW':
 			drop_info = treeview.get_dest_row_at_pos(x, y)
 			before = None
 			after = None
@@ -545,8 +545,8 @@ class MainWindow:
 			content_type = file_info.get_content_type()
 			if content_type == 'application/x-desktop':
 				input_stream = myfile.read()
-				open('/tmp/alacarte-dnd.desktop', 'w').write(input_stream.read())
-				parser = util.DesktopParser('/tmp/alacarte-dnd.desktop')
+				open('/tmp/mozo-dnd.desktop', 'w').write(input_stream.read())
+				parser = util.DesktopParser('/tmp/mozo-dnd.desktop')
 				self.editor.createItem(parent, parser.get('Icon'), parser.get('Name', self.editor.locale), parser.get('Comment', self.editor.locale), parser.get('Exec'), parser.get('Terminal'), before, after)
 			elif content_type in ('application/x-shellscript', 'application/x-executable'):
 				self.editor.createItem(parent, None, os.path.split(file_path)[1].strip(), None, file_path.replace('file://', '').strip(), False, before, after)

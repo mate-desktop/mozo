@@ -1,8 +1,8 @@
 dnl -*- Mode: autoconf -*-
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
-AC_INIT(alacarte, 2011.12.01, http://bugzilla.mate.org/enter_bug.cgi?product=alacarte)
-AC_CONFIG_SRCDIR(alacarte.in)
+AC_INIT(mozo, 2011.12.01, http://bugzilla.mate.org/enter_bug.cgi?product=mozo)
+AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([1.7])
 AM_MAINTAINER_MODE
@@ -14,7 +14,7 @@ dnl put the ACLOCAL flags in the makefile
 ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
 
 
-GETTEXT_PACKAGE=alacarte
+GETTEXT_PACKAGE=mozo
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext package])
 AM_GLIB_GNU_GETTEXT
@@ -22,7 +22,7 @@ IT_PROG_INTLTOOL([0.40.0])
 
 AM_PATH_PYTHON_VERSION(2.7, 2.7.0, 2.6, 2.6.0, 2.5, 2.5.0, 2.4, 2.4.0)
 
-PKG_CHECK_MODULES(ALACARTE, libmate-menu >= 2.27.92)
+PKG_CHECK_MODULES(MOZO, libmate-menu >= 2.27.92)
 
 dnl Check for correctly installed pygobject
 AC_MSG_CHECKING(for pygobject required_pygobject_version installed for python required_python_abi)
@@ -70,8 +70,8 @@ dnl fi
 AC_CONFIG_FILES([
         Makefile
         po/Makefile.in
-        Alacarte/Makefile
-        data/alacarte.desktop.in
+        Mozo/Makefile
+        data/mozo.desktop.in
 	data/Makefile
 	data/icons/Makefile
         ])
