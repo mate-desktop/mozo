@@ -1,7 +1,7 @@
 dnl -*- Mode: autoconf -*-
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
-AC_INIT(mozo, 2011.12.01, http://bugzilla.mate.org/enter_bug.cgi?product=mozo)
+AC_INIT(mozo, 1.1.0, http://www.mate-desktop.org)
 AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([1.7])
@@ -22,7 +22,7 @@ IT_PROG_INTLTOOL([0.40.0])
 
 AM_PATH_PYTHON_VERSION(2.7, 2.7.0, 2.6, 2.6.0, 2.5, 2.5.0, 2.4, 2.4.0)
 
-PKG_CHECK_MODULES(MOZO, libmate-menu >= 2.27.92)
+PKG_CHECK_MODULES(MOZO, libmate-menu >= 1.1.0)
 
 dnl Check for correctly installed pygobject
 AC_MSG_CHECKING(for pygobject required_pygobject_version installed for python required_python_abi)
