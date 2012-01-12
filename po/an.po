@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mozo&component=general\n"
 "POT-Creation-Date: 2010-04-24 20:36+0000\n"
 "PO-Revision-Date: 2010-04-24 20:36+0000\n"

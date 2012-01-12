@@ -154,7 +154,7 @@ msgstr "_Terugzetten"
 #~ "Tino Meinen\n"
 #~ "Niels Abspoel\n"
 #~ "\n"
-#~ "Kijk voor meer informatie op http://nl.mate.org/"
+#~ "Kijk voor meer informatie op http://nl.gnome.org/"
 
 #~ msgid "Add, change, remove menu entries"
 #~ msgstr "Toevoegen, wijzigen, en verwijderen van menu-items"

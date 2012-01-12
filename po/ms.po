@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=mozo&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mozo&component=general\n"
 "POT-Creation-Date: 2010-02-12 22:56+0000\n"
 "PO-Revision-Date: 2010-02-24 20:18+0730\n"
 "Last-Translator: Umarzuki bin Mochlis Moktar <umarzuki@gmail.com>\n"

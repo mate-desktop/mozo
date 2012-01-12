@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the Mozo package.
 # Copyright (C) 2006 The Free Software Foundation.
 #
-# Francisco Javier F. Serrador <serrador@cvs.mate.org>, 2006.
+# Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
 # Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007.
-# Jorge González <jorgegonz@svn.mate.org>, 200, 2009.
+# Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mozo&component=general\n"
 "POT-Creation-Date: 2009-05-04 13:54+0000\n"
 "PO-Revision-Date: 2009-07-07 20:34+0200\n"
-"Last-Translator: Jorge González <jorgegonz@svn.mate.org>\n"
-"Language-Team: Español <mate-es-list@mate.org>\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"Language-Team: Español <mate-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

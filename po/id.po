@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the mozo package.
 #
 #
-# ahmad riza h nst<rizahnst@mate.org>, 2007.
+# ahmad riza h nst<rizahnst@gnome.org>, 2007.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=mozo&component=general\n"
 "POT-Creation-Date: 2010-08-20 18:15+0000\n"
 "PO-Revision-Date: 2010-06-06 09:44+0700\n"

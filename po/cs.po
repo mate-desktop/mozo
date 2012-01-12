@@ -1,11 +1,11 @@
 # translation of cs.po to Czech
 # Czech translation of PACKAGE.
 # Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
-# Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.mate.org>
+# Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>
 # This file is distributed under the same license as the PACKAGE package.
 #
 #
-# Lukas Novotny <lukasnov@cvs.mate.org>, 2006.
+# Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
 # Jakub Friedl <jfriedl@suse.cz>, 2007.
 msgid ""
 msgstr ""
@@ -14,7 +14,7 @@ msgstr ""
 "POT-Creation-Date: 2007-04-21 16:24+0200\n"
 "PO-Revision-Date: 2007-04-21 16:30+0200\n"
 "Last-Translator: Jakub Friedl <jfriedl@suse.cz>\n"
-"Language-Team: Czech <mate-cs-list@mate.org>\n"
+"Language-Team: Czech <mate-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
