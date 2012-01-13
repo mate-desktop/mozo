@@ -1,7 +1,7 @@
 # Japanese message catalog for Mozo, a simple menu editor for MATE.
 # Copyright (C) 2006,2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the 'mozo' package.
-# Satoru SATOH <ss@mate.gr.jp>, 2006.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
 # Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006,2007.
 #
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "POT-Creation-Date: 2008-03-03 07:23+0900\n"
 "PO-Revision-Date: 2008-03-03 07:20+0900\n"
 "Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
-"Language-Team: Japanese <mate-translation@mate.gr.jp>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
