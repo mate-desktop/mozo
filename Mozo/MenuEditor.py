@@ -65,9 +65,8 @@ class MenuEditor:
 
 	def save(self, from_loading=False):
 		for menu in ('applications', 'settings'):
-			fd = open(getattr(self, menu).path, 'w')
-			fd.write(re.sub("\n[\s]*([^\n<]*)\n[\s]*</", "\\1</", getattr(self, menu).dom.toprettyxml().replace('<?xml version="1.0" ?>\n', '')))
-			fd.close()
+			with open(getattr(self, menu).path, 'w') as f:
+				f.write(getattr(self, menu).dom.toprettyxml())
 		if not from_loading:
 			self.__loadMenus()
 
