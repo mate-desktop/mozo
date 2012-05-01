@@ -18,6 +18,7 @@
 
 import os, re, xml.dom.minidom, locale
 import matemenu
+from gi.repository import GLib
 from Mozo import util
 
 class Menu:
@@ -201,7 +202,7 @@ class MenuEditor:
 			menu_xml = self.__getXmlMenu(self.__getPath(item.get_parent()), dom, dom)
 			if visible:
 				self.__addXmlFilename(menu_xml, dom, item.get_desktop_file_id(), 'Include')
-				self.__writeItem(item, no_display=False)
+				self.__writeItem(item, NoDisplay=False)
 			else:
 				self.__addXmlFilename(menu_xml, dom, item.get_desktop_file_id(), 'Exclude')
 			self.__addXmlTextElement(menu_xml, 'AppDir', util.getUserItemPath(), dom)
@@ -213,15 +214,12 @@ class MenuEditor:
 			menu_xml = self.__getXmlMenu(self.__getPath(item), dom, dom)
 			for node in self.__getXmlNodesByName(['Deleted', 'NotDeleted'], menu_xml):
 				node.parentNode.removeChild(node)
-			if visible:
-				self.__writeMenu(item, no_display=False)
-			else:
-				self.__writeMenu(item, no_display=True)
+			self.__writeMenu(item, NoDisplay=not visible)
 			self.__addXmlTextElement(menu_xml, 'DirectoryDir', util.getUserDirectoryPath(), dom)
 		self.save()
 
-	def createItem(self, parent, icon, name, comment, command, use_term, before=None, after=None):
-		file_id = self.__writeItem(None, icon, name, comment, command, use_term)
+	def createItem(self, parent, before, after, **kwargs):
+		file_id = self.__writeItem(None, **kwargs)
 		self.insertExternalItem(file_id, parent.menu_id, before, after)
 
 	def insertExternalItem(self, file_id, parent_id, before=None, after=None):
@@ -231,10 +229,6 @@ class MenuEditor:
 		self.__positionItem(parent, ('Item', file_id), before, after)
 		self.__addUndo([self.__getMenu(parent), ('Item', file_id)])
 		self.save()
-
-	def createMenu(self, parent, icon, name, comment, before=None, after=None):
-		file_id = self.__writeMenu(None, icon, name, comment)
-		self.insertExternalMenu(file_id, parent.menu_id, before, after)
 
 	def insertExternalMenu(self, file_id, parent_id, before=None, after=None):
 		menu_id = file_id.rsplit('.', 1)[0]
@@ -261,7 +255,7 @@ class MenuEditor:
 			parent = item.get_parent()
 		if final:
 			self.__addUndo([self.__getMenu(parent), item])
-		self.__writeItem(item, icon, name, comment, command, use_term)
+		self.__writeItem(item, Icon=icon, Name=name, Comment=comment, Exec=command, Terminal=use_term)
 		if final:
 			dom = self.__getMenu(parent).dom
 			menu_xml = self.__getXmlMenu(self.__getPath(parent), dom, dom)
@@ -276,7 +270,7 @@ class MenuEditor:
 		#otherwise changes won't show up
 		dom = self.__getMenu(menu).dom
 		menu_xml = self.__getXmlMenu(self.__getPath(menu), dom, dom)
-		file_id = self.__writeMenu(menu, icon, name, comment)
+		self.__writeMenu(menu, Icon=icon, Name=name, Comment=comment)
 		if final:
 			self.__addXmlTextElement(menu_xml, 'DirectoryDir', util.getUserDirectoryPath(), dom)
 			self.__addUndo([self.__getMenu(menu), menu])
@@ -285,13 +279,19 @@ class MenuEditor:
 	def copyItem(self, item, new_parent, before=None, after=None):
 		dom = self.__getMenu(new_parent).dom
 		file_path = item.get_desktop_file_path()
-		keyfile = util.DesktopParser(file_path)
-		#erase Categories in new file
-		keyfile.set('Categories', ('',))
-		keyfile.set('Hidden', False)
+		keyfile = GLib.KeyFile()
+		keyfile.load_from_file(file_path, util.KEY_FILE_FLAGS)
+
+		util.fillKeyFile(keyfile, dict(Categories=[], Hidden=False))
+
 		file_id = util.getUniqueFileId(item.get_name().replace(os.sep, '-'), '.desktop')
 		out_path = os.path.join(util.getUserItemPath(), file_id)
-		keyfile.write(open(out_path, 'w'))
+
+		contents, length = keyfile.to_data()
+
+		with open(out_path, 'w') as f:
+			f.write(contents)
+
 		self.__addItem(new_parent, file_id, dom)
 		self.__positionItem(new_parent, ('Item', file_id), before, after)
 		self.__addUndo([self.__getMenu(new_parent), ('Item', file_id)])
@@ -356,7 +356,7 @@ class MenuEditor:
 
 	def deleteItem(self, item):
 		self.__addUndo([item,])
-		self.__writeItem(item, hidden=True)
+		self.__writeItem(item, Hidden=True)
 		self.save()
 
 	def deleteMenu(self, menu):
@@ -549,65 +549,59 @@ class MenuEditor:
 		node = dom.createElement('Deleted')
 		return element.appendChild(node)
 
-	def __writeItem(self, item=None, icon=None, name=None, comment=None, command=None, use_term=None, no_display=None, startup_notify=None, hidden=None):
-		if item:
+	def __makeKeyFile(self, file_path, kwargs):
+		if 'KeyFile' in kwargs:
+			return kwargs['KeyFile']
+
+		keyfile = GLib.KeyFile()
+
+		if file_path is not None:
+			keyfile.load_from_file(file_path, util.KEY_FILE_FLAGS)
+
+		util.fillKeyFile(keyfile, kwargs)
+		return keyfile
+
+	def __writeItem(self, item, **kwargs):
+		if item is not None:
 			file_path = item.get_desktop_file_path()
-			file_id = item.get_desktop_file_id()
-			keyfile = util.DesktopParser(file_path)
-		elif item == None and name == None:
-			raise Exception('New menu items need a name')
 		else:
-			file_id = util.getUniqueFileId(item.get_name().replace(os.sep, '-'), '.desktop')
-			keyfile = util.DesktopParser()
-		if icon:
-			keyfile.set('Icon', icon)
-			keyfile.set('Icon', icon, self.locale)
-		if name:
-			keyfile.set('Name', name)
-			keyfile.set('Name', name, self.locale)
-		if comment:
-			keyfile.set('Comment', comment)
-			keyfile.set('Comment', comment, self.locale)
-		if command:
-			keyfile.set('Exec', command)
-		if use_term != None:
-			keyfile.set('Terminal', use_term)
-		if no_display != None:
-			keyfile.set('NoDisplay', no_display)
-		if startup_notify != None:
-			keyfile.set('StartupNotify', startup_notify)
-		if hidden != None:
-			keyfile.set('Hidden', hidden)
-		out_path = os.path.join(util.getUserItemPath(), file_id)
-		keyfile.write(open(out_path, 'w'))
+			file_path = None
+
+		keyfile = self.__makeKeyFile(file_path, kwargs)
+
+		if item is not None:
+			file_id = item.get_desktop_file_id()
+		else:
+			file_id = util.getUniqueFileId(keyfile.get_string(GLib.KEY_FILE_DESKTOP_GROUP, 'Name'), '.desktop')
+
+		contents, length = keyfile.to_data()
+
+		with open(os.path.join(util.getUserItemPath(), file_id), 'w') as f:
+		        f.write(contents)
 		return file_id
 
-	def __writeMenu(self, menu=None, icon=None, name=None, comment=None, no_display=None):
-		if menu:
+	def __writeMenu(self, menu, **kwargs):
+		if menu is not None:
 			file_id = os.path.split(menu.get_desktop_file_path())[1]
 			file_path = menu.get_desktop_file_path()
-			keyfile = util.DesktopParser(file_path)
-		elif menu == None and name == None:
+			keyfile = GLib.KeyFile()
+			keyfile.load_from_file(file_path, util.KEY_FILE_FLAGS)
+		elif menu is None and 'Name' not in kwargs:
 			raise Exception('New menus need a name')
 		else:
-			file_id = util.getUniqueFileId(name, '.directory')
-			keyfile = util.DesktopParser(file_type='Directory')
-		if icon:
-			keyfile.set('Icon', icon)
-		if name:
-			keyfile.set('Name', name)
-			keyfile.set('Name', name, self.locale)
-		if comment:
-			keyfile.set('Comment', comment)
-			keyfile.set('Comment', comment, self.locale)
-		if no_display != None:
-			keyfile.set('NoDisplay', no_display)
-		out_path = os.path.join(util.getUserDirectoryPath(), file_id)
-		keyfile.write(open(out_path, 'w'))
+			file_id = util.getUniqueFileId(kwargs['Name'], '.directory')
+			keyfile = GLib.KeyFile()
+
+		util.fillKeyFile(keyfile, kwargs)
+
+		contents, length = keyfile.to_data()
+
+		with open(os.path.join(util.getUserDirectoryPath(), file_id), 'w') as f:
+			f.write(contents)
 		return file_id
 
 	def __getXmlNodesByName(self, name, element):
-		for	child in element.childNodes:
+		for child in element.childNodes:
 			if child.nodeType == xml.dom.Node.ELEMENT_NODE:
 				if isinstance(name, str) and child.nodeName == name:
 					yield child
