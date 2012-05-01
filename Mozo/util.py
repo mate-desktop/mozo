@@ -130,11 +130,9 @@ def getUserMenuXml(tree):
 	menu_xml += "<MergeFile type=\"parent\">" + system_file +	"</MergeFile>\n</Menu>\n"
 	return menu_xml
 
-def getIcon(item, for_properties=False):
+def getIcon(item):
 	pixbuf, path = None, None
 	if item is None:
-		if for_properties:
-			return None, None
 		return None
 	if isinstance(item, str):
 		iconName = item
@@ -154,8 +152,6 @@ def getIcon(item, for_properties=False):
 			except:
 				pass
 		if pixbuf is None:
-			if for_properties:
-				return None, None
 			if item.get_type() == matemenu.TYPE_DIRECTORY:
 				iconName = 'mate-fs-directory'
 			elif item.get_type() == matemenu.TYPE_ENTRY:
@@ -169,8 +165,6 @@ def getIcon(item, for_properties=False):
 		return None
 	if pixbuf.get_width() != 24 or pixbuf.get_height() != 24:
 		pixbuf = pixbuf.scale_simple(24, 24, GdkPixbuf.InterpType.HYPER)
-	if for_properties:
-		return pixbuf, path
 	return pixbuf
 
 def removeWhitespaceNodes(node):
