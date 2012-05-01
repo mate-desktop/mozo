@@ -686,10 +686,6 @@ class MenuEditor:
 		xml_parent = self.__getXmlMenu(self.__getPath(parent), dom, dom)
 		self.__addXmlFilename(xml_parent, dom, file_id, 'Include')
 
-	def __deleteItem(self, parent, file_id, dom, before=None, after=None):
-		xml_parent = self.__getXmlMenu(self.__getPath(parent), dom, dom)
-		self.__addXmlFilename(xml_parent, dom, file_id, 'Exclude')
-
 	def __positionItem(self, parent, item, before=None, after=None):
 		if after:
 			index = parent.contents.index(after) + 1
