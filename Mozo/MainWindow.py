@@ -556,7 +556,7 @@ class MainWindow:
 			after = None
 			if drop_info:
 				path, position = drop_info
-				if position in types:
+				if position in types_before:
 					before = items[path][3]
 				else:
 					after = items[path][3]
