@@ -28,13 +28,12 @@ class Menu:
 	dom = None
 
 class MenuEditor:
-	#lists for undo/redo functionality
-	__undo = []
-	__redo = []
-
 	def __init__(self):
 		self.locale = locale.getdefaultlocale()[0]
 		self.__loadMenus()
+		self.__undo = []
+		self.__redo = []
+
 
 	def __loadMenus(self):
 		self.applications = Menu()
