@@ -47,7 +47,7 @@ class MenuEditor:
 			self.applications.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.applications.tree))
 		else:
 			self.applications.dom = xml.dom.minidom.parse(self.applications.path)
-		self.__remove_whilespace_nodes(self.applications.dom)
+		util.removeWhitespaceNodes(self.applications.dom)
 
 		self.settings = Menu()
 		self.settings.tree = matemenu.lookup_tree('mate-settings.menu', matemenu.FLAGS_SHOW_EMPTY|matemenu.FLAGS_INCLUDE_EXCLUDED|matemenu.FLAGS_INCLUDE_NODISPLAY|matemenu.FLAGS_SHOW_ALL_SEPARATORS)
@@ -59,7 +59,7 @@ class MenuEditor:
 			self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree))
 		else:
 			self.settings.dom = xml.dom.minidom.parse(self.settings.path)
-		self.__remove_whilespace_nodes(self.settings.dom)
+		util.removeWhitespaceNodes(self.settings.dom)
 
 		self.save(True)
 
@@ -98,7 +98,7 @@ class MenuEditor:
 				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
 			else:
 				menu.dom = xml.dom.minidom.parse(menu.path)
-			self.__remove_whilespace_nodes(menu.dom)
+			util.removeWhitespaceNodes(menu.dom)
 		#reset undo/redo, no way to recover from this
 		self.__undo, self.__redo = [], []
 		self.save()
@@ -132,7 +132,7 @@ class MenuEditor:
 				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
 			else:
 				menu.dom = xml.dom.minidom.parse(menu.path)
-			self.__remove_whilespace_nodes(menu.dom)
+			util.removeWhitespaceNodes(menu.dom)
 		self.__redo.append(redo)
 
 	def redo(self):
@@ -156,7 +156,7 @@ class MenuEditor:
 				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
 			else:
 				menu.dom = xml.dom.minidom.parse(menu.path)
-			self.__remove_whilespace_nodes(menu.dom)
+			util.removeWhitespaceNodes(menu.dom)
 		self.__undo.append(undo)
 
 	def getMenus(self, parent=None):
@@ -596,18 +596,6 @@ class MenuEditor:
 				elif isinstance(name, list) or isinstance(name, tuple):
 					if child.nodeName in name:
 						yield child
-
-	def __remove_whilespace_nodes(self, node):
-		remove_list = []
-		for child in node.childNodes:
-			if child.nodeType == xml.dom.minidom.Node.TEXT_NODE:
-				child.data = child.data.strip()
-				if not child.data.strip():
-					remove_list.append(child)
-			elif child.hasChildNodes():
-				self.__remove_whilespace_nodes(child)
-		for node in remove_list:
-			node.parentNode.removeChild(node)
 
 	def __addXmlMove(self, element, old, new, dom):
 		if not self.__undoMoves(element, old, new, dom):

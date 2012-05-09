@@ -17,6 +17,7 @@
 #   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import os
+import xml.dom.minidom
 import matemenu
 import gi
 from collections import Sequence
@@ -171,3 +172,15 @@ def getIcon(item, for_properties=False):
 	if for_properties:
 		return pixbuf, path
 	return pixbuf
+
+def removeWhitespaceNodes(node):
+	remove_list = []
+	for child in node.childNodes:
+		if child.nodeType == xml.dom.minidom.Node.TEXT_NODE:
+			child.data = child.data.strip()
+			if not child.data.strip():
+				remove_list.append(child)
+		elif child.hasChildNodes():
+			removeWhitespaceNodes(child)
+	for node in remove_list:
+		node.parentNode.removeChild(node)
