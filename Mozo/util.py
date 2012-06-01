@@ -132,7 +132,7 @@ def getUserMenuXml(tree):
 
 def getIcon(item, for_properties=False):
 	pixbuf, path = None, None
-	if item == None:
+	if item is None:
 		if for_properties:
 			return None, None
 		return None
@@ -153,7 +153,7 @@ def getIcon(item, for_properties=False):
 				path = iconName
 			except:
 				pass
-		if pixbuf == None:
+		if pixbuf is None:
 			if for_properties:
 				return None, None
 			if item.get_type() == matemenu.TYPE_DIRECTORY:
@@ -165,7 +165,7 @@ def getIcon(item, for_properties=False):
 				path = icon_theme.lookup_icon(iconName, 24, 0).get_filename()
 			except:
 				return None
-	if pixbuf == None:
+	if pixbuf is None:
 		return None
 	if pixbuf.get_width() != 24 or pixbuf.get_height() != 24:
 		pixbuf = pixbuf.scale_simple(24, 24, GdkPixbuf.InterpType.HYPER)

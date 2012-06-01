@@ -271,14 +271,14 @@ class MainWindow:
 	#this is a little timeout callback to insert new items after
 	#mate-desktop-item-edit has finished running
 	def waitForNewItemProcess(self, process, parent_id, file_path):
-		if process.poll() != None:
+		if process.poll() is not None:
 			if os.path.isfile(file_path):
 				self.editor.insertExternalItem(os.path.split(file_path)[1], parent_id)
 			return False
 		return True
 
 	def waitForNewMenuProcess(self, process, parent_id, file_path):
-		if process.poll() != None:
+		if process.poll() is not None:
 			#hack for broken mate-desktop-item-edit
 			broken_path = os.path.join(os.path.split(file_path)[0], '.directory')
 			if os.path.isfile(broken_path):
@@ -290,7 +290,7 @@ class MainWindow:
 
 	#this callback keeps you from editing the same item twice
 	def waitForEditProcess(self, process, file_path):
-		if process.poll() != None:
+		if process.poll() is not None:
 			self.edit_pool.remove(file_path)
 			return False
 		return True
@@ -413,7 +413,7 @@ class MainWindow:
 				context.finish(False, False, etime)
 				return False
 			if str(selection.get_target()) in ('MOZO_ITEM_ROW', 'MOZO_MENU_ROW'):
-				if self.drag_data == None:
+				if self.drag_data is None:
 					return False
 				item = self.drag_data
 				new_parent = menus[path][2]
@@ -421,7 +421,7 @@ class MainWindow:
 				if item.get_type() == matemenu.TYPE_ENTRY:
 					self.editor.copyItem(item, new_parent)
 				elif item.get_type() == matemenu.TYPE_DIRECTORY:
-					if self.editor.moveMenu(item, new_parent) == False:
+					if not self.editor.moveMenu(item, new_parent):
 						self.loadUpdates()
 				elif item.get_type() == matemenu.TYPE_SEPARATOR:
 					self.editor.moveSeparator(item, new_parent)
@@ -480,7 +480,7 @@ class MainWindow:
 			button = event.button
 			event_time = event.time
 			info = item_tree.get_path_at_pos(int(event.x), int(event.y))
-			if info != None:
+			if info is not None:
 				path, col, cellx, celly = info
 				item_tree.grab_focus()
 				item_tree.set_cursor(path, col, 0)
@@ -508,7 +508,7 @@ class MainWindow:
 			drop_info = treeview.get_dest_row_at_pos(x, y)
 			before = None
 			after = None
-			if self.drag_data == None:
+			if self.drag_data is None:
 				return False
 			item = self.drag_data
 			# by default we assume, that the items stays in the same menu
@@ -533,13 +533,13 @@ class MainWindow:
 			if item.get_type() == matemenu.TYPE_ENTRY:
 				self.editor.moveItem(item, destination, before, after)
 			elif item.get_type() == matemenu.TYPE_DIRECTORY:
-				if self.editor.moveMenu(item, destination, before, after) == False:
+				if not self.editor.moveMenu(item, destination, before, after):
 					self.loadUpdates()
 			elif item.get_type() == matemenu.TYPE_SEPARATOR:
 				self.editor.moveSeparator(item, destination, before, after)
 			context.finish(True, True, etime)
 		elif str(selection.get_target()) == 'text/plain':
-			if selection.data == None:
+			if selection.data is None:
 				return False
 			menus, iter = self.tree.get_object('menu_tree').get_selection().get_selected()
 			parent = menus[iter][2]

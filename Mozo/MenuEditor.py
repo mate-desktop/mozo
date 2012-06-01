@@ -188,7 +188,7 @@ class MenuEditor:
 		self.__undo.append(undo)
 
 	def getMenus(self, parent=None):
-		if parent == None:
+		if parent is None:
 			yield self.applications.tree.root
 			yield self.settings.tree.root
 		else:
@@ -419,7 +419,7 @@ class MenuEditor:
 				else:
 					continue
 			elif item.get_type() == matemenu.TYPE_DIRECTORY:
-				if item.get_desktop_file_path() == None:
+				if item.get_desktop_file_path() is None:
 					continue
 				file_path = os.path.join(util.getUserDirectoryPath(), os.path.split(item.get_desktop_file_path())[1])
 				if not os.path.isfile(file_path):
@@ -451,9 +451,9 @@ class MenuEditor:
 		return self.settings
 
 	def __findMenu(self, menu_id, parent=None):
-		if parent == None:
+		if parent is None:
 			menu = self.__findMenu(menu_id, self.applications.tree.root)
-			if menu != None:
+			if menu is not None:
 				return menu
 			else:
 				return self.__findMenu(menu_id, self.settings.tree.root)
@@ -466,7 +466,7 @@ class MenuEditor:
 				if item.menu_id == menu_id:
 					return item
 				menu = self.__findMenu(menu_id, item)
-				if menu != None:
+				if menu is not None:
 					return menu
 
 	def __isVisible(self, item):
@@ -478,7 +478,7 @@ class MenuEditor:
 		elif menu == self.settings:
 			root = self.settings.visible_tree.root
 		if item.get_type() == matemenu.TYPE_DIRECTORY:
-			if self.__findMenu(item.menu_id, root) == None:
+			if self.__findMenu(item.menu_id, root) is None:
 				return False
 		return True
 
