@@ -16,7 +16,11 @@
 #   License along with this library; if not, write to the Free Software
 #   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-import os, re, xml.dom.minidom, locale
+import os
+import re
+import xml.dom.minidom
+import xml.parsers.expat
+import locale
 import matemenu
 from gi.repository import GLib
 from Mozo import util
@@ -42,10 +46,10 @@ class MenuEditor:
 		self.applications.tree.sort_key = matemenu.SORT_DISPLAY_NAME
 		self.applications.visible_tree.sort_key = matemenu.SORT_DISPLAY_NAME
 		self.applications.path = os.path.join(util.getUserMenuPath(), self.applications.tree.get_menu_file())
-		if not os.path.isfile(self.applications.path):
-			self.applications.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.applications.tree))
-		else:
+		try:
 			self.applications.dom = xml.dom.minidom.parse(self.applications.path)
+		except (IOError, xml.parsers.expat.ExpatError):
+			self.applications.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.applications.tree))
 		util.removeWhitespaceNodes(self.applications.dom)
 
 		self.settings = Menu()
@@ -54,10 +58,10 @@ class MenuEditor:
 		self.settings.tree.sort_key = matemenu.SORT_DISPLAY_NAME
 		self.settings.visible_tree.sort_key = matemenu.SORT_DISPLAY_NAME
 		self.settings.path = os.path.join(util.getUserMenuPath(), self.settings.tree.get_menu_file())
-		if not os.path.isfile(self.settings.path):
-			self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree))
-		else:
+		try:
 			self.settings.dom = xml.dom.minidom.parse(self.settings.path)
+		except (IOError, xml.parsers.expat.ExpatError):
+			self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree))
 		util.removeWhitespaceNodes(self.settings.dom)
 
 		self.save(True)
@@ -93,10 +97,10 @@ class MenuEditor:
 			except OSError:
 				pass
 			#reload DOM for each menu
-			if not os.path.isfile(menu.path):
-				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
-			else:
+			try:
 				menu.dom = xml.dom.minidom.parse(menu.path)
+			except (IOError, xml.parsers.expat.ExpatError):
+				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
 			util.removeWhitespaceNodes(menu.dom)
 		#reset undo/redo, no way to recover from this
 		self.__undo, self.__redo = [], []
@@ -152,10 +156,10 @@ class MenuEditor:
 		#reload DOM to make changes stick
 		for name in ('applications', 'settings'):
 			menu = getattr(self, name)
-			if not os.path.isfile(menu.path):
-				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
-			else:
+			try:
 				menu.dom = xml.dom.minidom.parse(menu.path)
+			except (IOError, xml.parsers.expat.ExpatError):
+				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
 			util.removeWhitespaceNodes(menu.dom)
 		self.__redo.append(redo)
 
@@ -176,10 +180,10 @@ class MenuEditor:
 		#reload DOM to make changes stick
 		for name in ('applications', 'settings'):
 			menu = getattr(self, name)
-			if not os.path.isfile(menu.path):
-				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
-			else:
+			try:
 				menu.dom = xml.dom.minidom.parse(menu.path)
+			except (IOError, xml.parsers.expat.ExpatError):
+				menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
 			util.removeWhitespaceNodes(menu.dom)
 		self.__undo.append(undo)
 
