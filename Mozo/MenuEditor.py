@@ -110,6 +110,31 @@ class MenuEditor:
 				self.revertItem(child)
 		self.revertMenu(menu)
 
+	def revertItem(self, item):
+		if not self.canRevert(item):
+			return
+		self.__addUndo([item,])
+		try:
+			os.remove(item.get_desktop_file_path())
+		except OSError:
+			pass
+		self.save()
+
+	def revertMenu(self, menu):
+		if not self.canRevert(menu):
+			return
+		#wtf happened here? oh well, just bail
+		if not menu.get_desktop_file_path():
+			return
+		self.__addUndo([menu,])
+		file_id = os.path.split(menu.get_desktop_file_path())[1]
+		path = os.path.join(util.getUserDirectoryPath(), file_id)
+		try:
+			os.remove(path)
+		except OSError:
+			pass
+		self.save()
+
 	def undo(self):
 		if len(self.__undo) == 0:
 			return
@@ -370,31 +395,6 @@ class MenuEditor:
 		menu_xml = self.__getXmlMenu(self.__getPath(parent), dom.documentElement, dom)
 		self.__addXmlLayout(menu_xml, layout, dom)
 		self.__addUndo([self.__getMenu(item.get_parent()),])
-		self.save()
-
-	def revertItem(self, item):
-		if not self.canRevert(item):
-			return
-		self.__addUndo([item,])
-		try:
-			os.remove(item.get_desktop_file_path())
-		except OSError:
-			pass
-		self.save()
-
-	def revertMenu(self, menu):
-		if not self.canRevert(menu):
-			return
-		#wtf happened here? oh well, just bail
-		if not menu.get_desktop_file_path():
-			return
-		self.__addUndo([menu,])
-		file_id = os.path.split(menu.get_desktop_file_path())[1]
-		path = os.path.join(util.getUserDirectoryPath(), file_id)
-		try:
-			os.remove(path)
-		except OSError:
-			pass
 		self.save()
 
 	#private stuff
