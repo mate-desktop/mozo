@@ -422,7 +422,6 @@ class MainWindow:
 					return False
 				item = self.drag_data
 				new_parent = menus[path][2]
-				treeview.get_selection().select_path(path)
 				if item.get_type() == matemenu.TYPE_ENTRY:
 					self.editor.copyItem(item, new_parent)
 				elif item.get_type() == matemenu.TYPE_DIRECTORY:
