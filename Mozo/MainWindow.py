@@ -599,7 +599,7 @@ class MainWindow:
 		self.editor.redo()
 
 	def on_help_button_clicked(self, *args):
-		gtk.show_uri(gtk.gdk.screen_get_default(), "ghelp:user-guide#menu-editor", gtk.get_current_event_time())
+		gtk.show_uri(gtk.gdk.screen_get_default(), "http://wiki.mate-desktop.org/docs:mozo", gtk.get_current_event_time())
 
 	def on_revert_button_clicked(self, button):
 		dialog = self.tree.get_object('revertdialog')
