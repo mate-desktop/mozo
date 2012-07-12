@@ -3,81 +3,82 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Kostas Papadimas <pkst@gmx.net>, 2006.
+# Juanita Nell <homeqj@vodamail.co.za>, 2012.
+#   <nato323@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
 "POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/el/)\n"
+"PO-Revision-Date: 2012-07-04 14:15+0000\n"
+"Last-Translator: nato323 <nato323@gmail.com>\n"
+"Language-Team: Afrikaans (http://www.transifex.com/projects/p/MATE/language/af/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
+"Language: af\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
-msgstr "Όνομα"
+msgstr "Naam"
 
 #: ../Mozo/MainWindow.py:180
 msgid "Show"
-msgstr "Προβολή"
+msgstr "Wys"
 
 #: ../Mozo/MainWindow.py:188
 msgid "Item"
-msgstr "Αντικείμενο"
+msgstr "Item"
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Κυρίως μενού"
+msgstr "Hoof Menu"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Αλλαγή των εφαρμογών που εμφανίζονται στο κυρίως μενού"
+msgstr "Verander watter programme word op die hoof menu gewys"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr "Επανα_φορά στο αρχικό"
+msgstr "_Keer terug na oorspronklike"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Επαναφορά της προεπιλεγμένης διάταξης"
+msgstr "Herstel die default menu uitleg"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
-msgstr "_Μενού:"
+msgstr "_Menus:"
 
 #: ../data/mozo.ui.h:5
 msgid "It_ems:"
-msgstr "Αντι_κείμενα:"
+msgstr "It_ems:"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "Νέο _μενού"
+msgstr "_Nuwe Menu"
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
-msgstr "Νέ_ο αντικείμενο"
+msgstr "Nu_we Item"
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr "Νέο δια_χωριστικό"
+msgstr "Nuwe _Spasieërder"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
-msgstr "Μετακίνηση πάνω"
+msgstr "Beweeg op"
 
 #: ../data/mozo.ui.h:10
 msgid "Move Down"
-msgstr "Μετακίνηση κάτω"
+msgstr "Beweeg af"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Επαναφορά αλλαγών;"
+msgstr "Herstel veranderinge?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Επαναφορά όλων των μενού στις αρχικές τους ρυθμίσεις;"
+msgstr "Herstel alle menus na oorspronklike stellings?"

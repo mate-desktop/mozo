@@ -1,139 +1,83 @@
-# Persian translation of mozo.
-# Copyright (C) 2006 Sharif FarsiWeb, Inc.
-# This file is distributed under the same license as the mozo package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Meelad Zakaria <meelad@farsiweb.info>, 2006.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-08-06 14:49+0200\n"
-"PO-Revision-Date: 2006-08-15 21:05+0330\n"
-"Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
-"Language-Team: Persian\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../Mozo/MainWindow.py:161
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "نام"
 
-#: ../Mozo/MainWindow.py:177
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "نمایش"
 
-#: ../Mozo/MainWindow.py:185
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "مورد"
 
-#: ../Mozo/DialogHandler.py:145 ../Mozo/DialogHandler.py:182
-#: ../Mozo/DialogHandler.py:337 ../Mozo/DialogHandler.py:368
-msgid "A name is required."
-msgstr "دادن نام ضروری است."
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr ""
 
-#: ../Mozo/DialogHandler.py:148 ../Mozo/DialogHandler.py:185
-msgid "A command is required."
-msgstr "دادن فرمان ضروری است."
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr ""
 
-#: ../mozo.desktop.in.h:1
-msgid "Add, change, remove menu entries"
-msgstr "اضافه کردن، تغییر دادن یا حذف مداخل منو"
-
-#: ../mozo.desktop.in.h:2 ../mozo.glade.h:9
-msgid "Menu Layout"
-msgstr "چیدمان منو"
-
-#: ../mozo.glade.h:1
-msgid "Mozo Menu Editor"
-msgstr "ویرایشگر منوی آلاکارته"
-
-#: ../mozo.glade.h:2
-msgid "Browse..."
-msgstr "مرور..."
-
-#: ../mozo.glade.h:3
-msgid "Command:"
-msgstr "فرمان:"
-
-#: ../mozo.glade.h:4
-msgid "Comment:"
-msgstr "توضیح:"
-
-#: ../mozo.glade.h:5
-msgid "Copyright © 2006 Travis Watkins"
-msgstr "Copyright © 2006 Travis Watkins"
-
-#: ../mozo.glade.h:6
-msgid "Icon:"
-msgstr "شمایل:"
-
-#: ../mozo.glade.h:7
-msgid "It_ems:"
-msgstr "_موارد:"
-
-#: ../mozo.glade.h:8
-msgid "Menu Item Properties"
-msgstr "ویژگی‌های این مورد در منو"
-
-#: ../mozo.glade.h:10
-msgid "Menu Properties"
-msgstr "ویژگی‌های منو"
-
-#: ../mozo.glade.h:11
-msgid "Move Down"
-msgstr "جابه‌جایی به پایین"
-
-#: ../mozo.glade.h:12
-msgid "Move Up"
-msgstr "جابه‌جایی به بالا"
-
-#: ../mozo.glade.h:13
-msgid "Name:"
-msgstr "نام:"
-
-#: ../mozo.glade.h:14
-msgid "Ne_w Item"
-msgstr "مورد _جدید"
-
-#: ../mozo.glade.h:15
-msgid "New _Separator"
-msgstr "ج_داساز جدید"
-
-#: ../mozo.glade.h:16
-msgid "Restore the default menu layout"
-msgstr "برگرداندن چیدمان پیش‌فرض منو"
-
-#: ../mozo.glade.h:17
-msgid "Revert Changes?"
-msgstr "تغییرات بازگشت داده شود؟"
-
-#: ../mozo.glade.h:18
-msgid "Revert all menus to original settings?"
-msgstr "تنظیمات همهٔ منوها به حالت اصلی بازگشت داده شود؟"
-
-#: ../mozo.glade.h:19
-msgid "Run command in a terminal"
-msgstr "اجرای فرمان در پایانه"
-
-#: ../mozo.glade.h:20
-msgid "Simple fd.o compliant menu editor"
-msgstr "ویرایشگر منوی سادهٔ سازگار با fd.o"
-
-#: ../mozo.glade.h:21
-msgid "_Menus:"
-msgstr "_منوها:"
-
-#: ../mozo.glade.h:22
-msgid "_New Menu"
-msgstr "منوی _جدید"
-
-#: ../mozo.glade.h:23
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_بازگشت به حالت اصلی"
 
-#. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../mozo.glade.h:25
-msgid "translator-credits"
-msgstr "میلاد زکریا <meelad@farsiweb.info>"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "برگرداندن چیدمان پیش‌فرض منو"
 
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_منوها:"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "_موارد:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "منوی _جدید"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "مورد _جدید"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "ج_داساز جدید"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "جابه‌جایی به بالا"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "جابه‌جایی به پایین"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "تغییرات بازگشت داده شود؟"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "تنظیمات همهٔ منوها به حالت اصلی بازگشت داده شود؟"

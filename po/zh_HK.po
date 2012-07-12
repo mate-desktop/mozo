@@ -1,150 +1,82 @@
-# Chinese (Hong Kong) translation of mozo.
-# Copyright (C) 2006, 07 Free Software Foundation, Inc.
-# Woodman Tuen <wmtuen@gmail.com>, 2006-2007.
-#
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 0.11.8\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-30 22:47+0800\n"
-"PO-Revision-Date: 2009-01-31 14:05+0800\n"
-"Last-Translator: Woodman Tuen <wmtuen@gmail.com>\n"
-"Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:28+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_HK\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../Mozo/MainWindow.py:169
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "名稱"
 
-#: ../Mozo/MainWindow.py:185
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "顯示"
 
-#: ../Mozo/MainWindow.py:193
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "項目"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "選擇那一個應用程式顯示在主選單上"
-
-#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "主選單"
 
-#: ../data/mozo.glade.h:1
-msgid "It_ems:"
-msgstr "項目(_E):"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "選擇那一個應用程式顯示在主選單上"
 
-#: ../data/mozo.glade.h:3
-msgid "Move Down"
-msgstr "下移"
-
-#: ../data/mozo.glade.h:4
-msgid "Move Up"
-msgstr "上移"
-
-#: ../data/mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "新增項目(_W)"
-
-#: ../data/mozo.glade.h:6
-msgid "New _Separator"
-msgstr "新增分隔線(_S)"
-
-#: ../data/mozo.glade.h:7
-msgid "Restore the default menu layout"
-msgstr "回復預設的選單配置"
-
-#: ../data/mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "還原更改？"
-
-#: ../data/mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "將所有選單還原為原本的設定？"
-
-#: ../data/mozo.glade.h:10
-msgid "_Menus:"
-msgstr "選單(_M):"
-
-#: ../data/mozo.glade.h:11
-msgid "_New Menu"
-msgstr "新增選單(_N)"
-
-#: ../data/mozo.glade.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "還原為原本的設定(_R)"
 
-#~ msgid "Menu Layout"
-#~ msgstr "選單配置"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "回復預設的選單配置"
 
-#~ msgid "New menu items need a name"
-#~ msgstr "新增選單項目需要有名稱"
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "選單(_M):"
 
-#~ msgid "New menus need a name"
-#~ msgstr "新選單需要有名稱"
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "項目(_E):"
 
-#~ msgid "Choose a Program"
-#~ msgstr "選擇一個程式"
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "新增選單(_N)"
 
-#~ msgid "Choose an Icon"
-#~ msgstr "選擇圖示"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "新增項目(_W)"
 
-#~ msgid "A name is required."
-#~ msgstr "需要輸入名稱。"
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "新增分隔線(_S)"
 
-#~ msgid "A command is required."
-#~ msgstr "需要輸入指令。"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "上移"
 
-#~ msgid "No Icon"
-#~ msgstr "沒有圖示"
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "下移"
 
-#~ msgid "Menu Editor"
-#~ msgstr "選單編輯器"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "還原更改？"
 
-#~ msgid "Mozo Menu Editor"
-#~ msgstr "Mozo 選單編輯器"
-
-#~ msgid "Browse..."
-#~ msgstr "瀏覽..."
-
-#~ msgid "Command:"
-#~ msgstr "指令："
-
-#~ msgid "Comment:"
-#~ msgstr "註解:"
-
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "版權所有 © 2006 Travis Watkins"
-
-#~ msgid "Icon:"
-#~ msgstr "圖示："
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "選單項目屬性"
-
-#~ msgid "Menu Properties"
-#~ msgstr "選單屬性"
-
-#~ msgid "Name:"
-#~ msgstr "名稱:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "在終端機中執行指令"
-
-#~ msgid "Simple fd.o compliant menu editor"
-#~ msgstr "符合 fd.o 的選單編輯器"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "如對翻譯有任何意見，請送一封電子郵件給以下地址，MATE 翻譯團隊會儘快回覆"
-#~ "您：\n"
-#~ "community@linuxhall.org\n"
-#~ "Woodman Tuen <wmtuen@gmail.com>, 2006-07"
-
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "加入、更改及移除選單項目"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "將所有選單還原為原本的設定？"

@@ -1,23 +1,24 @@
-# Kazakh translation of mozo
-# Copyright (C) Free Software Foundation
-# This file is distributed under the same license as the mozo package.
-#
-# Erzhan Shaniev <erzhan.jktl@gmail.com>, 2008
-# Moldabekov Margulan <moldabekov@gmail.com>, 2008
-# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010.
+# Erzhan Shaniev <erzhan.jktl@gmail.com>, 2008.
+# Moldabekov Margulan <moldabekov@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo trunk\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=mozo&component=general\n"
-"POT-Creation-Date: 2010-07-13 11:32+0000\n"
-"PO-Revision-Date: 2010-08-21 21:07+0600\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
-"Language-Team: Kazakh <>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: kk\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -31,56 +32,54 @@ msgstr "Көрсету"
 msgid "Item"
 msgstr "Элемент"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Бас мәзірде көрсетілген қолданбаларды таңдау"
-
-#: ../data/mozo.desktop.in.in.h:2
-#: ../data/mozo.ui.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Бас мәзір"
 
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Бас мәзірде көрсетілген қолданбаларды таңдау"
+
 #: ../data/mozo.ui.h:1
-msgid "It_ems:"
-msgstr "_Элементтер:"
-
-#: ../data/mozo.ui.h:3
-msgid "Move Down"
-msgstr "Астына жылжыту"
-
-#: ../data/mozo.ui.h:4
-msgid "Move Up"
-msgstr "Үстіне жылжыту"
-
-#: ../data/mozo.ui.h:5
-msgid "Ne_w Item"
-msgstr "Жаңа элемен_т"
-
-#: ../data/mozo.ui.h:6
-msgid "New _Separator"
-msgstr "Жаңа бө_лгіш"
-
-#: ../data/mozo.ui.h:7
-msgid "Restore the default menu layout"
-msgstr "Мәзірді бастапқы қалпына келтіру"
-
-#: ../data/mozo.ui.h:8
-msgid "Revert Changes?"
-msgstr "Өзгерістерден бас тарту керек пе?"
-
-#: ../data/mozo.ui.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Барлық мәзірлерді бастапқы қалпына келтіру керек пе?"
-
-#: ../data/mozo.ui.h:10
-msgid "_Menus:"
-msgstr "_Мәзір:"
-
-#: ../data/mozo.ui.h:11
-msgid "_New Menu"
-msgstr "Жаңа мә_зір"
-
-#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "Бастапқы қалпына келтіру"
 
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Мәзірді бастапқы қалпына келтіру"
+
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Мәзір:"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "_Элементтер:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "Жаңа мә_зір"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "Жаңа элемен_т"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Жаңа бө_лгіш"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Үстіне жылжыту"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Астына жылжыту"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Өзгерістерден бас тарту керек пе?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Барлық мәзірлерді бастапқы қалпына келтіру керек пе?"

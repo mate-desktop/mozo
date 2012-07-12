@@ -1,153 +1,84 @@
-# Mozo eesti keele tõlge.
-# Estonian translation of Mozo.
-#
-# Copyright (C) 2006 Free Software Foundation, Inc.
-# Copyright (C) 2007 The MATE Project.
-# This file is distributed under the same license as the mozo package.
-#
-# Priit Laes <amd store20 com>, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Ivar Smolin <okul linux ee>, 2006, 2007.
-#
+# Priit Laes <amd store20 com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-12 04:30+0000\n"
-"PO-Revision-Date: 2007-02-16 14:27+0200\n"
-"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
-"Language-Team: Estonian <mate-et@linux.ee>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Estonian (http://www.transifex.com/projects/p/MATE/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Nimi"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Näita"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Kirje"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Peamenüüs näidatavate rakenduste valimine"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Peamenüü"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "_Elemendid:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Peamenüüs näidatavate rakenduste valimine"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "Liiguta alla"
-
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "Liiguta üles"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "_Uus kirje"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "Uus _eraldaja"
-
-#: ../mozo.glade.h:7
-msgid "Restore the default menu layout"
-msgstr "Taasta vaikimisi menüüpaigutus"
-
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Pöörata muudatused tagasi?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Taastada kõigi menüüde algseaded?"
-
-#: ../mozo.glade.h:10
-msgid "_Menus:"
-msgstr "_Menüüd:"
-
-#: ../mozo.glade.h:11
-msgid "_New Menu"
-msgstr "_Uus menüü"
-
-#: ../mozo.glade.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_Taasta algne seis"
 
-#~ msgid "New menu items need a name"
-#~ msgstr "Uuel menüükirjel peab nimi olema"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Taasta vaikimisi menüüpaigutus"
 
-#~ msgid "New menus need a name"
-#~ msgstr "Uutel menüüdel peab nimi olema"
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Menüüd:"
 
-#~ msgid "Choose a Program"
-#~ msgstr "Programmi valimine"
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "_Elemendid:"
 
-#~ msgid "Choose an Icon"
-#~ msgstr "Ikooni valimine"
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_Uus menüü"
 
-#~ msgid "A name is required."
-#~ msgstr "Nimi on vajalik."
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "_Uus kirje"
 
-#~ msgid "A command is required."
-#~ msgstr "Käsk on vajalik"
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Uus _eraldaja"
 
-#~ msgid "No Icon"
-#~ msgstr "Ikooni pole"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Liiguta üles"
 
-#~ msgid "Menu Editor"
-#~ msgstr "Menüüredaktor"
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Liiguta alla"
 
-#~ msgid "Mozo Menu Editor"
-#~ msgstr "Mozo menüüredaktor"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Pöörata muudatused tagasi?"
 
-#~ msgid "Browse..."
-#~ msgstr "Sirvi..."
-
-#~ msgid "Command:"
-#~ msgstr "Käsk:"
-
-#~ msgid "Comment:"
-#~ msgstr "Kommentaar:"
-
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "Autoriõigused © 2006 Travis Watkins"
-
-#~ msgid "Icon:"
-#~ msgstr "Ikoon:"
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "Menüükirje omadused"
-
-#~ msgid "Menu Layout"
-#~ msgstr "Menüü paigutus"
-
-#~ msgid "Menu Properties"
-#~ msgstr "Menüü omadused"
-
-#~ msgid "Name:"
-#~ msgstr "Nimi:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "Käsk käivitatakse terminalis"
-
-#~ msgid "Simple fd.o compliant menu editor"
-#~ msgstr "Lihtne menüüredaktor"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Priit Laes <amd@store20.com>, 2006.\n"
-#~ "Ivar Smolin <okul linux ee>, 2006, 2007."
-
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "Menüükirjete lisamine, muutmine ja eemaldamine"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Taastada kõigi menüüde algseaded?"

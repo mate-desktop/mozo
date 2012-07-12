@@ -1,22 +1,23 @@
-# Kurdish translation for mozo
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the mozo package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Erdal <erdal.ronahi@gmail.com>, 2009.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 14:05+0200\n"
-"PO-Revision-Date: 2009-09-15 14:09+0200\n"
-"Last-Translator: Erdal <erdal.ronahi@gmail.com>\n"
-"Language-Team: Kurdish Team http://pckurd.net\n"
-"Language: ku\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Kurdish (http://www.transifex.com/projects/p/MATE/language/ku/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.0\n"
+"Language: ku\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -30,111 +31,54 @@ msgstr "Nîşandan"
 msgid "Item"
 msgstr "Hêman"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr ""
-
-#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Pêşeka Bingehîn"
 
-#: ../data/mozo.ui.h:1
-msgid "It_ems:"
-msgstr "Hê_man:"
-
-#: ../data/mozo.ui.h:3
-msgid "Move Down"
-msgstr "Bikşîne Jêr"
-
-#: ../data/mozo.ui.h:4
-msgid "Move Up"
-msgstr "Bikşîne Jor"
-
-#: ../data/mozo.ui.h:5
-msgid "Ne_w Item"
-msgstr "Hêmana _nû"
-
-#: ../data/mozo.ui.h:6
-msgid "New _Separator"
-msgstr "V_eqetandeka nû"
-
-#: ../data/mozo.ui.h:7
-msgid "Restore the default menu layout"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
 msgstr ""
 
-#: ../data/mozo.ui.h:8
-msgid "Revert Changes?"
-msgstr "Guherînan _paş de vegerîne?"
-
-#: ../data/mozo.ui.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Bila hemû pêşek vegere mîhengên sereke?"
-
-#: ../data/mozo.ui.h:10
-msgid "_Menus:"
-msgstr "_Pêşek:"
-
-#: ../data/mozo.ui.h:11
-msgid "_New Menu"
-msgstr "_Pêşeka nû"
-
-#: ../data/mozo.ui.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_Vegerîne Orjînalê"
 
-#~ msgid "A name is required."
-#~ msgstr "Navek pêwist e."
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr ""
 
-#~ msgid "A menu can't be named \"Other\"."
-#~ msgstr "Pêşek wekî \"Yên din\" nikare bête binavkirin."
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Pêşek:"
 
-#~ msgid "A command is required."
-#~ msgstr "Fermanek pêwist e."
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "Hê_man:"
 
-#~ msgid "Loading..."
-#~ msgstr "Tê barkirin..."
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_Pêşeka nû"
 
-#~ msgid "Visible"
-#~ msgstr "Pêkane"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "Hêmana _nû"
 
-#~ msgid "translator-credits"
-#~ msgstr "Rêzan Tovjîn <rezan@bername.net>, 2006"
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "V_eqetandeka nû"
 
-#~ msgid "Mozo Menu Editor"
-#~ msgstr "Pergalkerê Pêşeka Mozo"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Bikşîne Jor"
 
-#~ msgid "Simple freedesktop.org Compliant Menu Editor"
-#~ msgstr "Edîtora Pêşekan a hesan û li gora freedesktop.org"
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Bikşîne Jêr"
 
-#~ msgid "Command:"
-#~ msgstr "Ferman:"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Guherînan _paş de vegerîne?"
 
-#~ msgid "Comment:"
-#~ msgstr "Şîrove:"
-
-#~ msgid "Entry Editor"
-#~ msgstr "Edîtorê Daneyê"
-
-#~ msgid "Icon Selector"
-#~ msgstr "Hilbijêrê Sembolê"
-
-#~ msgid "Icon:"
-#~ msgstr "Sembol"
-
-#~ msgid "Menu Editor"
-#~ msgstr "Edîtorê Pêşekê"
-
-#~ msgid "Name:"
-#~ msgstr "Nav:"
-
-#~ msgid "New _Entry"
-#~ msgstr "_Daneya nû"
-
-#~ msgid "Run In Terminal"
-#~ msgstr "Li Termînalê Bixebitîne"
-
-#~ msgid "_Delete"
-#~ msgstr "_Jê bibe"
-
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "Daneyên pêşekê lê zêde bike, biguhere, jê bibe"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Bila hemû pêşek vegere mîhengên sereke?"

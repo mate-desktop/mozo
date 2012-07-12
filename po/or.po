@@ -1,84 +1,84 @@
-# translation of mozo.HEAD.or.po to Oriya
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-#
-# Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
+# 
+# Translators:
 # Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008.
+# Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo.HEAD.or\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-20 03:54+0000\n"
-"PO-Revision-Date: 2008-06-12 12:56+0530\n"
-"Last-Translator: Manoj Kumar Giri <giri.manojkr@gmail.com>\n"
-"Language-Team: Oriya\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:31+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"\n"
+"Language: or\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:168
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "ନାମ"
 
-#: ../Mozo/MainWindow.py:184
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "ପ୍ରଦର୍ଶନ"
 
-#: ../Mozo/MainWindow.py:192
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "ବସ୍ତୁ"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "ମୁଖ୍ୟ ତାଲିକାରେ ଦର୍ଶାଯାଇଥିବା ପ୍ରୟୋଗଗୁଡିକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "ମୁଖ୍ୟ ତାଲିକା"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "ବସ୍ତୁ (_e):"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "ମୁଖ୍ୟ ତାଲିକାରେ ଦର୍ଶାଯାଇଥିବା ପ୍ରୟୋଗଗୁଡିକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "ତଳକୁ ଯାଆନ୍ତୁ"
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "ମୌଳିକ ରୂପକୁ ପ୍ରତ୍ଯାବ୍ରୁତ କରନ୍ତୁ (_R)"
 
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "ଉପରକୁ ଯାଆନ୍ତୁ"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "ନୂତନ ବସ୍ତୁ (_w)"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "ନୂତନ ବିଭାଜକ (_S)"
-
-#: ../mozo.glade.h:7
+#: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
 msgstr "ପୂର୍ବ ନିର୍ଦ୍ଧାରିତ ବିନ୍ଯାସକୁ ପୁନଃସ୍ଥାପନ କରନ୍ତୁ"
 
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "ପରିବର୍ତ୍ତନ ମାନଙ୍କୁ ପ୍ରତ୍ଯାବ୍ରୁତ କରିବ କି?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "ସମସ୍ତ ତାଲିକାକୁ ମୌଳିକ ବିନ୍ଯାସକୁ ପ୍ରତ୍ଯାବ୍ରୁତ କରିବ କି?"
-
-#: ../mozo.glade.h:10
+#: ../data/mozo.ui.h:4
 msgid "_Menus:"
 msgstr "ତାଲିକା (_M):"
 
-#: ../mozo.glade.h:11
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "ବସ୍ତୁ (_e):"
+
+#: ../data/mozo.ui.h:6
 msgid "_New Menu"
 msgstr "ନୂତନ ତାଲିକା (_N)"
 
-#: ../mozo.glade.h:12
-msgid "_Revert to Original"
-msgstr "ମୌଳିକ ରୂପକୁ ପ୍ରତ୍ଯାବ୍ରୁତ କରନ୍ତୁ (_R)"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "ନୂତନ ବସ୍ତୁ (_w)"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "ନୂତନ ବିଭାଜକ (_S)"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "ଉପରକୁ ଯାଆନ୍ତୁ"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "ତଳକୁ ଯାଆନ୍ତୁ"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "ପରିବର୍ତ୍ତନ ମାନଙ୍କୁ ପ୍ରତ୍ଯାବ୍ରୁତ କରିବ କି?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "ସମସ୍ତ ତାଲିକାକୁ ମୌଳିକ ବିନ୍ଯାସକୁ ପ୍ରତ୍ଯାବ୍ରୁତ କରିବ କି?"

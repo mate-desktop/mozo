@@ -1,23 +1,24 @@
-# Romanian translation of mozo.
-# Copyright (C) 2006 mozo
-# This file is distributed under the same license as the mozo package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009.
 # Alexandru Szasz <alexxed@gmail.com>, 2006.
-# Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
-# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=mozo&component=general\n"
-"POT-Creation-Date: 2009-11-01 20:49+0000\n"
-"PO-Revision-Date: 2009-11-15 21:06+0300\n"
-"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Language-Team: Mate Romanian Team <matero-list@lists.sourceforge.net>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -31,60 +32,54 @@ msgstr "Arată"
 msgid "Item"
 msgstr "Element"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Modifică aplicațiile care sunt afișate în meniul principal"
-
-#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Meniu principal"
 
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Modifică aplicațiile care sunt afișate în meniul principal"
+
 #: ../data/mozo.ui.h:1
-msgid "It_ems:"
-msgstr "Elem_ente:"
-
-#: ../data/mozo.ui.h:3
-msgid "Move Down"
-msgstr "Mută în jos"
-
-#: ../data/mozo.ui.h:4
-msgid "Move Up"
-msgstr "Mută în sus"
-
-#: ../data/mozo.ui.h:5
-msgid "Ne_w Item"
-msgstr "Element no_u"
-
-#: ../data/mozo.ui.h:6
-msgid "New _Separator"
-msgstr "_Separator nou"
-
-#: ../data/mozo.ui.h:7
-msgid "Restore the default menu layout"
-msgstr "Restabilește aranjamentul meniului implicit"
-
-#: ../data/mozo.ui.h:8
-msgid "Revert Changes?"
-msgstr "Anulați modificările?"
-
-#: ../data/mozo.ui.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Restabiliți toate meniurile la configurările lor originale?"
-
-#: ../data/mozo.ui.h:10
-msgid "_Menus:"
-msgstr "_Meniuri:"
-
-#: ../data/mozo.ui.h:11
-msgid "_New Menu"
-msgstr "Meniu _nou"
-
-#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "_Restabilește valoarea originală"
 
-#~ msgid "gtk-delete"
-#~ msgstr "gtk-delete"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Restabilește aranjamentul meniului implicit"
 
-#~ msgid "gtk-properties"
-#~ msgstr "gtk-properties"
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Meniuri:"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "Elem_ente:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "Meniu _nou"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "Element no_u"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "_Separator nou"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Mută în sus"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Mută în jos"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Anulați modificările?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Restabiliți toate meniurile la configurările lor originale?"

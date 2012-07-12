@@ -1,81 +1,84 @@
-# translation of ka.po to Georgian
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Davit Managadze  <dmanagadze@googlemail.com>, 2006.
 # Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@mate.org>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: ka\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-28 03:49+0200\n"
-"PO-Revision-Date: 2007-08-28 03:52+0200\n"
-"Last-Translator: Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@mate.org>\n"
-"Language-Team: Georgian <http://mail.mate.org/mailman/listinfo/mate-ge-list>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: ka\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "სახელი"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "ჩვენება"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "ელემენტი"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "ძირითად მენიუში პროგრამების მართვა, შესაძლებელია მათი დამალვა ან ჩვენება"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "ძირითადი მენიუ"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "_ელემენტები:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "ძირითად მენიუში პროგრამების მართვა, შესაძლებელია მათი დამალვა ან ჩვენება"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "ქვემოთ გადატანა"
-
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "ზემოთ გადატანა"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "_ახალი პუნქტი"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "ახალი _გამყოფი ხაზი"
-
-#: ../mozo.glade.h:7
-msgid "Restore the default menu layout"
-msgstr "სტანდარტული მენიუს განლაგების აღდგენა"
-
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "გავაუქმოთ ცვლილებები?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "დავაბრუნოთ ყველა მენიუ საწყის მდგომარეობაში?"
-
-#: ../mozo.glade.h:10
-msgid "_Menus:"
-msgstr "_მენიუები:"
-
-#: ../mozo.glade.h:11
-msgid "_New Menu"
-msgstr "ახალი _მენიუ"
-
-#: ../mozo.glade.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_დააბრუნე ორიგინალი"
 
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "სტანდარტული მენიუს განლაგების აღდგენა"
+
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_მენიუები:"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "_ელემენტები:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "ახალი _მენიუ"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "_ახალი პუნქტი"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "ახალი _გამყოფი ხაზი"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "ზემოთ გადატანა"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "ქვემოთ გადატანა"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "გავაუქმოთ ცვლილებები?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "დავაბრუნოთ ყველა მენიუ საწყის მდგომარეობაში?"

@@ -1,147 +1,84 @@
-# Norwegian nynorsk translation of mozo
-# Copyright (C) 2007 THE mozo'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mozo package
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Eskild Hustvedt <i18n@zerodogg.org>, 2007.
 # Kjartan Maraas <kmaraas@mate.org>, 2006, 2007.
-# Eskild Hustvedt <i18n@zerodogg.org>, 2007
-# 
-# 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 0.11\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-02 13:59+0000\n"
-"PO-Revision-Date: 2007-12-07 20:18+0100\n"
-"Last-Translator: MagicPO 0.3 (automated)\n"
-"Language-Team: Norwegian nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Namn"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Vis"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Oppføring"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Endra kva program som vert viste i hovudmenyen"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Hovudmeny"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "Oppføring_ar:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Endra kva program som vert viste i hovudmenyen"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "Flytt ned"
-
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "Flytt opp"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "N_y oppføring"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "Ny _separator"
-
-#: ../mozo.glade.h:7
-msgid "Restore the default menu layout"
-msgstr "Gjenopprett forvald menyutføring"
-
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Angra endringer?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Set menyane tilbake til opphavleg tilstand?"
-
-#: ../mozo.glade.h:10
-msgid "_Menus:"
-msgstr "_Menyar:"
-
-#: ../mozo.glade.h:11
-msgid "_New Menu"
-msgstr "_Ny meny"
-
-#: ../mozo.glade.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_Angra alle endringar"
 
-#~ msgid "New menu items need a name"
-#~ msgstr "Nye menyoppføringer må ha et navn"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Gjenopprett forvald menyutføring"
 
-#~ msgid "New menus need a name"
-#~ msgstr "Nye menyer må ha et navn"
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Menyar:"
 
-#~ msgid "Choose a Program"
-#~ msgstr "Velg et program"
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "Oppføring_ar:"
 
-#~ msgid "Choose an Icon"
-#~ msgstr "Velg et ikon"
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_Ny meny"
 
-#~ msgid "A name is required."
-#~ msgstr "Du må oppgi et navn"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "N_y oppføring"
 
-#~ msgid "A command is required."
-#~ msgstr "Du må oppgi en kommando"
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Ny _separator"
 
-#~ msgid "No Icon"
-#~ msgstr "Uten ikon"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Flytt opp"
 
-#~ msgid "Menu Editor"
-#~ msgstr "Menyredigering"
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Flytt ned"
 
-#~ msgid "Mozo Menu Editor"
-#~ msgstr "Mozo menyredigering"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Angra endringer?"
 
-#~ msgid "Browse..."
-#~ msgstr "Bla gjennom..."
-
-#~ msgid "Command:"
-#~ msgstr "Kommando:"
-
-#~ msgid "Comment:"
-#~ msgstr "Kommentar:"
-
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "Opphavsrett @ 2006 Travis Watkins"
-
-#~ msgid "Icon:"
-#~ msgstr "Ikon:"
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "Egenskaper for menyoppføring"
-
-#~ msgid "Menu Layout"
-#~ msgstr "Menyutføring"
-
-#~ msgid "Menu Properties"
-#~ msgstr "Egenskaper for meny"
-
-#~ msgid "Name:"
-#~ msgstr "Navn:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "Kjør kommando i en terminal"
-
-#~ msgid "Simple fd.o compliant menu editor"
-#~ msgstr "Enkel menyredigerer"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Kjartan Maraas <kmaraas@mate.org>\n"
-#~ "Eskild Hustvedt <i18n@zerodogg.org"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Set menyane tilbake til opphavleg tilstand?"

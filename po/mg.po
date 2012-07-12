@@ -1,130 +1,84 @@
-# MALAGASY TRANSLATION OF MOZO.
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Thierry Randrianiriana <thierry@isvtec.com>, 2007.
+# 
+# Translators:
 # Fano Rajaonarisoa <fano@isvtec.com>, 2006.
+# Thierry Randrianiriana <thierry@isvtec.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: MOZO VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-12 04:30+0000\n"
-"PO-Revision-Date: 2007-03-06 13:33+0300\n"
-"Last-Translator: Fano Rajaonarisoa <fano@isvtec.com>\n"
-"Language-Team: MALAGASY <i18n-malagasy-mate@gna.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:28+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: mg\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Anarana"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Asehoy"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Singa"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Ovay ireo rindran'asa miseo amin'ny tolotra fototra"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Tolotra Fototra"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "Sin_ga:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Ovay ireo rindran'asa miseo amin'ny tolotra fototra"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "Ampidino"
-
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "Akaro"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "Singa _vaovao"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "_Mpampisaraka vaovao"
-
-#: ../mozo.glade.h:7
-msgid "Restore the default menu layout"
-msgstr "Hamerina ny lamin'ny tolotra lasitra"
-
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Foanana ireo fanovana?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Averina amin'ny laminy taloha ny tolotra rehetra?"
-
-#: ../mozo.glade.h:10
-msgid "_Menus:"
-msgstr "_Tolotra:"
-
-#: ../mozo.glade.h:11
-msgid "_New Menu"
-msgstr "_Tolotra vaovao"
-
-#: ../mozo.glade.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_Averina amin'ny taloha"
 
-#~ msgid "A name is required."
-#~ msgstr "Mila anarana."
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Hamerina ny lamin'ny tolotra lasitra"
 
-#~ msgid "A command is required."
-#~ msgstr "Mila baiko."
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Tolotra:"
 
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "Mampiditra, manova, manesotra safidin-tolotra"
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "Sin_ga:"
 
-#~ msgid "Menu Layout"
-#~ msgstr "Lamin'ny tolotra"
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_Tolotra vaovao"
 
-#~ msgid "Mozo Menu Editor"
-#~ msgstr "Mpanova tolotra Mozo"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "Singa _vaovao"
 
-#~ msgid "Browse..."
-#~ msgstr "Zahavo..."
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "_Mpampisaraka vaovao"
 
-#~ msgid "Command:"
-#~ msgstr "Baiko:"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Akaro"
 
-#~ msgid "Comment:"
-#~ msgstr "Teny fanampiny:"
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Ampidino"
 
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "Copyright © 2006 Travis Watkins"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Foanana ireo fanovana?"
 
-#~ msgid "Icon:"
-#~ msgstr "Kisary:"
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "Toetoetran'ilay singan-tolotra"
-
-#~ msgid "Menu Properties"
-#~ msgstr "Toetoetran'ny tolotra"
-
-#~ msgid "Name:"
-#~ msgstr "Anarana:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "Alefaso anaty terminal ny baiko"
-
-#~ msgid "Simple fd.o compliant menu editor"
-#~ msgstr "Mpanova tolotra tsotra manaraka ny fd.o"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Mpandrindra: Thierry Randrianiriana <thierry@isvtec.com>\n"
-#~ "Fanomezana Rajaonarisoa <fano@isvtec.com>"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Averina amin'ny laminy taloha ny tolotra rehetra?"

@@ -1,84 +1,83 @@
-# Qırımtatarca translation of mozo.
-# This file is distributed under the same license as the mozo package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Reşat SABIQ <tilde.birlik@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=mozo&component=general\n"
-"POT-Creation-Date: 2009-03-13 21:18+0000\n"
-"PO-Revision-Date: 2009-03-15 22:38-0500\n"
-"Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
-"Language-Team: Qırımtatarca (Qırım Türkçesi) <tilde-birlik-tercime@lists."
-"sourceforge.net>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: KBabel 1.11.4\n"
+"Language: crh\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "İsim"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Köster"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Unsur"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Baş menüde qaysı uyğulamalarnıñ kösterilecegini deñiştir"
-
-#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Baş Menü"
 
-#: ../data/mozo.glade.h:1
-msgid "It_ems:"
-msgstr "_Unsurlar"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Baş menüde qaysı uyğulamalarnıñ kösterilecegini deñiştir"
 
-#: ../data/mozo.glade.h:3
-msgid "Move Down"
-msgstr "Aşağı Taşı"
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "Özgünge _Keri Döndür"
 
-#: ../data/mozo.glade.h:4
-msgid "Move Up"
-msgstr "Yuqarı Taşı"
-
-#: ../data/mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "_Yañı Unsur"
-
-#: ../data/mozo.glade.h:6
-msgid "New _Separator"
-msgstr "Yañı _Ayırğıç"
-
-#: ../data/mozo.glade.h:7
+#: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
 msgstr "Ög-belgilengen menü serimini keri tikle"
 
-# tüklü
-#: ../data/mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Deñişikliklerni Keri Döndür?"
-
-#: ../data/mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Menülerniñ episini özgün tesbitlerge keri döndür?"
-
-#: ../data/mozo.glade.h:10
+#: ../data/mozo.ui.h:4
 msgid "_Menus:"
 msgstr "Menü_ler"
 
-#: ../data/mozo.glade.h:11
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "_Unsurlar"
+
+#: ../data/mozo.ui.h:6
 msgid "_New Menu"
 msgstr "Yañı _Menü"
 
-#: ../data/mozo.glade.h:12
-msgid "_Revert to Original"
-msgstr "Özgünge _Keri Döndür"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "_Yañı Unsur"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Yañı _Ayırğıç"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Yuqarı Taşı"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Aşağı Taşı"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Deñişikliklerni Keri Döndür?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Menülerniñ episini özgün tesbitlerge keri döndür?"

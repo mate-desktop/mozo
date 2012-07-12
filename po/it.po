@@ -1,140 +1,83 @@
-# Italian translation for mozo
-# Copyright (c) 2006 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mozo package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Alessio Frusciante <algol@firenze.linux.it>, 2006.
-# Milo Casagrande <milo@ubuntu.com>, 2006-2008
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-06 14:34+0100\n"
-"PO-Revision-Date: 2009-01-06 14:34+0100\n"
-"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
-"Language-Team: Italian <tp@lists.linux.it>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/MATE/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:168
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Nome"
 
-#: ../Mozo/MainWindow.py:184
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Mostra"
 
-#: ../Mozo/MainWindow.py:192
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Voce di menù"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Sceglie le applicazioni da mostrate nel menù"
-
-#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Menù principale"
 
-#: ../data/mozo.glade.h:1
-msgid "It_ems:"
-msgstr "Voc_i:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Sceglie le applicazioni da mostrate nel menù"
 
-#: ../data/mozo.glade.h:3
-msgid "Move Down"
-msgstr "Sposta in basso"
-
-#: ../data/mozo.glade.h:4
-msgid "Move Up"
-msgstr "Sposta in alto"
-
-#: ../data/mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "Nuova _voce"
-
-#: ../data/mozo.glade.h:6
-msgid "New _Separator"
-msgstr "Nuovo _separatore"
-
-#: ../data/mozo.glade.h:7
-msgid "Restore the default menu layout"
-msgstr "Ripristina la struttura predefinita del menù"
-
-#: ../data/mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Annullare i cambiamenti?"
-
-#: ../data/mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Ripristinare le impostazioni predefinite di tutti i menù?"
-
-#: ../data/mozo.glade.h:10
-msgid "_Menus:"
-msgstr "_Menù:"
-
-#: ../data/mozo.glade.h:11
-msgid "_New Menu"
-msgstr "_Nuovo menù"
-
-#: ../data/mozo.glade.h:12
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "_Ripristina originale"
 
-#~ msgid "Menu Layout"
-#~ msgstr "Struttura menù"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Ripristina la struttura predefinita del menù"
 
-#, fuzzy
-#~ msgid "New menu items need a name"
-#~ msgstr "La nuova voce di menù necessita di un nome"
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Menù:"
 
-#, fuzzy
-#~ msgid "New menus need a name"
-#~ msgstr "Il nuovo menù necessita di un nome"
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "Voc_i:"
 
-#, fuzzy
-#~ msgid "Menu Editor"
-#~ msgstr "Editor di menù"
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_Nuovo menù"
 
-#~ msgid "A name is required."
-#~ msgstr "È richiesto un nome."
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "Nuova _voce"
 
-#~ msgid "A command is required."
-#~ msgstr "È richiesto un comando."
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Nuovo _separatore"
 
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "Aggiunge, cambia e rimuove voci di menù"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Sposta in alto"
 
-#~ msgid "Browse..."
-#~ msgstr "Sfoglia ..."
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Sposta in basso"
 
-#~ msgid "Command:"
-#~ msgstr "Comando:"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Annullare i cambiamenti?"
 
-#~ msgid "Comment:"
-#~ msgstr "Commento:"
-
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "Copyright © 2006 Travis Watkins"
-
-#~ msgid "Icon:"
-#~ msgstr "Icona:"
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "Proprietà della voce di menù"
-
-#~ msgid "Menu Properties"
-#~ msgstr "Proprietà del menù"
-
-#~ msgid "Name:"
-#~ msgstr "Nome:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "Eseguire il comando in un terminale"
-
-#~ msgid "Simple fd.o compliant menu editor"
-#~ msgstr "Semplice editor di menù conforme a freedesktop.org"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Milo Casagrande <milo_casagrande@yahoo.it>\n"
-#~ "Alessio Frusciante <algol@firenze.linux.it>"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Ripristinare le impostazioni predefinite di tutti i menù?"

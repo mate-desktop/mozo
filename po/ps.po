@@ -1,82 +1,82 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo.head\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-19 15:10+0200\n"
-"PO-Revision-Date: 2008-07-18 14:35-0800\n"
-"Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
-"Language-Team: Pashto <pathanisation@googlegroups.com>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:28+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Pashto, Pushto\n"
-"X-Poedit-Country: AFGHANISTAN\n"
+"Language: ps\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:168
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "نوم"
 
-#: ../Mozo/MainWindow.py:184
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "ښودل"
 
-#: ../Mozo/MainWindow.py:192
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "توکی"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "په ارې غورنۍ کې د ښودلو لپاره کاريالونه بدلول"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "اره غورنۍ"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr ":تو_کي"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "په ارې غورنۍ کې د ښودلو لپاره کاريالونه بدلول"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "ښکته خوځول"
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "ارې ته اړول_"
 
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "بره خوځول"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "نو_ی توکی"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "نوی _بېلند"
-
-#: ../mozo.glade.h:7
+#: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
 msgstr "تلواله غورنۍ هډوانه بيازېرمل"
 
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "بدلونونه اړول غواړﺉ؟"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "ټولې غورنۍ ارو امستنو ته اړول"
-
-#: ../mozo.glade.h:10
+#: ../data/mozo.ui.h:4
 msgid "_Menus:"
 msgstr ":غورنۍ_"
 
-#: ../mozo.glade.h:11
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr ":تو_کي"
+
+#: ../data/mozo.ui.h:6
 msgid "_New Menu"
 msgstr "نوې غورنۍ_"
 
-#: ../mozo.glade.h:12
-msgid "_Revert to Original"
-msgstr "ارې ته اړول_"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "نو_ی توکی"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "نوی _بېلند"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "بره خوځول"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "ښکته خوځول"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "بدلونونه اړول غواړﺉ؟"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "ټولې غورنۍ ارو امستنو ته اړول"

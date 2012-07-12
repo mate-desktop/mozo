@@ -1,0 +1,963 @@
+========== an.po ==========
+# Aragonese translation for mozo.
+# Copyright (C) 2010 mozo's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+# Daniel Martinez Cucalon <entaltoaragon@gmail.com>, 2010.
+#
+
+
+
+
+========== ar.po ==========
+# translation of mozo.HEAD.po to Arabic
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yousef Raffah <yousef@raffah.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2008.
+
+
+
+
+========== as.po ==========
+# translation of as.po to Assamese
+# Translation of mozo.head.po to Assamese
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Amitakhya Phukan <amitakhya.phukan@gmail.com>, 2006.
+# Amitakhya Phukan <aphukan@redhat.com>, 2007, 2008.
+# Amitakhya Phukan <amitakhya@svn.mate.org>, 2007, 2008.
+
+
+
+
+========== ast.po ==========
+# Asturian translation for mozo
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the mozo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+
+
+
+
+========== be.po ==========
+# Mozo Belarusian translation
+# Copyright (C) 2007 Free Software Foundation
+# This file is distributed under the same license as the mozo package.
+# Ihar Hrachyshka <iharh@mate.org>, 2007.
+#
+
+
+
+
+========== be@latin.po ==========
+# Biełaruski pierakład Mozo.
+# Copyright (C) 2007 Free Software Foundation.
+# This file is distributed under the same license as the Mozo package.
+# Ihar Hračyška <ihar.hrachyshka@gmail.com>, 2007.
+#
+
+
+
+
+========== bem.po ==========
+# Bemba translation of mozo.
+# Copyright (C) 2009, listed translators
+# This file is distributed under the same license as the mozo package.
+# Katongo Musaluke <goof@coppernet.zm>, 2009.
+#
+
+
+
+
+========== bg.po ==========
+# Bulgarian translation of mozo po-file.
+# Copyright (C) 2005 THE Mozo'S COPYRIGHT HOLDER
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Mozo package.
+# Stanimir Djevelekov <kori.mendocino@gmail.com>, 2005.
+# Alexander Shopov <ash@contact.bg>, 2006, 2007.
+# Vladimir "Kaladan" Petkov <vpetkov@i-space.org>, 2006, 2007.
+#
+#
+
+
+
+
+========== bn.po ==========
+# Bengali translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+# Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2006.
+# Maruf Ovee <maruf@ankur.org.bd>, 2009.
+# Sadia Afroz <sadia@ankur.org.bd>, 2010.
+#
+
+
+
+
+========== bn_IN.po ==========
+# Bengali India translation for mozo
+# This file is distributed under the same license as the mozo package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2006.
+# Runa Bhattacharjee <runabh@gmail.com>, 2006.
+#
+
+
+
+
+========== br.po ==========
+# Breton translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+# Oublieuse, 2006.
+#
+
+
+
+
+========== ca.po ==========
+# Catalan translation for mozo.
+# Copyright © 2006, 2007 The Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+# Esteve Blanch Sanmartí <anakinjinn@gmail.com>, 2006, 2007.
+#
+
+
+
+
+========== ca@valencia.po ==========
+# Catalan translation for mozo.
+# Copyright © 2006, 2007 The Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+# Esteve Blanch Sanmartí <anakinjinn@gmail.com>, 2006, 2007.
+#
+
+
+
+
+========== crh.po ==========
+# Qırımtatarca translation of mozo.
+# This file is distributed under the same license as the mozo package.
+#
+# Reşat SABIQ <tilde.birlik@gmail.com>, 2009.
+
+
+
+
+========== cs.po ==========
+# translation of cs.po to Czech
+# Czech translation of PACKAGE.
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.mate.org>
+# This file is distributed under the same license as the PACKAGE package.
+#
+#
+# Lukas Novotny <lukasnov@cvs.mate.org>, 2006.
+# Jakub Friedl <jfriedl@suse.cz>, 2007.
+
+
+
+
+========== cy.po ==========
+# Welsh Translation for mozo.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+# Iestyn Pryce <dylunio@gmail.com>, 2009.
+#
+
+
+
+
+========== da.po ==========
+# Danish translation of mozo.
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo
+# package.
+#
+# Peter Bach <bach.peter@gmail.com>, 2007.
+#
+
+
+
+
+========== de.po ==========
+# translation of de.po to Deutsch
+# translation of mozo.
+# Copyright (C) 2006 THE mozo COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+#
+# Beni Goll <Beni.Goll@web.de>, 2006.
+# Hendrik Brandt <heb@mate-de.org>, 2006.
+# Hendrik Richter <hendrikr@mate.org>, 2007.
+#
+
+
+
+
+========== dz.po ==========
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+
+
+
+========== el.po ==========
+# Greek, Modern (1453-) translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+# Kostas Papadimas <pkst@gmx.net>, 2006.
+#
+
+
+
+
+========== en@shaw.po ==========
+# Shavian translation..
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Thomas Thurman <tthurman@mate.org>, 2009.
+#
+
+
+
+
+========== en_CA.po ==========
+# Canadian English translation for mozo
+# Copyright (C) 2007 A Bunch Of Hungry Hungry Hippos
+# This file is distributed under the same licence as the mozo package.
+# Adam Weinberger <adamw@mate.org>, 2007.
+#
+#
+
+
+
+
+========== en_GB.po ==========
+# English (British) translation
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same licence as the mozo package.
+# David Lodge <dave@cirt.net>, 2006
+#
+
+
+
+
+========== eo.po ==========
+# Esperanto translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+# Dominique PELLÉ <dominique.pelle@free.fr>, 2006.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2010.
+#
+
+
+
+
+========== es.po ==========
+# translation of mozo.HEAD.po to Español
+# translation of mozo to Spanish
+# This file is distributed under the same license as the Mozo package.
+# Copyright (C) 2006 The Free Software Foundation.
+#
+# Francisco Javier F. Serrador <serrador@cvs.mate.org>, 2006.
+# Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007.
+# Jorge González <jorgegonz@svn.mate.org>, 200, 2009.
+
+
+
+
+========== et.po ==========
+# Mozo eesti keele tõlge.
+# Estonian translation of Mozo.
+#
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# Copyright (C) 2007 The MATE Project.
+# This file is distributed under the same license as the mozo package.
+#
+# Priit Laes <amd store20 com>, 2006.
+# Ivar Smolin <okul linux ee>, 2006, 2007.
+#
+
+
+
+
+========== eu.po ==========
+# translation of mozo.HEAD.po to Basque
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2006, 2007.
+
+
+
+
+========== fa.po ==========
+# Persian translation of mozo.
+# Copyright (C) 2006 Sharif FarsiWeb, Inc.
+# This file is distributed under the same license as the mozo package.
+# Meelad Zakaria <meelad@farsiweb.info>, 2006.
+#
+
+
+
+
+========== fi.po ==========
+# Finnish translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+#
+# Elias Julkunen <vililikku@gmail.com>, 2006.
+# Ilkka Tuohela <hile@iki.fi>, 2006.
+#
+
+
+
+
+========== fr.po ==========
+# French translation of mozo.
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+#
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+# Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+#
+
+
+
+
+========== fur.po ==========
+# Friulian translation of mozo
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# Massimo Furlani <massimo.furlani@libero.it>, 2007.
+#
+#
+
+
+
+
+========== fy.po ==========
+# Frisian translation for mozo
+#
+# This file is distributed under the same license as the mozo package.
+# Sense Hofstede <sense@ubuntu.com>, 2010.
+#
+
+
+
+
+========== ga.po ==========
+# Irish translations for mozo package.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+# Seán de Búrca <leftmostcat@gmail.com>, 2007.
+#
+
+
+
+
+========== gl.po ==========
+# translation of gl.po to Galego
+# Copyright (C) 2010 Francisco Diéguez <frandieguez@ubuntu.com>
+# This file is distributed under the same license as the mozo package.
+#
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2006.
+# Ignacio Casal Quinteiro <icq@cvs.mate.org>, 2007, 2008.
+# Mancomún - Centro de Referencia e Servizos de Software Libre <g11n@mancomun.org>, 2009.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2010.
+#
+
+
+
+
+========== gu.po ==========
+# translation of mozo.HEAD.gu.po to Gujarati
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Ankit Patel <ankit644@yahoo.com>, 2006.
+# Ankit Patel <ankit@redhat.com>, 2007.
+#
+
+
+
+
+========== he.po ==========
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Zohar Snir <zoharsnir@gmail.com>, 2006.
+# 
+
+
+
+
+========== hi.po ==========
+# translation of mozo.master.po to Hindi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Rajesh Ranjan <rranjan@redhat.com>, 2006.
+# Rajesh Ranjan <rajesh672@gmail.com>, 2009.
+
+
+
+
+========== hr.po ==========
+# Croatian translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+#
+
+
+
+
+========== hu.po ==========
+# Hungarian translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+#
+# Gabor Burján <buga@buvoshetes.hu>, 2006.
+# Gabor Kelemen <kelemeng@mate.hu>, 2006, 2007.
+
+
+
+
+========== hy.po ==========
+# Translation of mozo to Armenian
+# This file is distributed under the same license as the mozo package.
+# Copyright (C) 2010, Artyom Karhanyan
+# Artyom Karhanyan <artiomkarhanyan@yahoo.com>
+#
+
+
+
+
+========== id.po ==========
+# translation of mozo.
+# Copyright (C) 2007 THE mozo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+#
+#
+# ahmad riza h nst<rizahnst@mate.org>, 2007.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2010.
+
+
+
+
+========== io.po ==========
+# Ido gtk+ po-properties file.
+# Copyright (C) 2007
+# This file is distributed under the same license as the gtk+ package.
+# Michael Terry <mike@mterry.name>, 2007.
+#
+
+
+
+
+========== it.po ==========
+# Italian translation for mozo
+# Copyright (c) 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+# Alessio Frusciante <algol@firenze.linux.it>, 2006.
+# Milo Casagrande <milo@ubuntu.com>, 2006-2008
+#
+
+
+
+
+========== ja.po ==========
+# Japanese message catalog for Mozo, a simple menu editor for MATE.
+# Copyright (C) 2006,2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the 'mozo' package.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006,2007.
+#
+
+
+
+
+========== ka.po ==========
+# translation of ka.po to Georgian
+# Davit Managadze  <dmanagadze@googlemail.com>, 2006.
+# Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@mate.org>, 2007.
+
+
+
+
+========== kk.po ==========
+# Kazakh translation of mozo
+# Copyright (C) Free Software Foundation
+# This file is distributed under the same license as the mozo package.
+#
+# Erzhan Shaniev <erzhan.jktl@gmail.com>, 2008
+# Moldabekov Margulan <moldabekov@gmail.com>, 2008
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010
+
+
+
+
+========== kn.po ==========
+# translation of mozo.HEAD.kn.po to Kannada
+# Translation of mozo.HEAD.po to Kannada
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ragavendra BN <ragavendra.bn@gmail.com>, 2007.
+# Shankar Prasad <svenkate@redhat.com>, 2007.
+
+
+
+
+========== ko.po ==========
+# mozo Korean translation
+# This file is distributed under the same license as the mozo package.
+# Changwoo Ryu <cwryu@debian.org>, 2006, 2010.
+#
+
+
+
+
+========== ku.po ==========
+# Kurdish translation for mozo
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the mozo package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# Erdal <erdal.ronahi@gmail.com>, 2009.
+
+
+
+
+========== lt.po ==========
+# translation of lt.po to Lithuanian
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Mozo package.
+#
+# Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007.
+
+
+
+
+========== lv.po ==========
+# translation of lv.po to Latvian
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Raivis Dejus <orvils@gmail.com>, 2006, 2007.
+
+
+
+
+========== mai.po ==========
+# translation of mozo.master.po to Maithili
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009.
+
+
+
+
+========== mg.po ==========
+# MALAGASY TRANSLATION OF MOZO.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Thierry Randrianiriana <thierry@isvtec.com>, 2007.
+# Fano Rajaonarisoa <fano@isvtec.com>, 2006.
+
+
+
+
+========== mk.po ==========
+# translation of mk.po to Macedonian
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jovan Naumovski <jovan@lugola.net>, 2006.
+# Arangel Angov <ufo@linux.net.mk>, 2007.
+
+
+
+
+========== ml.po ==========
+# translation of mozo.HEAD.ml.po to Malayalam
+# Copyright (C) 2007 mozo'S COPYRIGHT HOLDER.
+# This file is distributed under the same license as the mozo package.
+# Ani Peter <peter.ani@gmail.com>, 2006.
+# NIKHIL VISHNU P V <nikhilvishnupv@gmail.com>, 2007.
+# Ani Peter <apeter@redhat.com>, 2007.
+# Reviewed by Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2007, 2008.
+
+
+
+
+========== mn.po ==========
+# translation of mn.po to Mongolian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Badral <badral@openmn.org>, 2006.
+#
+
+
+
+
+========== mr.po ==========
+# translation of mozo.HEAD.mr.po to marathi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
+
+
+
+
+========== ms.po ==========
+# Malay translation for mozo.
+# Copyright (C) 2010 mozo's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+# Umarzuki Bin Mochlis Moktar <umar@umarzuki.org>, 2010.
+#
+
+
+
+
+========== nb.po ==========
+# Norwegian bokmål translation of mozo
+# Copyright (C) 2007, mozo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package
+# Kjartan Maraas <kmaraas@mate.org>, 2006-2008.
+#
+#
+
+
+
+
+========== nds.po ==========
+# Low German translation for mozo.
+# Copyright (C) 2009 mozo's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+# Nils-Christoph Fiedler <linux@medienkompanie.de>, 2009.
+#
+
+
+
+
+========== nl.po ==========
+# Dutch translation of Mozo.
+# Copyright (C) 2005 Niels Abspoel <niels.abspoel@wanadoo.nl>
+# This file is distributed under the same license as the Mozo package.
+# Niels Abspoel <niels.abspoel@wanadoo.nl>, 2005.
+# Tino Meinen <a.t.meinen@chello.nl>, 2006, 2007.
+#
+
+
+
+
+========== nn.po ==========
+# Norwegian nynorsk translation of mozo
+# Copyright (C) 2007 THE mozo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package
+# Kjartan Maraas <kmaraas@mate.org>, 2006, 2007.
+# Eskild Hustvedt <i18n@zerodogg.org>, 2007
+# 
+# 
+
+
+
+
+========== oc.po ==========
+# Translation of oc.po to Occitan
+# Occitan translation of mozo.
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008
+
+
+
+
+========== or.po ==========
+# translation of mozo.HEAD.or.po to Oriya
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Subhransu Behera <arya_subhransu@yahoo.co.in>, 2006.
+# Manoj Kumar Giri <giri.manojkr@gmail.com>, 2008.
+
+
+
+
+========== pa.po ==========
+# translation of mozo.HEAD.po to Punjabi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# A S Alam <apbrar@gmail.com>, 2006.
+# ASB <aalam@users.sf.net>, 2007.
+
+
+
+
+========== pl.po ==========
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# matepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+
+
+========== ps.po ==========
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+
+
+
+========== pt.po ==========
+# mozo's Portuguese translation.
+# Copyright © 2006, 2007 mozo
+# This file is distributed under the same license as the mozo package.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2006, 2007.
+#
+
+
+
+
+========== pt_BR.po ==========
+# Mozo Menu Editor.
+# Copyright (C) 2006 Travis Watkins
+# This file is distributed under the same license as the Mozo package.
+# Licio Fonseca <licio@ubuntu.com>, 2006.
+# Og Maciel <ogmaciel@ubuntu.com>, 2006.
+#
+
+
+
+
+========== ro.po ==========
+# Romanian translation of mozo.
+# Copyright (C) 2006 mozo
+# This file is distributed under the same license as the mozo package.
+# Alexandru Szasz <alexxed@gmail.com>, 2006.
+# Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009
+
+
+
+
+========== ru.po ==========
+# Russian translation of mozo
+# Copyright (C) Free Software Foundation
+# This file is distributed under the same license as the mozo package.
+#
+# Leonid Kanter <leon@asplinux.ru>, 2006, 2007.
+
+
+
+
+========== si.po ==========
+# translation of si.po to Sinhala
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Tyronne Wickramarathne <tywickra@redhat.com>, 2006.
+# Danishka Navin <snavin@redhat.com>, 2007.
+
+
+
+
+========== sk.po ==========
+# Slovak translation of mozo.
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+# Marcel Telka <marcel@telka.sk>, 2008.
+#
+
+
+
+
+========== sl.po ==========
+# Slovenian translation for mozo.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+#
+# Matic Žgur <mr.zgur@gmail.com>, 2006 - 2007.
+# Matej Urbančič <mateju@svn.mate.org>, 2010.
+#
+
+
+
+
+========== sq.po ==========
+# Përkthimi i mozo në shqip.
+# Laurent Dhima <laurenti@alblinux.net>, 2006, 2007.
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+
+
+
+
+========== sr.po ==========
+# Serbian translation of mozo 
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2006, 2007.
+#
+# This file is distributed under the same license as the mozo package.
+#
+# Maintainer: Igor Miletić <grejigl-mateprevod@yahoo.com>
+
+
+
+
+========== sr@latin.po ==========
+# Serbian translation of mozo 
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2006, 2007.
+#
+# This file is distributed under the same license as the mozo package.
+#
+# Maintainer: Igor Miletić <grejigl-mateprevod@yahoo.com>
+
+
+
+
+========== sv.po ==========
+# Swedish messages for mozo.
+# Copyright (C) 2006, 2007, 2009 Free Software Foundation, Inc.
+# Christian Rose <menthos@menthos.com>, 2006.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2009.
+#
+# $Id: sv.po,v 1.3 2006/12/28 06:52:28 dnylande Exp $
+#
+
+
+
+
+========== ta.po ==========
+# translation of mozo.HEAD.po to TAMIL
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Felix <ifelix@redhat.com>, 2006.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007.
+
+
+
+
+========== te.po ==========
+# Telugu translation of mozo
+# This file is distributed under the same license as the mozo package.
+# Copyright (C) 2006 Sree Ganesh <mrthottempudi@yahoo.com>
+# Copyright (C) 2006 Sunil Mohan Adapa <sunilmohan@swecha.org>
+# Copyright (C) 2007 Bharath Kumar <bharath@swecha.net>
+#
+
+
+
+
+========== th.po ==========
+# Thai translation of mozo.
+# Copyright (C) 2006-2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mozo package.
+#
+# Roys Hengwatanakul <roysheng@msn.com>, 2006.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2006-2007.
+#
+
+
+
+
+========== tr.po ==========
+# translation of mozo.HEAD.tr.po to Turkish
+# Turkish translation of mozo.
+# Copyright (C) 2006 THE mozo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mozo package.
+#
+#
+# Volkan Güney <guneyvolkan@gmail.com>, 2006.
+# Baris Cicek <baris@teamforce.name.tr>, 2006, 2007.
+
+
+
+
+========== ug.po ==========
+# Uighur Translation of Mozo
+# Copyright (C) 2010 Mozo'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Mozo package.
+# Gheyret T.Kenji <gheyret@yahoo.com>, 2010.
+# 
+
+
+
+
+========== uk.po ==========
+# Ukrainian translation of mozo.
+# Copyright (C) 2006 Free Software Foundation
+# This file is distributed under the same license as the PACKAGE package.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2006-2007.
+#
+
+
+
+
+========== uz@cyrillic.po ==========
+# translation of mozo.HEAD.po to Uzbek
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Nurali Abdurahmonov <mavnur@gmail.com>, 2007.
+
+
+
+
+========== vi.po ==========
+# Vietnamese translation for À la Carte.
+# Copyright © 2007 Mate i18n Project for Vietnamese.
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2007.
+#
+
+
+
+
+========== zh_CN.po ==========
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Funda Wang <fundawang@linux.net.cn>, 2006.
+#
+
+
+
+
+========== zh_HK.po ==========
+# Chinese (Hong Kong) translation of mozo.
+# Copyright (C) 2006, 07 Free Software Foundation, Inc.
+# Woodman Tuen <wmtuen@gmail.com>, 2006-2007.
+#
+#
+
+
+
+
+========== zh_TW.po ==========
+# Chinese (Taiwan) translation of mozo.
+# Copyright (C) 2006, 07 Free Software Foundation, Inc.
+# Woodman Tuen <wmtuen@gmail.com>, 2006-2007.
+#
+#
+
+
+
+

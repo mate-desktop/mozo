@@ -1,82 +1,83 @@
-# Danish translation of mozo.
-# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mozo
-# package.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Peter Bach <bach.peter@gmail.com>, 2007.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-18 20:44+0100\n"
-"PO-Revision-Date: 2007-02-18 19:57+0200\n"
-"Last-Translator: Peter bach <bach.peter@gmail.com>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:28+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/MATE/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Navn"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
 msgstr "Vis"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Punkt"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Tilret hvilke programmer der vises i hovedmenuen"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "Hovedmenu"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "Punkt_er:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Tilret hvilke programmer der vises i hovedmenuen"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "Flyt ned"
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "Gendan til original"
 
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "Flyt op"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "_Nyt punkt"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "Ny _separator"
-
-#: ../mozo.glade.h:7
+#: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
 msgstr "Genskab det oprindelige menuudseende"
 
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Fortryd ændringer?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Gendan alle menuer til standardopsætninger?"
-
-#: ../mozo.glade.h:10
+#: ../data/mozo.ui.h:4
 msgid "_Menus:"
 msgstr "_Menuer:"
 
-#: ../mozo.glade.h:11
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "Punkt_er:"
+
+#: ../data/mozo.ui.h:6
 msgid "_New Menu"
 msgstr "_Ny menu"
 
-#: ../mozo.glade.h:12
-msgid "_Revert to Original"
-msgstr "Gendan til original"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "_Nyt punkt"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Ny _separator"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Flyt op"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Flyt ned"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Fortryd ændringer?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Gendan alle menuer til standardopsætninger?"

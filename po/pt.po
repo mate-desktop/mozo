@@ -1,125 +1,84 @@
-# mozo's Portuguese translation.
-# Copyright © 2006, 2007 mozo
-# This file is distributed under the same license as the mozo package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Duarte Loreto <happyguy_pt@hotmail.com>, 2006, 2007.
-#
+# Sérgio Marques <smarquespt@gmail.com>, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.18\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-15 01:47+0000\n"
-"PO-Revision-Date: 2007-02-15 01:50+0000\n"
-"Last-Translator: Duarte Loreto <happyguy_pt@hotmail.com>\n"
-"Language-Team: Portuguese <mate_pt@yahoogroups.com>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-05-06 18:04+0000\n"
+"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
+"Language-Team: Portuguese (http://www.transifex.com/projects/p/MATE/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../Mozo/MainWindow.py:167
+#: ../Mozo/MainWindow.py:164
 msgid "Name"
 msgstr "Nome"
 
-#: ../Mozo/MainWindow.py:183
+#: ../Mozo/MainWindow.py:180
 msgid "Show"
-msgstr "Apresentar"
+msgstr "Mostrar"
 
-#: ../Mozo/MainWindow.py:191
+#: ../Mozo/MainWindow.py:188
 msgid "Item"
 msgstr "Item"
 
-#: ../mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "Alterar que aplicações são apresentadas no menu principal"
-
-#: ../mozo.desktop.in.in.h:2 ../mozo.glade.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Menu Principal"
+msgstr "Menu principal"
 
-#: ../mozo.glade.h:1
-msgid "It_ems:"
-msgstr "It_ens:"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Alterar as aplicações a exibir no menu principal"
 
-#: ../mozo.glade.h:3
-msgid "Move Down"
-msgstr "Mover Abaixo"
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "_Reverter para as definições originais"
 
-#: ../mozo.glade.h:4
-msgid "Move Up"
-msgstr "Mover Acima"
-
-#: ../mozo.glade.h:5
-msgid "Ne_w Item"
-msgstr "No_vo Item"
-
-#: ../mozo.glade.h:6
-msgid "New _Separator"
-msgstr "Novo _Separador"
-
-#: ../mozo.glade.h:7
+#: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Repor a disposição por omissão do menu"
+msgstr "Restaurar o esquema pré-definido do menu"
 
-#: ../mozo.glade.h:8
-msgid "Revert Changes?"
-msgstr "Reverter as Alterações?"
-
-#: ../mozo.glade.h:9
-msgid "Revert all menus to original settings?"
-msgstr "Reverter todos os menus para as definições originais?"
-
-#: ../mozo.glade.h:10
+#: ../data/mozo.ui.h:4
 msgid "_Menus:"
 msgstr "_Menus:"
 
-#: ../mozo.glade.h:11
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "It_ens:"
+
+#: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "_Novo Menu"
+msgstr "_Novo menu"
 
-#: ../mozo.glade.h:12
-msgid "_Revert to Original"
-msgstr "_Reverter para o Original"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "No_vo item"
 
-#~ msgid "Menu Layout"
-#~ msgstr "Disposição do Menu"
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Novo _separador"
 
-#~ msgid "A name is required."
-#~ msgstr "É necessário um nome."
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Mover para cima"
 
-#~ msgid "A command is required."
-#~ msgstr "É necessário um comando."
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Mover para baixo"
 
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "Adicionar, alterar, remover entradas de menu"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Reverter as alterações?"
 
-#~ msgid "Browse..."
-#~ msgstr "Procurar..."
-
-#~ msgid "Command:"
-#~ msgstr "Comando:"
-
-#~ msgid "Comment:"
-#~ msgstr "Comentário:"
-
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "Copyright © 2006 Travis Watkins"
-
-#~ msgid "Icon:"
-#~ msgstr "Ícone:"
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "Propriedades do Item de Menu"
-
-#~ msgid "Menu Properties"
-#~ msgstr "Propriedades do Menu"
-
-#~ msgid "Name:"
-#~ msgstr "Nome:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "Executar o comando numa consola"
-
-#~ msgid "Simple fd.o compliant menu editor"
-#~ msgstr "Editor de menus que respeita a definição da fd.o"
-
-#~ msgid "translator-credits"
-#~ msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Reverter todos os menus para as definições originais?"

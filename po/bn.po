@@ -1,22 +1,24 @@
-# Bengali translation for mozo
-# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
-# This file is distributed under the same license as the mozo package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 # Khandakar Mujahidul Islam <suzan@bengalinux.org>, 2006.
 # Maruf Ovee <maruf@ankur.org.bd>, 2009.
 # Sadia Afroz <sadia@ankur.org.bd>, 2010.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: bn\n"
-"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=mozo&component=general\n"
-"POT-Creation-Date: 2009-12-14 15:28+0000\n"
-"PO-Revision-Date: 2010-03-09 12:15+0600\n"
-"Last-Translator: Sadia Afroz <sadia@ankur.org.bd>\n"
-"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -30,124 +32,54 @@ msgstr "প্রদর্শন"
 msgid "Item"
 msgstr "আইটেম"
 
-#: ../data/mozo.desktop.in.in.h:1
-msgid "Change which applications are shown on the main menu"
-msgstr "প্রধান মেনুতে কোন অ্যাপ্লিকেশনগুলো থাকবে তা পরিবর্তন করুন"
-
-#: ../data/mozo.desktop.in.in.h:2 ../data/mozo.ui.h:2
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
 msgstr "প্রধান মেনু"
 
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "প্রধান মেনুতে কোন অ্যাপ্লিকেশনগুলো থাকবে তা পরিবর্তন করুন"
+
 #: ../data/mozo.ui.h:1
-msgid "It_ems:"
-msgstr "আইটেম: (_e)"
-
-#: ../data/mozo.ui.h:3
-msgid "Move Down"
-msgstr "নিচে নামান"
-
-#: ../data/mozo.ui.h:4
-msgid "Move Up"
-msgstr "উপরে উঠান"
-
-#: ../data/mozo.ui.h:5
-msgid "Ne_w Item"
-msgstr "নতুন আইটেম (_w)"
-
-#: ../data/mozo.ui.h:6
-msgid "New _Separator"
-msgstr "নতুন বিভাজক (_S)"
-
-#: ../data/mozo.ui.h:7
-msgid "Restore the default menu layout"
-msgstr "পূর্বনির্ধারিত মেনু বহির্বিন্যাস পুনরুদ্ধার করুন"
-
-#: ../data/mozo.ui.h:8
-msgid "Revert Changes?"
-msgstr "পরিবর্তনগুলো কি বাদ দিতে চান?"
-
-#: ../data/mozo.ui.h:9
-msgid "Revert all menus to original settings?"
-msgstr "সকল মেনু কি আদি সেটিংসে ফিরিয়ে আনা হবে?"
-
-#: ../data/mozo.ui.h:10
-msgid "_Menus:"
-msgstr "মেনু: (_M)"
-
-#: ../data/mozo.ui.h:11
-msgid "_New Menu"
-msgstr "নতুন মেনু (_N)"
-
-#: ../data/mozo.ui.h:12
 msgid "_Revert to Original"
 msgstr "আদি অবস্থায় ফিরে যান (_R)"
 
-#~ msgid "A name is required."
-#~ msgstr "একটি নাম প্রয়োজন।"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "পূর্বনির্ধারিত মেনু বহির্বিন্যাস পুনরুদ্ধার করুন"
 
-#~ msgid "A command is required."
-#~ msgstr "একটি কমান্ড প্রয়োজন।"
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "মেনু: (_M)"
 
-#~ msgid "Add, change, remove menu entries"
-#~ msgstr "মেনু এন্ট্রিগুলো যোগ করুন, পরিবর্তন করুন, মুছে ফেলুন"
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "আইটেম: (_e)"
 
-#~ msgid "Menu Layout"
-#~ msgstr "মেনু বহির্বিন্যাস"
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "নতুন মেনু (_N)"
 
-#~ msgid "Mozo Menu Editor"
-#~ msgstr "Mozo মেনু সম্পাদক"
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "নতুন আইটেম (_w)"
 
-#~ msgid "Browse..."
-#~ msgstr "ব্রাউজ করুন..."
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "নতুন বিভাজক (_S)"
 
-#~ msgid "Command:"
-#~ msgstr "কমান্ড:"
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "উপরে উঠান"
 
-#~ msgid "Comment:"
-#~ msgstr "মন্তব্য:"
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "নিচে নামান"
 
-#~ msgid "Copyright © 2006 Travis Watkins"
-#~ msgstr "স্বত্বাধিকার © ২০০৬ Travis Watkins"
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "পরিবর্তনগুলো কি বাদ দিতে চান?"
 
-#~ msgid "Icon:"
-#~ msgstr "আইকন:"
-
-#~ msgid "Menu Item Properties"
-#~ msgstr "মেনু আইটেম বৈশিষ্ট্য"
-
-#~ msgid "Menu Properties"
-#~ msgstr "মেনু বৈশিষ্ট্য"
-
-#~ msgid "Name:"
-#~ msgstr "নাম:"
-
-#~ msgid "Run command in a terminal"
-#~ msgstr "টার্মিনালে কমান্ড চালান"
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "অঙ্কুর গ্রুপের পক্ষ থেকে খন্দকার মুজাহিদুল ইসলাম সুজন <suzan@bengalinux.org>, ২০০৬।"
-
-#~ msgid "A menu can't be named \"Other\"."
-#~ msgstr "একটি মেনুর নাম \"অন্যান্য\" হতে পারে না।"
-
-#~ msgid "Loading..."
-#~ msgstr "লোড করা হচ্ছে..."
-
-#~ msgid "Visible"
-#~ msgstr "দৃশ্যমান"
-
-#~ msgid "Entry Editor"
-#~ msgstr "এন্ট্রি সম্পাদক"
-
-#~ msgid "Icon Selector"
-#~ msgstr "আইকন নির্বাচক"
-
-#~ msgid "Menu Editor"
-#~ msgstr "মেনু সম্পাদক"
-
-#~ msgid "New _Entry"
-#~ msgstr "নতুন এন্ট্রি (_E)"
-
-#~ msgid "_Delete"
-#~ msgstr "মুছে ফেলুন (_D)"
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "সকল মেনু কি আদি সেটিংসে ফিরিয়ে আনা হবে?"

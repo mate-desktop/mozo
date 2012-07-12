@@ -1,23 +1,23 @@
-# translation of si.po to Sinhala
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
-#
-# Tyronne Wickramarathne <tywickra@redhat.com>, 2006.
+# 
+# Translators:
 # Danishka Navin <snavin@redhat.com>, 2007.
+# Tyronne Wickramarathne <tywickra@redhat.com>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: si\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-26 07:38+0200\n"
-"PO-Revision-Date: 2007-07-09 11:33+0530\n"
-"Last-Translator: Danishka Navin <snavin@redhat.com>\n"
-"Language-Team: Sinhala <en@li.org>\n"
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-03-14 13:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"\n"
+"Language: si\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -31,113 +31,54 @@ msgstr "පෙන්වනු"
 msgid "Item"
 msgstr "අයිතමය"
 
-#: ../Mozo/DialogHandler.py:141 ../Mozo/DialogHandler.py:178
-#: ../Mozo/DialogHandler.py:333 ../Mozo/DialogHandler.py:364
-msgid "A name is required."
-msgstr "නමක් අවශ්‍යය"
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr ""
 
-#: ../Mozo/DialogHandler.py:144 ../Mozo/DialogHandler.py:181
-msgid "A command is required."
-msgstr "විධානයක් අවශ්‍යයි"
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr ""
 
-#: ../mozo.desktop.in.h:1
-msgid "Add, change, remove menu entries"
-msgstr "මෙනු සටහනට එකතු කරනු,වෙනස් කරනු නැතහොත් ඉවත් කරනු"
-
-#: ../mozo.desktop.in.h:2 ../mozo.glade.h:9
-msgid "Menu Layout"
-msgstr "මෙනු සැකසුම"
-
-#: ../mozo.glade.h:1
-msgid "Mozo Menu Editor"
-msgstr "Mozo මෙනු සකස්කරණය"
-
-#: ../mozo.glade.h:2
-msgid "Browse..."
-msgstr "සැරිසරන්න..."
-
-#: ../mozo.glade.h:3
-msgid "Command:"
-msgstr "විධානය:"
-
-#: ../mozo.glade.h:4
-msgid "Comment:"
-msgstr "විස්තර සටහන"
-
-#: ../mozo.glade.h:5
-msgid "Copyright © 2006 Travis Watkins"
-msgstr "සියළුම හිමිකම් සහිතයි © 2006 ට්‍රැවිස් වොට්කිනස්"
-
-#: ../mozo.glade.h:6
-msgid "Icon:"
-msgstr "සංකේතය:"
-
-#: ../mozo.glade.h:7
-msgid "It_ems:"
-msgstr "අයිතමයන් (_e):"
-
-#: ../mozo.glade.h:8
-msgid "Menu Item Properties"
-msgstr "මෙනු අයිතම වත්කම්"
-
-#: ../mozo.glade.h:10
-msgid "Menu Properties"
-msgstr "මෙනු වත්කම්"
-
-#: ../mozo.glade.h:11
-msgid "Move Down"
-msgstr "පහලට චලනය කරනු"
-
-#: ../mozo.glade.h:12
-msgid "Move Up"
-msgstr "ඉහලට චලනය කරනු"
-
-#: ../mozo.glade.h:13
-msgid "Name:"
-msgstr "නම:"
-
-#: ../mozo.glade.h:14
-msgid "Ne_w Item"
-msgstr "නව අයිතමයක් (_w)"
-
-#: ../mozo.glade.h:15
-msgid "New _Separator"
-msgstr "නව වෙන් කරණයක් (_S)"
-
-#: ../mozo.glade.h:16
-msgid "Restore the default menu layout"
-msgstr "මෙනු සැකසුම පෙර තිබූ ප්‍රකෘති තත්වයට පත් කරනු"
-
-#: ../mozo.glade.h:17
-msgid "Revert Changes?"
-msgstr "සංශෝධනයන් පෙර තිබූ තත්වයට  පත් කිරීමට අවශ්‍යද?"
-
-#: ../mozo.glade.h:18
-msgid "Revert all menus to original settings?"
-msgstr "සියළු මෙනූ පෙර තිබූ නැවුම් තත්වයට පත් කිරීමට අවශ්‍යද ?"
-
-#: ../mozo.glade.h:19
-msgid "Run command in a terminal"
-msgstr "විධානය අග්‍රයක් තුල ක්‍රියාත්මක කරන්න"
-
-#: ../mozo.glade.h:20
-msgid "Simple fd.o compliant menu editor"
-msgstr "සරල fd.o සමපාත මෙනු සකස්කරණය"
-
-#: ../mozo.glade.h:21
-msgid "_Menus:"
-msgstr "මෙනූ (_M):"
-
-#: ../mozo.glade.h:22
-msgid "_New Menu"
-msgstr "නව මෙනුවක් (_N)"
-
-#: ../mozo.glade.h:23
+#: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
 msgstr "පෙර තිබූ නව්‍ය තත්වයට පත්කරන්න (_R)"
 
-#. TRANSLATORS: Replace this string with your names, one name per line.
-#: ../mozo.glade.h:25
-msgid "translator-credits"
-msgstr "පරිවර්තන ස්තූතිය"
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "මෙනු සැකසුම පෙර තිබූ ප්‍රකෘති තත්වයට පත් කරනු"
 
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "මෙනූ (_M):"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "අයිතමයන් (_e):"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "නව මෙනුවක් (_N)"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "නව අයිතමයක් (_w)"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "නව වෙන් කරණයක් (_S)"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "ඉහලට චලනය කරනු"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "පහලට චලනය කරනු"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "සංශෝධනයන් පෙර තිබූ තත්වයට  පත් කිරීමට අවශ්‍යද?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "සියළු මෙනූ පෙර තිබූ නැවුම් තත්වයට පත් කිරීමට අවශ්‍යද ?"
