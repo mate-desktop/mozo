@@ -23,10 +23,10 @@ gi.require_version('Gdk', '3.0')
 from gi.repository import GLib, Gio
 from gi.repository import Gtk, Gdk, GdkPixbuf
 import cgi
-import codecs
 import os
 import gettext
 import subprocess
+import shutil
 import urllib
 try:
 	from Mozo import config
@@ -378,9 +378,7 @@ class MainWindow:
 			file_type = 'Menu'
 
 		if not os.path.isfile(file_path):
-			data = open(item.get_desktop_file_path()).read()
-			with codecs.open(file_path, 'w') as f:
-				f.write(data)
+			shutil.copy(item.get_desktop_file_path(), file_path)
 			self.editor._MenuEditor__addUndo([(file_type, os.path.split(file_path)[1]),])
 		else:
 			self.editor._MenuEditor__addUndo([item,])
