@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+ 
+[MATE.mozo]
+file_filter = po/<lang>.po
+source_file = po/mozo.pot
+source_lang = en
