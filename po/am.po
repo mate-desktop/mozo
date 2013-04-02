@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# samson <sambelet@yahoo.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2013-03-10 01:14+0000\n"
+"Last-Translator: samson <sambelet@yahoo.com>\n"
+"Language-Team: Amharic (http://www.transifex.com/projects/p/MATE/language/am/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: am\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../Mozo/MainWindow.py:164
+msgid "Name"
+msgstr "ስም "
+
+#: ../Mozo/MainWindow.py:180
+msgid "Show"
+msgstr "ማሳያ "
+
+#: ../Mozo/MainWindow.py:188
+msgid "Item"
+msgstr "እቃ "
+
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr "ዋናው ዝርዝር "
+
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "በዋናው ዝርዝር ላይ የሚታዩትን መተግበሪያዎች ማሳያ መቀየሪያ "
+
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "_መቀየሪያ ወደነበረበት "
+
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "ወደ ነበሩበት ዝርዝር ማሰናጃዎች ልቀይራቸው? "
+
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_ዝርዝሮች :"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "እቃ_ዎች :"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_አዲስ ዝርዝር "
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "አዲ_ስ እቃ "
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "አዲስ _መለያያ "
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "ወደ ላይ ማንቀሳቀሻ "
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "ወደ ታች ማንቀሳቀሻ"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "ለውጦቹን ወደ ነበሩበት ልቀይራቸው? "
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "ሁሉንም ዝርዝሮች ወደ ነበሩበት ማሰናጃዎች ልቀይራቸው? "

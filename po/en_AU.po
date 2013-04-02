@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <keltoiboy@gmail.com>, 2012.
+# Michael Findlay <keltoiboy@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2012-09-26 08:38+0000\n"
+"Last-Translator: k3lt01 <keltoiboy@gmail.com>\n"
+"Language-Team: English (Australia) (http://www.transifex.com/projects/p/MATE/language/en_AU/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_AU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../Mozo/MainWindow.py:164
+msgid "Name"
+msgstr "Name"
+
+#: ../Mozo/MainWindow.py:180
+msgid "Show"
+msgstr "Show"
+
+#: ../Mozo/MainWindow.py:188
+msgid "Item"
+msgstr "Item"
+
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr "Main Menu"
+
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Change which applications are shown on the main menu"
+
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "_Revert to Original"
+
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Restore the default menu layout"
+
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Menus:"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "It_ems:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "_New Menu"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "Ne_w Item"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "New _Separator"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Move Up"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Move Down"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Revert Changes?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Revert all menus to original settings?"
