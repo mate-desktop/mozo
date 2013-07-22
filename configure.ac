@@ -1,10 +1,10 @@
 dnl -*- Mode: autoconf -*-
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
-AC_INIT(mozo, 1.6.0, http://www.mate-desktop.org)
+AC_INIT(mate-menu-editor, 1.6.0, http://www.mate-desktop.org)
 AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([1.7])
+AM_INIT_AUTOMAKE([1.7 dist-xz no-dist-gzip])
 AM_MAINTAINER_MODE
 
 m4_define(required_pygobject_version, 2.15.1)
