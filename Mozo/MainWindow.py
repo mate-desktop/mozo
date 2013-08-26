@@ -297,6 +297,9 @@ class MainWindow:
 			return False
 		return True
 
+	def on_delete_event(self, widget, event):
+		self.quit()
+
 	def on_new_menu_button_clicked(self, button):
 		menu_tree = self.tree.get_object('menu_tree')
 		menus, iter = menu_tree.get_selection().get_selected()
