@@ -27,8 +27,8 @@ def main():
 		datadir = config.pkgdatadir
 		version = config.VERSION
 	except:
-		datadir = '.'
-		version = '0.9'
+		datadir = './data/'
+		version = '1.7.0'
 	app = MainWindow(datadir, version, sys.argv)
 	app.run()
 
