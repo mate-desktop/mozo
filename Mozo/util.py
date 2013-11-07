@@ -17,7 +17,10 @@
 #   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import os
-import gtk, matemenu
+import matemenu
+import gi
+from gi.repository import Gtk
+from gi.repository import GdkPixbuf
 from ConfigParser import ConfigParser
 
 class DesktopParser(ConfigParser):
@@ -212,14 +215,14 @@ def getIcon(item, for_properties=False):
 		iconName = item.get_icon()
 	if iconName and not '/' in iconName and iconName[-3:] in ('png', 'svg', 'xpm'):
 		iconName = iconName[:-4]
-	icon_theme = gtk.icon_theme_get_default()
+	icon_theme = Gtk.IconTheme.get_default()
 	try:
 		pixbuf = icon_theme.load_icon(iconName, 24, 0)
 		path = icon_theme.lookup_icon(iconName, 24, 0).get_filename()
 	except:
 		if iconName and '/' in iconName:
 			try:
-				pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(iconName, 24, 24)
+				pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(iconName, 24, 24)
 				path = iconName
 			except:
 				pass
@@ -238,7 +241,7 @@ def getIcon(item, for_properties=False):
 	if pixbuf == None:
 		return None
 	if pixbuf.get_width() != 24 or pixbuf.get_height() != 24:
-		pixbuf = pixbuf.scale_simple(24, 24, gtk.gdk.INTERP_HYPER)
+		pixbuf = pixbuf.scale_simple(24, 24, GdkPixbuf.InterpType.HYPER)
 	if for_properties:
 		return pixbuf, path
 	return pixbuf
