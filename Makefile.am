@@ -9,6 +9,8 @@ CLEANFILES += mozo
 
 DISTCLEANFILES = ChangeLog
 
+DISTCHECK_CONFIGURE_FLAGS = --disable-icon-update
+
 mozo: mozo.in
 	sed -e s!\@PYTHON\@!@PYTHON@!		\
 	    -e s!\@PYOPTIONS\@!-OOt!		\
