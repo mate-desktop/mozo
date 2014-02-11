@@ -18,6 +18,7 @@ mozo: mozo.in
 mozo: Makefile
 
 EXTRA_DIST = \
+	autogen.sh \
 	mozo.in
 
 ChangeLog:
