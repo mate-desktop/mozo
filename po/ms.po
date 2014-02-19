@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Umarzuki Bin Mochlis Moktar <umar@umarzuki.org>, 2010.
+# abuyop <abuyop@gmail.com>, 2013
+# Umarzuki Bin Mochlis Moktar <umar@umarzuki.org>, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"PO-Revision-Date: 2013-08-12 08:06+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (http://www.transifex.com/projects/p/MATE/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ms\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -36,15 +37,15 @@ msgstr "Menu Utama"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Tukar aplikasi mana yang akan ditunjukkan pada menu utama"
+msgstr "Tukar aplikasi yang ditunjukkan pada menu utama"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr "Kembali_kan semula ke Asal"
+msgstr "Ke_mbali ke Asal"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Pulihkan semula rekabentuk dasar menu"
+msgstr "Pulih bentangan menu lalai"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
@@ -68,16 +69,16 @@ msgstr "Pemi_sah Baru"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
-msgstr "Alihkan ke Atas"
+msgstr "Alih ke Atas"
 
 #: ../data/mozo.ui.h:10
 msgid "Move Down"
-msgstr "Alihkan ke Bawah"
+msgstr "Alih ke Bawah"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Kembalikan semula perubahan kepada asal?"
+msgstr "Kembalikan Semula Perubahan?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Kembalikan semula semua menu ke tetapan asal?"
+msgstr "Kembalikan semua menu ke tetapan asal?"
