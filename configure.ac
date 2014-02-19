@@ -4,7 +4,7 @@ AC_PREREQ(2.53)
 AC_INIT(mozo, 1.7.0, http://www.mate-desktop.org)
 AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE([1.7 dist-xz no-dist-gzip])
+AM_INIT_AUTOMAKE([1.7 dist-xz no-dist-gzip check-news])
 AM_MAINTAINER_MODE
 
 m4_define(required_pygobject_version, 2.15.1)
