@@ -5,13 +5,14 @@
 # Translators:
 # Licio Fonseca <licio@ubuntu.com>, 2006
 # Pygmalion, 2014
+# Pygmalion, 2014
 # Og Maciel <ogmaciel@ubuntu.com>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2014-01-13 04:38+0000\n"
+"PO-Revision-Date: 2014-02-20 16:53+0000\n"
 "Last-Translator: Pygmalion\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/MATE/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +35,7 @@ msgstr "Item"
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Menu principal"
+msgstr "Menu Principal"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
@@ -42,7 +43,7 @@ msgstr "Altere quais aplicativos são mostrados no menu principal"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr "_Restaurar ao original"
+msgstr "_Restaurar ao Original"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
@@ -58,27 +59,27 @@ msgstr "It_ens:"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "_Novo menu"
+msgstr "_Novo Menu"
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
-msgstr "No_vo item"
+msgstr "No_vo Item"
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr "Novo _separador"
+msgstr "Novo _Separador"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
-msgstr "Mover para cima"
+msgstr "Mover para Cima"
 
 #: ../data/mozo.ui.h:10
 msgid "Move Down"
-msgstr "Mover para baixo"
+msgstr "Mover para Baixo"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Reverter alterações?"
+msgstr "Reverter Alterações?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
