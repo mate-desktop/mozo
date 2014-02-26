@@ -6,6 +6,7 @@ Terminal=false
 Type=Application
 StartupNotify=false
 Categories=Settings;DesktopSettings;
+Keywords=application;main;menu;editor;customize;MATE;
 OnlyShowIn=MATE;
 Icon=mozo
 X-MATE-Bugzilla-Bugzilla=MATE
