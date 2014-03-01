@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ihar Hrachyshka <iharh@mate.org>, 2007.
+# Ihar Hrachyshka <iharh@mate.org>, 2007
+# meequz <meequz@gmail.com>, 2014
+# meequz <meequz@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2014-02-28 07:33+0000\n"
+"Last-Translator: meequz <meequz@gmail.com>\n"
+"Language-Team: Belarusian (http://www.transifex.com/projects/p/MATE/language/be/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: be\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../Mozo/MainWindow.py:164
 msgid "Name"
@@ -28,15 +30,15 @@ msgstr "Паказаць"
 
 #: ../Mozo/MainWindow.py:188
 msgid "Item"
-msgstr "Элемэнт"
+msgstr "Элемент"
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Галоўнае мэню"
+msgstr "Галоўнае меню"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Вызначыць, якія праграмы трэба паказваць у мэню"
+msgstr "Вызначыць, якія праграмы трэба паказваць у меню"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
@@ -44,27 +46,27 @@ msgstr "_Вярнуцца да пачатковага"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Вярнуць звычайны расклад мэню"
+msgstr "Вярнуць стандартны расклад меню"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
-msgstr "_Мэню:"
+msgstr "_Меню:"
 
 #: ../data/mozo.ui.h:5
 msgid "It_ems:"
-msgstr "_Элемэнты:"
+msgstr "Эл_ементы:"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "_Новае мэню"
+msgstr "_Новае меню"
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
-msgstr "_Новы элемэнт"
+msgstr "Но_вы элемент"
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr "Новы _падзяляльнік"
+msgstr "Новы _межнік"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
@@ -76,8 +78,8 @@ msgstr "Пасунуць долу"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Скасаваць зьмены?"
+msgstr "Скасаваць змены?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Вярнуць пачатковую наладку для ўсіх мэню?"
+msgstr "Вярнуць пачатковыя настáўленні для ўсіх меню?"
