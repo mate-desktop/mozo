@@ -1,3 +1,10 @@
+1.10.1
+
+  * Fix wrong highlighting while moving menu items
+    when separators are present.
+  * Remove deprecated GTK properties
+  * Fix help link
+
 1.10.0
 
   * Translations update
