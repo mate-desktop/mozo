@@ -550,7 +550,7 @@ class MenuEditor:
 		elif item == None and name == None:
 			raise Exception('New menu items need a name')
 		else:
-			file_id = util.getUniqueFileId(name, '.desktop')
+			file_id = util.getUniqueFileId(item.get_name().replace(os.sep, '-'), '.desktop')
 			keyfile = util.DesktopParser()
 		if icon:
 			keyfile.set('Icon', icon)
