@@ -547,8 +547,10 @@ class MainWindow:
 			content_type = file_info.get_content_type()
 			if content_type == 'application/x-desktop':
 				input_stream = myfile.read()
-				open('/tmp/mozo-dnd.desktop', 'w').write(input_stream.read())
-				parser = util.DesktopParser('/tmp/mozo-dnd.desktop')
+				(fd, tmppath) = tempfile.mkstemp(prefix='mozo-dnd', suffix='.desktop')
+                                with open(fd, "w") as f:
+                                    f.write(input_stream.read())
+				parser = util.DesktopParser(tmppath)
 				self.editor.createItem(parent, parser.get('Icon'), parser.get('Name', self.editor.locale), parser.get('Comment', self.editor.locale), parser.get('Exec'), parser.get('Terminal'), before, after)
 			elif content_type in ('application/x-shellscript', 'application/x-executable'):
 				self.editor.createItem(parent, None, os.path.split(file_path)[1].strip(), None, file_path.replace('file://', '').strip(), False, before, after)
