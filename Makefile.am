@@ -12,8 +12,8 @@ DISTCLEANFILES = ChangeLog
 DISTCHECK_CONFIGURE_FLAGS = --disable-icon-update
 
 mozo: mozo.in
-	sed -e s!\@PYTHON\@!@PYTHON@!		\
-	    -e s!\@PYOPTIONS\@!-OOt!		\
+	$(AM_V_GEN)sed -e s!\@PYTHON\@!@PYTHON@!	\
+	    -e s!\@PYOPTIONS\@!-OOt!			\
 	    < $< > $@
 mozo: Makefile
 
