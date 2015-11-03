@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Ir0nsh007er <eerlemm@hotmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-09 13:09+0200\n"
+"PO-Revision-Date: 2015-10-08 14:33+0000\n"
+"Last-Translator: Ir0nsh007er <eerlemm@hotmail.com>\n"
+"Language-Team: French (Canada) (http://www.transifex.com/mate/MATE/language/fr_CA/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_CA\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../Mozo/MainWindow.py:166
+msgid "Name"
+msgstr "Nom"
+
+#: ../Mozo/MainWindow.py:182
+msgid "Show"
+msgstr "Montrer"
+
+#: ../Mozo/MainWindow.py:190
+msgid "Item"
+msgstr ""
+
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr ""
+
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr ""
+
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr ""
+
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr ""
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "It_ems:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr ""
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr ""
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr ""
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr ""
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr ""
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr ""
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr ""
