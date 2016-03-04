@@ -19,8 +19,7 @@
 import os
 import matemenu
 import gi
-from gi.repository import Gtk
-from gi.repository import GdkPixbuf
+from gi.repository import Gtk, Gdk, GdkPixbuf
 from ConfigParser import ConfigParser
 
 class DesktopParser(ConfigParser):

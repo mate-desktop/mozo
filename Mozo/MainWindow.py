@@ -18,12 +18,10 @@
 
 import matemenu
 import gi
-gi.require_version('Gtk', "3.0")
-from gi.repository import Gtk
-from gi.repository import Gdk
-from gi.repository import GdkPixbuf
-from gi.repository import GObject
-from gi.repository import Gio
+gi.require_version('Gtk', '3.0')
+gi.require_version('Gdk', '3.0')
+from gi.repository import GLib, Gio
+from gi.repository import Gtk, Gdk, GdkPixbuf
 import cgi, os
 import gettext
 import subprocess
@@ -85,12 +83,13 @@ class MainWindow:
 
 	def menuChanged(self, *a):
 		if self.timer:
-			GObject.source_remove(self.timer)
+			GLib.Source.remove(self.timer)
 			self.timer = None
-		self.timer = GObject.timeout_add(3, self.loadUpdates)
+		self.timer = GLib.timeout_add(3, self.loadUpdates)
 
 	def loadUpdates(self):
 		if not self.allow_update:
+			self.timer = None
 			return False
 		menu_tree = self.tree.get_object('menu_tree')
 		item_tree = self.tree.get_object('item_tree')
@@ -106,7 +105,7 @@ class MainWindow:
 				item_id = items[iter][3].get_desktop_file_id()
 				update_items = True
 			elif items[iter][3].get_type() == matemenu.TYPE_SEPARATOR:
-				item_id = items.get_path(iter)
+				item_id = items.get_path(iter).to_string()
 				update_items = True
 		menus, iter = menu_tree.get_selection().get_selected()
 		update_menus = False
@@ -152,6 +151,7 @@ class MainWindow:
 					self.on_item_tree_cursor_changed(item_tree)
 					break
 				i += 1
+		self.timer = None
 		return False
 
 	def findMenu(self, menus, path, iter, menu_id):
@@ -306,7 +306,7 @@ class MainWindow:
 			parent = menus[iter][2]
 		file_path = os.path.join(util.getUserDirectoryPath(), util.getUniqueFileId('mozo-made', '.directory'))
 		process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
-		GObject.timeout_add(100, self.waitForNewMenuProcess, process, parent.menu_id, file_path)
+		GLib.timeout_add(100, self.waitForNewMenuProcess, process, parent.menu_id, file_path)
 
 	def on_new_item_button_clicked(self, button):
 		menu_tree = self.tree.get_object('menu_tree')
@@ -319,7 +319,7 @@ class MainWindow:
 			parent = menus[iter][2]
 		file_path = os.path.join(util.getUserItemPath(), util.getUniqueFileId('mozo-made', '.desktop'))
 		process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
-		GObject.timeout_add(100, self.waitForNewItemProcess, process, parent.menu_id, file_path)
+		GLib.timeout_add(100, self.waitForNewItemProcess, process, parent.menu_id, file_path)
 
 	def on_new_separator_button_clicked(self, button):
 		item_tree = self.tree.get_object('item_tree')
@@ -390,7 +390,7 @@ class MainWindow:
 		if file_path not in self.edit_pool:
 			self.edit_pool.append(file_path)
 			process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
-			GObject.timeout_add(100, self.waitForEditProcess, process, file_path)
+			GLib.timeout_add(100, self.waitForEditProcess, process, file_path)
 
 	def on_menu_tree_cursor_changed(self, treeview):
 		menus, iter = treeview.get_selection().get_selected()
@@ -420,7 +420,7 @@ class MainWindow:
 			if position not in types:
 				context.finish(False, False, etime)
 				return False
-			if selection.target in ('MOZO_ITEM_ROW', 'MOZO_MENU_ROW'):
+			if str(selection.get_target()) in ('MOZO_ITEM_ROW', 'MOZO_MENU_ROW'):
 				if self.drag_data == None:
 					return False
 				item = self.drag_data
@@ -463,13 +463,13 @@ class MainWindow:
 			self.tree.get_object('edit_properties').set_sensitive(False)
 
 		# If first item...
-		if items.get_path(iter)[0] == 0:
+		if items.get_path(iter).get_indices()[0] == 0:
 			self.tree.get_object('move_up_button').set_sensitive(False)
 		else:
 			self.tree.get_object('move_up_button').set_sensitive(True)
 
 		# If last item...
-		if items.get_path(iter)[0] == (len(items)-1):
+		if items.get_path(iter).get_indices()[0] == (len(items)-1):
 			self.tree.get_object('move_down_button').set_sensitive(False)
 		else:
 			self.tree.get_object('move_down_button').set_sensitive(True)
@@ -508,7 +508,7 @@ class MainWindow:
 	def on_item_tree_drag_data_received(self, treeview, context, x, y, selection, info, etime):
 		items = treeview.get_model()
 		types = (Gtk.TreeViewDropPosition.BEFORE,	Gtk.TreeViewDropPosition.INTO_OR_BEFORE)
-		if selection.target == 'MOZO_ITEM_ROW':
+		if str(selection.get_target()) == 'MOZO_ITEM_ROW':
 			drop_info = treeview.get_dest_row_at_pos(x, y)
 			before = None
 			after = None
@@ -532,7 +532,7 @@ class MainWindow:
 			elif item.get_type() == matemenu.TYPE_SEPARATOR:
 				self.editor.moveSeparator(item, item.get_parent(), before, after)
 			context.finish(True, True, etime)
-		elif selection.target == 'text/plain':
+		elif str(selection.get_target()) == 'text/plain':
 			if selection.data == None:
 				return False
 			menus, iter = self.tree.get_object('menu_tree').get_selection().get_selected()
@@ -577,7 +577,7 @@ class MainWindow:
 			return
 		path = items.get_path(iter)
 		#at top, can't move up
-		if path[0] == 0:
+		if path.get_indices()[0] == 0:
 			return
 		item = items[path][3]
 		before = items[(path[0] - 1,)][3]
@@ -595,7 +595,7 @@ class MainWindow:
 			return
 		path = items.get_path(iter)
 		#at bottom, can't move down
-		if path[0] == (len(items) - 1):
+		if path.get_indices()[0] == (len(items) - 1):
 			return
 		item = items[path][3]
 		after = items[path][3]
@@ -628,7 +628,7 @@ class MainWindow:
 			self.tree.get_object('mainwindow').hide()
 		except:
 			pass
-		GObject.timeout_add(10, self.quit)
+		GLib.timeout_add(10, self.quit)
 
 	def on_style_set(self, *args):
 		self.loadUpdates()
