@@ -478,7 +478,7 @@ class MenuEditor:
 
 	def __getPath(self, menu, path=None):
 		if not path:
-                        path = menu.tree.root.get_menu_id()
+			path = menu.tree.root.get_menu_id()
 		if menu.get_parent():
 			path = self.__getPath(menu.get_parent(), path)
 			path += '/'
