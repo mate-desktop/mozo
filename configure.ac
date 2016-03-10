@@ -34,8 +34,8 @@ AC_CONFIG_FILES([
         po/Makefile.in
         Mozo/Makefile
         data/mozo.desktop.in
-	data/Makefile
-	data/icons/Makefile
+        data/Makefile
+        data/icons/Makefile
         ])
 
 AC_OUTPUT
