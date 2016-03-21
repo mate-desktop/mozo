@@ -630,7 +630,7 @@ class MainWindow:
 			pass
 		GLib.timeout_add(10, self.quit)
 
-	def on_style_set(self, *args):
+	def on_style_updated(self, *args):
 		self.loadUpdates()
 
 	def quit(self):
