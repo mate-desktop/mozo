@@ -1,10 +1,8 @@
-1.13.1
+1.14.0
 
- * port to GTK+3 and make it buildable only for GTK+3
-
-1.13.0
-
- * bump version
+  * Move to GTK+3 and GObject Introspection, drop old
+    PyGTK-related code
+  * Translations update
 
 1.12.0
 
