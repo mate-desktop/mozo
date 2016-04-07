@@ -4,31 +4,31 @@
 # 
 # Translators:
 # Ihar Hrachyshka <iharh@mate.org>, 2007
-# meequz <meequz@gmail.com>, 2014
-# meequz <meequz@gmail.com>, 2014
+# Mihail Varantsou <meequz@gmail.com>, 2014
+# Mihail Varantsou <meequz@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
 "PO-Revision-Date: 2014-02-28 07:33+0000\n"
-"Last-Translator: meequz <meequz@gmail.com>\n"
-"Language-Team: Belarusian (http://www.transifex.com/projects/p/MATE/language/be/)\n"
+"Last-Translator: Mihail Varantsou <meequz@gmail.com>\n"
+"Language-Team: Belarusian (http://www.transifex.com/mate/MATE/language/be/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: be\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Назва"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Паказаць"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Элемент"
 

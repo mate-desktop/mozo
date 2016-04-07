@@ -3,31 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Erdal <erdal.ronahi@gmail.com>, 2009.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# erdalronahi <erdal.ronahi@gmail.com>, 2009
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
 "PO-Revision-Date: 2012-03-14 13:30+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Kurdish (http://www.transifex.com/projects/p/MATE/language/ku/)\n"
+"Language-Team: Kurdish (http://www.transifex.com/mate/MATE/language/ku/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ku\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Nav"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Nîşandan"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Hêman"
 

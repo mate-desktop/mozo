@@ -3,30 +3,30 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Zohar Snir <zoharsnir@gmail.com>, 2006.
+# Zohar Snir <zoharsnir@gmail.com>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:28+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
+"PO-Revision-Date: 2015-12-25 20:15+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Hebrew (http://www.transifex.com/projects/p/MATE/language/he/)\n"
+"Language-Team: Hebrew (http://www.transifex.com/mate/MATE/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "שם"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "הצג"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "פריט"
 

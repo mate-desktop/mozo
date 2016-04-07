@@ -3,48 +3,49 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Iestyn Pryce <dylunio@gmail.com>, 2009.
+# ciaran, 2014-2015
+# Iestyn Pryce <dylunio@gmail.com>, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:28+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
+"PO-Revision-Date: 2015-12-17 21:19+0000\n"
+"Last-Translator: ciaran\n"
+"Language-Team: Welsh (http://www.transifex.com/mate/MATE/language/cy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cy\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Enw"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Dangos"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Eitem"
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Prif Ddewislen"
+msgstr "Prif ddewislen"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Newid pa rhaglenni i ddangos yn y prif ddewislen"
+msgstr "Newid pa raglenni i'w dangos yn y brif ddewislen"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr "_Dychwelid i'r Gwreiddiol"
+msgstr "_Dychwelyd i'r gwreiddiol"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Adfer i'r cynllun dewislen rhagosodedig"
+msgstr "Adfer cynllun rhagosodedig y ddewislen"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
@@ -56,28 +57,28 @@ msgstr "_Eitemau:"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "Dewislen _Newydd"
+msgstr "Dewislen _newydd"
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
-msgstr "Eitem Ne_wydd"
+msgstr "Eitem ne_wydd"
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr "_Gwahanydd Newydd"
+msgstr "_Gwahanydd newydd"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
-msgstr "Symud i Fyny "
+msgstr "Symud i fyny "
 
 #: ../data/mozo.ui.h:10
 msgid "Move Down"
-msgstr "Symud i Lawr"
+msgstr "Symud i lawr"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Dychwelid o'r Newidiadau"
+msgstr "Dychwelyd?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Dychwelid pob dewislen i'w ffurfweddiad gwreiddiol?"
+msgstr "Dychwelyd i osodiadau gwreiddiol pob dewislen?"

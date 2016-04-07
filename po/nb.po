@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-09 13:09+0200\n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
 "PO-Revision-Date: 2016-02-10 20:00+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/mate/MATE/language/nb/)\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Mozo/MainWindow.py:166
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Navn"
 
-#: ../Mozo/MainWindow.py:182
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Vis"
 
-#: ../Mozo/MainWindow.py:190
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Oppføring"
 

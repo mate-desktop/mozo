@@ -3,30 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006
+# Mislav E. Lukšić <meluksic@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:28+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Croatian (http://www.transifex.com/projects/p/MATE/language/hr/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
+"PO-Revision-Date: 2014-05-02 07:28+0000\n"
+"Last-Translator: Mislav E. Lukšić <meluksic@yahoo.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/mate/MATE/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hr\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Naziv"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Prikaži"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Stavka"
 
@@ -36,15 +37,15 @@ msgstr "Glavni izbornik"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Izmjenite popis programa na ovom izborniku"
+msgstr "Odredi programe za prikaz u glavnom izborniku "
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr "Vrati na originalno"
+msgstr "_Vrati na izvorno"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Vrati na uobičajeni raspored izbornika"
+msgstr "Obnovi zadani raspored izbornika"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
@@ -52,7 +53,7 @@ msgstr "_Izbornici:"
 
 #: ../data/mozo.ui.h:5
 msgid "It_ems:"
-msgstr "_Stavke:"
+msgstr "St_avke:"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
@@ -64,7 +65,7 @@ msgstr "Nova _stavka"
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr "Nova _razmaknica"
+msgstr "Novi _razdjelnik"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
@@ -76,8 +77,8 @@ msgstr "Pomakni dolje"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Vratiti promjene?"
+msgstr "Poništiti promjene?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Vratiti sve izbornike na originalne postavke?"
+msgstr "Vratiti sve izbornike na izvorne postavke?"

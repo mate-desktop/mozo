@@ -3,32 +3,34 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Francisco Javier F. Serrador <serrador@cvs.mate.org>, 2006.
-# Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007.
-# Jorge González <jorgegonz@svn.mate.org>, 200, 2009.
+# Adolfo Jayme Barrientos, 2014
+# Emiliano Fascetti, 2015
+# Francisco Javier F. Serrador <serrador@cvs.mate.org>, 2006
+# Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007
+# Jorge González <jorgegonz@svn.mate.org>, 200, 2009
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:29+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: Spanish (Castilian) (http://www.transifex.com/projects/p/MATE/language/es/)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
+"PO-Revision-Date: 2015-01-05 00:56+0000\n"
+"Last-Translator: Emiliano Fascetti\n"
+"Language-Team: Spanish (http://www.transifex.com/mate/MATE/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Nombre"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Mostrar"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Elemento"
 

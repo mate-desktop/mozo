@@ -3,30 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Oublieuse, 2006.
+# Alan Monfort <alan.monfort@free.fr>, 2015
+# Oublieuse, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
-"POT-Creation-Date: 2012-03-14 14:26+0100\n"
-"PO-Revision-Date: 2012-03-14 13:30+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
+"PO-Revision-Date: 2015-11-03 19:29+0000\n"
+"Last-Translator: Alan Monfort <alan.monfort@free.fr>\n"
+"Language-Team: Breton (http://www.transifex.com/mate/MATE/language/br/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: br\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../Mozo/MainWindow.py:164
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Anv"
 
-#: ../Mozo/MainWindow.py:180
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Diskouez"
 
-#: ../Mozo/MainWindow.py:188
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr "Ergorenn"
 
@@ -36,7 +37,7 @@ msgstr "Pennlañser"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Kemmañ roll an arloadoù diskouezet el lañser meur"
+msgstr "Kemmañ roll an arloadoù diskouezet war al lañser meur"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
@@ -44,7 +45,7 @@ msgstr "_Distreiñ d'ar stumm-orin"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Adlakaat ar pajennaozañ lañser dre ziouer"
+msgstr "Assav pajennaozañ al lañser dre ziouer"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
@@ -56,7 +57,7 @@ msgstr "_Ergorennoù :"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "Lañser nevez"
+msgstr "Lañser _nevez"
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
@@ -76,8 +77,8 @@ msgstr "Davit an traoñ"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Dizober kemmoù ?"
+msgstr "Dizober ar c'hemmoù ?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Adlakaat an holl lañseroù er stumm-orin"
+msgstr "Adlakaat an holl lañseroù en o stummoù-orin ?"

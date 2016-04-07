@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-09 13:09+0200\n"
+"POT-Creation-Date: 2016-03-27 23:17+0300\n"
 "PO-Revision-Date: 2015-10-08 14:33+0000\n"
 "Last-Translator: Ir0nsh007er <eerlemm@hotmail.com>\n"
 "Language-Team: French (Canada) (http://www.transifex.com/mate/MATE/language/fr_CA/)\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../Mozo/MainWindow.py:166
+#: ../Mozo/MainWindow.py:174
 msgid "Name"
 msgstr "Nom"
 
-#: ../Mozo/MainWindow.py:182
+#: ../Mozo/MainWindow.py:190
 msgid "Show"
 msgstr "Montrer"
 
-#: ../Mozo/MainWindow.py:190
+#: ../Mozo/MainWindow.py:198
 msgid "Item"
 msgstr ""
 
