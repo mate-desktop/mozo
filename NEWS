@@ -1,3 +1,7 @@
+1.15.0
+
+  * Translations update
+
 1.14.0
 
   * Move to GTK+3 and GObject Introspection, drop old
