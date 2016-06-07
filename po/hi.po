@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009
-# Rajesh Ranjan <rranjan@redhat.com>, 2006
+# Rajesh Ranjan <rajesh672@gmail.com>, 2006
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
