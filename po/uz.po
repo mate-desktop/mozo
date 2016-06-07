@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# muzaffar habibullayev <muzaffarlearner@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-27 23:17+0300\n"
-"PO-Revision-Date: 2012-03-14 13:27+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-04-15 13:07+0000\n"
+"Last-Translator: muzaffar habibullayev <muzaffarlearner@gmail.com>\n"
 "Language-Team: Uzbek (http://www.transifex.com/mate/MATE/language/uz/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,60 +24,60 @@ msgstr "Nomi"
 
 #: ../Mozo/MainWindow.py:190
 msgid "Show"
-msgstr ""
+msgstr "Ko'rsatish"
 
 #: ../Mozo/MainWindow.py:198
 msgid "Item"
-msgstr ""
+msgstr "Narsa"
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr ""
+msgstr "Asosiy Menyu"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr ""
+msgstr "Asosiy Menyuda ko'rinuvchi dasturlarni o'zgartirish"
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr ""
+msgstr "Asliga _Qaytarish"
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr ""
+msgstr "Standart Menyuni tiklash"
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
-msgstr ""
+msgstr "_Menyular:"
 
 #: ../data/mozo.ui.h:5
 msgid "It_ems:"
-msgstr ""
+msgstr "Na_rsalar:"
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr ""
+msgstr "_Yangi Menyu"
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
-msgstr ""
+msgstr "Ya_ngi Narsa"
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr ""
+msgstr "Yangi _Ajratuvchi"
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
-msgstr ""
+msgstr "Yuqoriga koʻtarish"
 
 #: ../data/mozo.ui.h:10
 msgid "Move Down"
-msgstr ""
+msgstr "Pastga Tushirish"
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr ""
+msgstr "O'zgarishlar qaytarilsinmi?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr ""
+msgstr "Barcha menyular asliga qaytarilsinmi?"
