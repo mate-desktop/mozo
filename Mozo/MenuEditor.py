@@ -16,6 +16,7 @@
 #   License along with this library; if not, write to the Free Software
 #   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
+import codecs
 import os
 import re
 import xml.dom.minidom
@@ -68,7 +69,7 @@ class MenuEditor:
 
 	def save(self, from_loading=False):
 		for menu in ('applications', 'settings'):
-			with open(getattr(self, menu).path, 'w') as f:
+			with codecs.open(getattr(self, menu).path, 'w', 'utf-8') as f:
 				f.write(getattr(self, menu).dom.toprettyxml())
 		if not from_loading:
 			self.__loadMenus()
@@ -147,13 +148,23 @@ class MenuEditor:
 		for file_path in files:
 			new_path = file_path.rsplit('.', 1)[0]
 			redo_path = util.getUniqueRedoFile(new_path)
-			data = open(new_path).read()
-			open(redo_path, 'w').write(data)
-			data = open(file_path).read()
-			open(new_path, 'w').write(data)
+
+			f_file_path = codecs.open(new_path, 'r', 'utf-8')
+			f_new_path = codecs.open(new_path, 'rw', 'utf-8')
+			f_redo_path = codecs.open(redo_path, 'rw', 'utf-8')
+
+			data = f_new_path.read()
+			f_redo_path.write(data)
+			data = f_file_path.read()
+			f_new_path.write(data)
+
+			f_file_path.close()
+			f_new_path.close()
+			f_redo_path.close()
+
 			os.unlink(file_path)
 			redo.append(redo_path)
-		#reload DOM to make changes stick
+		# reload DOM to make changes stick
 		for name in ('applications', 'settings'):
 			menu = getattr(self, name)
 			try:
@@ -171,12 +182,18 @@ class MenuEditor:
 		for file_path in files:
 			new_path = file_path.rsplit('.', 1)[0]
 			undo_path = util.getUniqueUndoFile(new_path)
-			data = open(new_path).read()
-			open(undo_path, 'w').write(data)
-			data = open(file_path).read()
-			open(new_path, 'w').write(data)
+			f_file_path = codecs.open(new_path, 'r', 'utf-8')
+			f_new_path = codecs.open(new_path, 'rw', 'utf-8')
+			f_undo_path = codecs.open(undo_path, 'rw', 'utf-8')
+			data = f_new_path.read()
+			f_undo_path.write(data)
+			data = f_file_path.read()
+			f_new_path.write(data)
 			os.unlink(file_path)
 			undo.append(undo_path)
+			f_file_path.close()
+			f_new_path.close()
+			f_undo_path.close()
 		#reload DOM to make changes stick
 		for name in ('applications', 'settings'):
 			menu = getattr(self, name)
@@ -430,9 +447,11 @@ class MenuEditor:
 					file_path = item.get_desktop_file_path()
 			else:
 				continue
-			data = open(file_path).read()
+			with codecs.open(file_path, 'r', 'utf-8') as f:
+				data = f.read()
 			undo_path = util.getUniqueUndoFile(file_path)
-			open(undo_path, 'w').write(data)
+			with codecs.open(undo_path, 'w', 'utf-8') as f:
+				f.write(data)
 			self.__undo[-1].append(undo_path)
 
 	def __getMenu(self, item):
