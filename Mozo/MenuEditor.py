@@ -530,11 +530,19 @@ class MenuEditor:
 		return element
 
 	def __addXmlMenuElement(self, element, name, dom):
+		if isinstance(name, bytes):
+			name = name.decode('utf-8')
+
 		node = dom.createElement('Menu')
 		self.__addXmlTextElement(node, 'Name', name, dom)
 		return element.appendChild(node)
 
 	def __addXmlTextElement(self, element, name, text, dom):
+		if isinstance(name, bytes):
+			name = name.decode('utf-8')
+		if isinstance(text, bytes):
+			text = text.decode('utf-8')
+
 		for temp in element.childNodes:
 			if temp.nodeName == name:
 				if temp.childNodes[0].nodeValue == text:
@@ -545,6 +553,9 @@ class MenuEditor:
 		return element.appendChild(node)
 
 	def __addXmlFilename(self, element, dom, filename, type = 'Include'):
+		if isinstance(filename, bytes):
+			filename = filename.decode('utf-8')
+
 		# remove old filenames
 		for node in self.__getXmlNodesByName(['Include', 'Exclude'], element):
 			if node.childNodes[0].nodeName == 'Filename' and node.childNodes[0].childNodes[0].nodeValue == filename:
