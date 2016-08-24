@@ -1,3 +1,11 @@
+1.14.1
+
+  * Fix crash and erasing of menu file when processing
+    non-ASCII character
+  * Fix crash on invalid XML file
+  * Always encode with UTF-8 before writing XML file
+  * Translations update
+
 1.14.0
 
   * Move to GTK+3 and GObject Introspection, drop old
