@@ -1,30 +1,17 @@
-1.15.1
+1.16.0
 
+  * Add Properties and Delete buttons
+  * Fix several drag-and-drop issues
+  * Fix crash when .desktop file has slash in the name
+  * Some more fixes and cleanups
   * Translations update
-  * quit on delete event
-  * MainWindow: make property editing work again
-  * MainWindow: refactor button sensitivity code a bit
-  * MainWindow: don't select the destination directory after a drop
-  * MainWindow: fix drag/drop handlers
-  * util: remove unused for_properties
-  * add properties and a delete button
-  * fix minidom related crashes (#29)
-  * encode with utf-8 before writing XML
-  * remove dumb explicit checks
-  * MenuEditor: be resilient to bad XML
-  * move revert item code close together
-  * MenuEditor: undo and redo lists should not be global
-  * MenuEditor: put removeWhitespaceNodes somewhere else
-  * MenuEditor: fix up XML writing
-  * MenuEditor: remove regex madness
-  * util: use GLib for xdg basedir spec stuff
-  * MenuEditor: scrap unused __deleteItem
-  * util: replace our own DesktopParser with GKeyFile
-  * fix several drag-and-drop usability issues
-  * don't crash when a desktop has a / in the name
 
-1.15.0
+1.14.1
 
+  * Fix crash and erasing of menu file when processing
+    non-ASCII character
+  * Fix crash on invalid XML file
+  * Always encode with UTF-8 before writing XML file
   * Translations update
 
 1.14.0
