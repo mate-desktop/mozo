@@ -1,8 +1,8 @@
-1.17.0
+### mozo 1.17.0
 
   * Translations update
 
-1.16.0
+### mozo 1.16.0
 
   * Add Properties and Delete buttons
   * Fix several drag-and-drop issues
@@ -10,7 +10,7 @@
   * Some more fixes and cleanups
   * Translations update
 
-1.14.1
+### mozo 1.14.1
 
   * Fix crash and erasing of menu file when processing
     non-ASCII character
@@ -18,31 +18,31 @@
   * Always encode with UTF-8 before writing XML file
   * Translations update
 
-1.14.0
+### mozo 1.14.0
 
   * Move to GTK+3 and GObject Introspection, drop old
     PyGTK-related code
   * Translations update
   * Fix Changelog generation
 
-1.12.0
+### mozo 1.12.0
 
   * Enable startup notification
   * Add silent rules
   * Some bugfixes
 
-1.10.1
+### mozo 1.10.1
 
   * Fix wrong highlighting while moving menu items
     when separators are present.
   * Remove deprecated GTK properties
   * Fix help link
 
-1.10.0
+### mozo 1.10.0
 
   * Translations update
 
-1.8.0
+### mozo 1.8.0
 
   * Tarball renamed to mozo
   * Update translations
