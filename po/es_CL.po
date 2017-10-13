@@ -4,13 +4,13 @@
 # 
 # Translators:
 # David Ríos <drios9420@gmail.com>, 2014
-# Pablo Roberto “Jristz” Lezaeta Reyes <prflr88@gmail.com>, 2012
+# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-27 23:17+0300\n"
-"PO-Revision-Date: 2014-05-10 05:29+0000\n"
+"PO-Revision-Date: 2017-09-19 13:00+0000\n"
 "Last-Translator: David Ríos <drios9420@gmail.com>\n"
 "Language-Team: Spanish (Chile) (http://www.transifex.com/mate/MATE/language/es_CL/)\n"
 "MIME-Version: 1.0\n"
