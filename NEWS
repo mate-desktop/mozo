@@ -1,5 +1,9 @@
 ### mozo 1.19.0
 
+  * Translations update
+  * Restore Polish translation credits from GNOME
+  * remove ancient NEWS.GNOME
+
 ### mozo 1.18.0
 
   * NEWS: use consistent, project wide, markdown-like formatting
