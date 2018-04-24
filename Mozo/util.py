@@ -86,8 +86,8 @@ def getUniqueUndoFile(filepath):
 def getItemPath(file_id):
     for path in GLib.get_system_data_dirs():
         file_path = os.path.join(path, 'applications', file_id)
-    if os.path.isfile(file_path):
-        return file_path
+        if os.path.isfile(file_path):
+            return file_path
     return None
 
 def getUserItemPath():
