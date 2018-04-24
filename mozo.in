@@ -22,16 +22,15 @@ import sys
 from Mozo.MainWindow import MainWindow
 
 def main():
-	try:
-		from Mozo import config
-		datadir = config.pkgdatadir
-		version = config.VERSION
-	except:
-		datadir = './data/'
-		version = '1.7.0'
-	app = MainWindow(datadir, version, sys.argv)
-	app.run()
+    try:
+        from Mozo import config
+        datadir = config.pkgdatadir
+        version = config.VERSION
+    except:
+        datadir = './data/'
+        version = '1.7.0'
+    app = MainWindow(datadir, version, sys.argv)
+    app.run()
 
 if __name__ == '__main__':
-	main()
-
+    main()
