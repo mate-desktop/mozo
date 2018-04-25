@@ -22,8 +22,9 @@ import re
 import xml.dom.minidom
 import xml.parsers.expat
 import locale
-import matemenu
-from gi.repository import GLib
+import gi
+gi.require_version('MateMenu', '2.0')
+from gi.repository import MateMenu, GLib
 from Mozo import util
 
 class Menu:
@@ -32,40 +33,55 @@ class Menu:
     path = None
     dom = None
 
-class MenuEditor:
+class MenuEditor(object):
     def __init__(self):
         self.locale = locale.getdefaultlocale()[0]
-        self.__loadMenus()
         self.__undo = []
         self.__redo = []
+        self.applications = Menu()
+        self.applications.tree = MateMenu.Tree.new('mate-applications.menu', MateMenu.TreeFlags.SHOW_EMPTY|MateMenu.TreeFlags.INCLUDE_EXCLUDED|MateMenu.TreeFlags.INCLUDE_NODISPLAY|MateMenu.TreeFlags.SHOW_ALL_SEPARATORS|MateMenu.TreeFlags.SORT_DISPLAY_NAME)
+        self.applications.visible_tree = MateMenu.Tree.new('mate-applications.menu', MateMenu.TreeFlags.SORT_DISPLAY_NAME)
+        self.applications.tree.sort_key = MateMenu.TreeFlags.SORT_DISPLAY_NAME
+        self.applications.visible_tree.sort_key = MateMenu.TreeFlags.SORT_DISPLAY_NAME
+        self.applications.tree.connect('changed', self.menuChanged)
 
+        self.settings = Menu()
+        self.settings.tree = MateMenu.Tree.new('mate-settings.menu', MateMenu.TreeFlags.SHOW_EMPTY|MateMenu.TreeFlags.INCLUDE_EXCLUDED|MateMenu.TreeFlags.INCLUDE_NODISPLAY|MateMenu.TreeFlags.SHOW_ALL_SEPARATORS|MateMenu.TreeFlags.SORT_DISPLAY_NAME)
+        self.settings.visible_tree = MateMenu.Tree.new('mate-settings.menu', MateMenu.TreeFlags.SORT_DISPLAY_NAME)
+        self.settings.tree.sort_key = MateMenu.TreeFlags.SORT_DISPLAY_NAME
+        self.settings.visible_tree.sort_key = MateMenu.TreeFlags.SORT_DISPLAY_NAME
+        self.settings.tree.connect('changed', self.menuChanged)
+        self.load()
+        self.__loadMenus()
 
     def __loadMenus(self):
-        self.applications = Menu()
-        self.applications.tree = matemenu.lookup_tree('mate-applications.menu', matemenu.FLAGS_SHOW_EMPTY|matemenu.FLAGS_INCLUDE_EXCLUDED|matemenu.FLAGS_INCLUDE_NODISPLAY|matemenu.FLAGS_SHOW_ALL_SEPARATORS)
-        self.applications.visible_tree = matemenu.lookup_tree('mate-applications.menu')
-        self.applications.tree.sort_key = matemenu.SORT_DISPLAY_NAME
-        self.applications.visible_tree.sort_key = matemenu.SORT_DISPLAY_NAME
-        self.applications.path = os.path.join(util.getUserMenuPath(), self.applications.tree.get_menu_file())
+        self.applications.path = os.path.join(util.getUserMenuPath(), self.applications.tree.props.menu_basename)
         try:
             self.applications.dom = xml.dom.minidom.parse(self.applications.path)
         except (IOError, xml.parsers.expat.ExpatError):
             self.applications.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.applications.tree))
         util.removeWhitespaceNodes(self.applications.dom)
 
-        self.settings = Menu()
-        self.settings.tree = matemenu.lookup_tree('mate-settings.menu', matemenu.FLAGS_SHOW_EMPTY|matemenu.FLAGS_INCLUDE_EXCLUDED|matemenu.FLAGS_INCLUDE_NODISPLAY|matemenu.FLAGS_SHOW_ALL_SEPARATORS)
-        self.settings.visible_tree = matemenu.lookup_tree('mate-settings.menu')
-        self.settings.tree.sort_key = matemenu.SORT_DISPLAY_NAME
-        self.settings.visible_tree.sort_key = matemenu.SORT_DISPLAY_NAME
-        self.settings.path = os.path.join(util.getUserMenuPath(), self.settings.tree.get_menu_file())
+        self.settings.path = os.path.join(util.getUserMenuPath(), self.settings.tree.props.menu_basename)
         try:
             self.settings.dom = xml.dom.minidom.parse(self.settings.path)
         except (IOError, xml.parsers.expat.ExpatError):
             self.settings.dom = xml.dom.minidom.parseString(util.getUserMenuXml(self.settings.tree))
         util.removeWhitespaceNodes(self.settings.dom)
-
         self.save(True)
+
+    def load(self):
+        if not self.applications.tree.load_sync():
+            raise ValueError("can not load menu tree %r" % (self.applications.tree.props.menu_basename,))
+        if not self.settings.tree.load_sync():
+            raise ValueError("can not load menu tree %r" % (self.settings.tree.props.menu_basename,))
+        if not self.applications.visible_tree.load_sync():
+            raise ValueError("can not load menu tree %r" % (self.applications.visible_tree.props.menu_basename,))
+        if not self.settings.visible_tree.load_sync():
+            raise ValueError("can not load menu tree %r" % (self.settings.visible_tree.props.menu_basename,))
+
+    def menuChanged(self, *a):
+        self.load()
 
     def save(self, from_loading=False):
         for menu in ('applications', 'settings'):
@@ -91,8 +107,8 @@ class MenuEditor:
     def revert(self):
         for name in ('applications', 'settings'):
             menu = getattr(self, name)
-            self.revertTree(menu.tree.root)
-            path = os.path.join(util.getUserMenuPath(), menu.tree.get_menu_file())
+            self.revertTree(menu.tree.get_root_directory())
+            path = os.path.join(util.getUserMenuPath(), menu.tree.props.menu_basename)
             try:
                 os.unlink(path)
             except OSError:
@@ -108,11 +124,16 @@ class MenuEditor:
         self.save()
 
     def revertTree(self, menu):
-        for child in menu.get_contents():
-            if child.get_type() == matemenu.TYPE_DIRECTORY:
-                self.revertTree(child)
-            elif child.get_type() == matemenu.TYPE_ENTRY:
-                self.revertItem(child)
+        item_iter = menu.iter()
+        item_type = item_iter.next()
+        while item_type != MateMenu.TreeItemType.INVALID:
+            if item_type == MateMenu.TreeItemType.DIRECTORY:
+                item = item_iter.get_directory()
+                self.revertTree(item)
+            elif item_type == MateMenu.TreeItemType.ENTRY:
+                item = item_iter.get_entry()
+                self.revertItem(item)
+            item_type = item_iter.next()
         self.revertMenu(menu)
 
     def revertItem(self, item):
@@ -206,29 +227,55 @@ class MenuEditor:
 
     def getMenus(self, parent=None):
         if parent is None:
-            yield self.applications.tree.root
-            yield self.settings.tree.root
+            yield self.applications.tree.get_root_directory()
+            yield self.settings.tree.get_root_directory()
         else:
-            for menu in parent.get_contents():
-                if menu.get_type() == matemenu.TYPE_DIRECTORY:
-                    yield (menu, self.__isVisible(menu))
+            item_iter = parent.iter()
+            item_type = item_iter.next()
+            while item_type != MateMenu.TreeItemType.INVALID:
+                if item_type == MateMenu.TreeItemType.DIRECTORY:
+                    item = item_iter.get_directory()
+                    yield (item, self.__isVisible(item))
+                item_type = item_iter.next()
+
+    def getContents(self, item):
+        contents = []
+        item_iter = item.iter()
+        item_type = item_iter.next()
+
+        while item_type != MateMenu.TreeItemType.INVALID:
+            item = None
+            if item_type == MateMenu.TreeItemType.DIRECTORY:
+                item = item_iter.get_directory()
+            elif item_type == MateMenu.TreeItemType.ENTRY:
+                item = item_iter.get_entry()
+            elif item_type == MateMenu.TreeItemType.HEADER:
+                item = item_iter.get_header()
+            elif item_type == MateMenu.TreeItemType.ALIAS:
+                item = item_iter.get_alias()
+            elif item_type == MateMenu.TreeItemType.SEPARATOR:
+                item = item_iter.get_separator()
+            if item:
+                contents.append(item)
+            item_type = item_iter.next()
+        return contents
 
     def getItems(self, menu):
-        for item in menu.get_contents():
-            if item.get_type() == matemenu.TYPE_SEPARATOR:
-                yield (item, True)
+        for item in self.getContents(menu):
+            if isinstance(item, MateMenu.TreeSeparator):
+                yield(item, True)
             else:
-                if item.get_type() == matemenu.TYPE_ENTRY and item.get_desktop_file_id()[-19:] == '-usercustom.desktop':
-                    continue
+                if isinstance(item, MateMenu.TreeEntry) and item.get_desktop_file_id()[-19:] == '-usercustom.desktop':
+                     continue
                 yield (item, self.__isVisible(item))
 
     def canRevert(self, item):
-        if item.get_type() == matemenu.TYPE_ENTRY:
+        if isinstance(item, MateMenu.TreeEntry):
             if util.getItemPath(item.get_desktop_file_id()) is not None:
                 path = util.getUserItemPath()
                 if os.path.isfile(os.path.join(path, item.get_desktop_file_id())):
                     return True
-        elif item.get_type() == matemenu.TYPE_DIRECTORY:
+        elif isinstance(item, MateMenu.TreeDirectory):
             if item.get_desktop_file_path():
                 file_id = os.path.split(item.get_desktop_file_path())[1]
             else:
@@ -241,7 +288,7 @@ class MenuEditor:
 
     def setVisible(self, item, visible):
         dom = self.__getMenu(item).dom
-        if item.get_type() == matemenu.TYPE_ENTRY:
+        if isinstance(item, MateMenu.TreeEntry):
             self.__addUndo([self.__getMenu(item), item])
             menu_xml = self.__getXmlMenu(self.__getPath(item.get_parent()), dom.documentElement, dom)
             if visible:
@@ -250,10 +297,12 @@ class MenuEditor:
             else:
                 self.__addXmlFilename(menu_xml, dom, item.get_desktop_file_id(), 'Exclude')
             self.__addXmlTextElement(menu_xml, 'AppDir', util.getUserItemPath(), dom)
-        elif item.get_type() == matemenu.TYPE_DIRECTORY:
+        elif isinstance(item, MateMenu.TreeDirectory):
             self.__addUndo([self.__getMenu(item), item])
+            item_iter = item.iter()
+            first_child_type = item_iter.next()
             #don't mess with it if it's empty
-            if len(item.get_contents()) == 0:
+            if first_child_type == MateMenu.TreeItemType.INVALID:
                 return
             menu_xml = self.__getXmlMenu(self.__getPath(item), dom.documentElement, dom)
             for node in self.__getXmlNodesByName(['Deleted', 'NotDeleted'], menu_xml):
@@ -264,7 +313,7 @@ class MenuEditor:
 
     def createItem(self, parent, before, after, **kwargs):
         file_id = self.__writeItem(None, **kwargs)
-        self.insertExternalItem(file_id, parent.menu_id, before, after)
+        self.insertExternalItem(file_id, parent.get_menu_id(), before, after)
 
     def insertExternalItem(self, file_id, parent_id, before=None, after=None):
         parent = self.__findMenu(parent_id)
@@ -292,7 +341,8 @@ class MenuEditor:
 
     def editItem(self, item, icon, name, comment, command, use_term, parent=None, final=True):
         #if nothing changed don't make a user copy
-        if icon == item.get_icon() and name == item.get_display_name() and comment == item.get_comment() and command == item.get_exec() and use_term == item.get_launch_in_terminal():
+        app_info = item.get_app_info()
+        if icon == app_info.get_icon() and name == app_info.get_display_name() and comment == item.get_comment() and command == item.get_exec() and use_term == item.get_launch_in_terminal():
             return
         #hack, item.get_parent() seems to fail a lot
         if not parent:
@@ -328,7 +378,8 @@ class MenuEditor:
 
         util.fillKeyFile(keyfile, dict(Categories=[], Hidden=False))
 
-        file_id = util.getUniqueFileId(item.get_name().replace(os.sep, '-'), '.desktop')
+        app_info = item.get_app_info()
+        file_id = util.getUniqueFileId(app_info.get_name().replace(os.sep, '-'), '.desktop')
         out_path = os.path.join(util.getUserItemPath(), file_id)
 
         contents, length = keyfile.to_data()
@@ -409,7 +460,7 @@ class MenuEditor:
 
     def deleteSeparator(self, item):
         parent = item.get_parent()
-        contents = parent.get_contents()
+        contents = self.getContents(parent)
         contents.remove(item)
         layout = self.__createLayout(contents)
         dom = self.__getMenu(parent).dom
@@ -435,13 +486,13 @@ class MenuEditor:
                         file_path = util.getDirectoryPath(item[1])
                 else:
                     continue
-            elif item.get_type() == matemenu.TYPE_DIRECTORY:
+            elif isinstance(item, MateMenu.TreeDirectory):
                 if item.get_desktop_file_path() is None:
                     continue
                 file_path = os.path.join(util.getUserDirectoryPath(), os.path.split(item.get_desktop_file_path())[1])
                 if not os.path.isfile(file_path):
                     file_path = item.get_desktop_file_path()
-            elif item.get_type() == matemenu.TYPE_ENTRY:
+            elif isinstance(item, MateMenu.TreeEntry):
                 file_path = os.path.join(util.getUserItemPath(), item.get_desktop_file_id())
                 if not os.path.isfile(file_path):
                     file_path = item.get_desktop_file_path()
@@ -465,39 +516,45 @@ class MenuEditor:
                     root = root.get_parent()
                 else:
                     break
-        if root.menu_id == self.applications.tree.root.menu_id:
+        if root.get_menu_id() == self.applications.tree.get_root_directory().get_menu_id():
             return self.applications
         return self.settings
 
     def __findMenu(self, menu_id, parent=None):
         if parent is None:
-            menu = self.__findMenu(menu_id, self.applications.tree.root)
+            menu = self.__findMenu(menu_id, self.applications.tree.get_root_directory())
             if menu is not None:
                 return menu
             else:
-                return self.__findMenu(menu_id, self.settings.tree.root)
-        if menu_id == self.applications.tree.root.menu_id:
-            return self.applications.tree.root
-        if menu_id == self.settings.tree.root.menu_id:
-            return self.settings.tree.root
-        for item in parent.get_contents():
-            if item.get_type() == matemenu.TYPE_DIRECTORY:
-                if item.menu_id == menu_id:
+                return self.__findMenu(menu_id, self.settings.tree.get_root_directory())
+        if menu_id == self.applications.tree.get_root_directory().get_menu_id():
+            return self.applications.tree.get_root_directory()
+        if menu_id == self.settings.tree.get_root_directory().get_menu_id():
+            return self.settings.tree.get_root_directory()
+
+        item_iter = parent.iter()
+        item_type = item_iter.next()
+        while item_type != MateMenu.TreeItemType.INVALID:
+            if item_type == MateMenu.TreeItemType.DIRECTORY:
+                item = item_iter.get_directory()
+                if item.get_menu_id() == menu_id:
                     return item
                 menu = self.__findMenu(menu_id, item)
                 if menu is not None:
                     return menu
+            item_type = item_iter.next()
 
     def __isVisible(self, item):
-        if item.get_type() == matemenu.TYPE_ENTRY:
-            return not (item.get_is_excluded() or item.get_is_nodisplay())
+        if isinstance(item, MateMenu.TreeEntry):
+            app_info = item.get_app_info()
+            return not (item.get_is_excluded() or app_info.get_nodisplay())
         menu = self.__getMenu(item)
         if menu == self.applications:
-            root = self.applications.visible_tree.root
+            root = self.applications.visible_tree.get_root_directory()
         elif menu == self.settings:
-            root = self.settings.visible_tree.root
-        if item.get_type() == matemenu.TYPE_DIRECTORY:
-            if self.__findMenu(item.menu_id, root) is None:
+            root = self.settings.visible_tree.get_root_directory()
+        if isinstance(item, MateMenu.TreeDirectory):
+            if self.__findMenu(item.get_menu_id(), root) is None:
                 return False
         return True
 
@@ -682,11 +739,11 @@ class MenuEditor:
                     layout.parseMenuname(item[1])
                 elif item[0] == 'Item':
                     layout.parseFilename(item[1])
-            elif item.get_type() == matemenu.TYPE_DIRECTORY:
+            elif isinstance(item, MateMenu.TreeDirectory):
                 layout.parseMenuname(item.get_menu_id())
-            elif item.get_type() == matemenu.TYPE_ENTRY:
+            elif isinstance(item, MateMenu.TreeEntry):
                 layout.parseFilename(item.get_desktop_file_id())
-            elif item.get_type() == matemenu.TYPE_SEPARATOR:
+            elif isinstance(item, MateMenu.TreeSeparator):
                 layout.parseSeparator()
         layout.order.append(['Merge', 'files'])
         return layout
@@ -695,20 +752,24 @@ class MenuEditor:
         xml_parent = self.__getXmlMenu(self.__getPath(parent), dom.documentElement, dom)
         self.__addXmlFilename(xml_parent, dom, file_id, 'Include')
 
+    def moveItem(self, parent, item, before=None, after=None):
+        self.__positionItem(parent, item, before=before, after=after)
+        self.save()
+
     def __positionItem(self, parent, item, before=None, after=None):
+        contents = self.getContents(parent)
         if after:
-            index = parent.contents.index(after) + 1
+            index = contents.index(after) + 1
         elif before:
-            index = parent.contents.index(before)
+            index = contents.index(before)
         else:
             # append the item to the list
-            index = len(parent.contents)
-        contents = parent.contents
+            index = len(contents)
         #if this is a move to a new parent you can't remove the item
         if item in contents:
             # decrease the destination index, if we shorten the list
             if (before and (contents.index(item) < index)) \
-                or (after and (contents.index(item) < index - 1)):
+                    or (after and (contents.index(item) < index - 1)):
                 index -= 1
             contents.remove(item)
         contents.insert(index, item)

@@ -18,9 +18,9 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext package])
 AM_GLIB_GNU_GETTEXT
 IT_PROG_INTLTOOL([0.40.0])
 
-AM_PATH_PYTHON_VERSION(2.7, 2.7.0)
+AM_PATH_PYTHON(3.5)
 
-PKG_CHECK_MODULES(MOZO, libmate-menu >= 1.1.0 pygobject-3.0)
+PKG_CHECK_MODULES(MOZO, libmate-menu >= 1.21.0 pygobject-3.0)
 
 AC_ARG_ENABLE(icon-update, AC_HELP_STRING([--disable-icon-update],
 					[Disable icon cache update]))

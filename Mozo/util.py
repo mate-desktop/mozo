@@ -18,24 +18,26 @@
 
 import os
 import xml.dom.minidom
-import matemenu
 import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('MateMenu', '2.0')
 from collections import Sequence
 from gi.repository import GLib, Gtk, Gdk, GdkPixbuf
+from gi.repository import MateMenu
 
 DESKTOP_GROUP = GLib.KEY_FILE_DESKTOP_GROUP
 KEY_FILE_FLAGS = GLib.KeyFileFlags.KEEP_COMMENTS | GLib.KeyFileFlags.KEEP_TRANSLATIONS
 
 def fillKeyFile(keyfile, items):
-    for key, item in items.iteritems():
+    for key, item in items.items():
         if item is None:
             continue
 
         if isinstance(item, bool):
             keyfile.set_boolean(DESKTOP_GROUP, key, item)
-        elif isinstance(item, Sequence):
+        elif isinstance(item, Sequence) and not isinstance(item, (str, bytes, bytearray)):
             keyfile.set_string_list(DESKTOP_GROUP, key, item)
-        elif isinstance(item, basestring):
+        elif isinstance(item, str):
             keyfile.set_string(DESKTOP_GROUP, key, item)
 
 def getUniqueFileId(name, extension):
@@ -123,49 +125,55 @@ def getSystemMenuPath(file_id):
     return None
 
 def getUserMenuXml(tree):
-    system_file = getSystemMenuPath(tree.get_menu_file())
-    name = tree.root.get_menu_id()
+    system_file = getSystemMenuPath(os.path.basename(tree.get_canonical_menu_path()))
+    name = tree.get_root_directory().get_menu_id()
     menu_xml = "<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>\n"
     menu_xml += "<Menu>\n  <Name>" + name + "</Name>\n  "
     menu_xml += "<MergeFile type=\"parent\">" + system_file +       "</MergeFile>\n</Menu>\n"
     return menu_xml
 
 def getIcon(item):
-    pixbuf, path = None, None
-    if item is None:
-        return None
-    if isinstance(item, str):
+    iconName = None
+    gicon = None
+    if isinstance(item, MateMenu.TreeDirectory):
+        gicon = item.get_icon()
+    elif isinstance(item, MateMenu.TreeEntry):
+        app_info = item.get_app_info()
+        gicon = app_info.get_icon()
+    elif isinstance(item, str):
         iconName = item
-    else:
-        iconName = item.get_icon()
     if iconName and not '/' in iconName and iconName[-3:] in ('png', 'svg', 'xpm'):
         iconName = iconName[:-4]
+
+    pixbuf = None
     icon_theme = Gtk.IconTheme.get_default()
-    try:
-        pixbuf = icon_theme.load_icon(iconName, 24, 0)
-        path = icon_theme.lookup_icon(iconName, 24, 0).get_filename()
-    except:
-        if iconName and '/' in iconName:
-            try:
-                pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(iconName, 24, 24)
-                path = iconName
-            except:
-                pass
-        if pixbuf is None:
-            if item.get_type() == matemenu.TYPE_DIRECTORY:
-                iconName = 'mate-fs-directory'
-            elif item.get_type() == matemenu.TYPE_ENTRY:
-                iconName = 'application-default-icon'
-            try:
-                pixbuf = icon_theme.load_icon(iconName, 24, 0)
-                path = icon_theme.lookup_icon(iconName, 24, 0).get_filename()
-            except:
-                return None
+    if gicon:
+        info = icon_theme.lookup_by_gicon(gicon, 24, 0)
+        try:
+            pixbuf = info.load_icon()
+        except:
+            pass
+    elif iconName is not None:
+        try:
+            pixbuf = icon_theme.load_icon(iconName, 24, 0)
+        except:
+            if iconName and '/' in iconName:
+                try:
+                    pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(iconName, 24, 24)
+                except:
+                    pass
+    # fallback to use image-missing icon
+    if pixbuf is None:
+        try:
+            pixbuf = icon_theme.load_icon('image-missing', 24, 0)
+        except:
+            pass
     if pixbuf is None:
         return None
-    if pixbuf.get_width() != 24 or pixbuf.get_height() != 24:
-        pixbuf = pixbuf.scale_simple(24, 24, GdkPixbuf.InterpType.HYPER)
-    return pixbuf
+    else:
+        if pixbuf.get_width() != 24 or pixbuf.get_height() != 24:
+            pixbuf = pixbuf.scale_simple(24, 24, GdkPixbuf.InterpType.HYPER)
+        return pixbuf
 
 def removeWhitespaceNodes(node):
     remove_list = []
