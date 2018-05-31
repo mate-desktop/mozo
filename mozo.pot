@@ -6,26 +6,26 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-18 16:57+0100\n"
+"POT-Creation-Date: 2018-05-31 21:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Mozo/MainWindow.py:178
+#: ../Mozo/MainWindow.py:176
 msgid "Name"
 msgstr ""
 
-#: ../Mozo/MainWindow.py:194
+#: ../Mozo/MainWindow.py:193
 msgid "Show"
 msgstr ""
 
-#: ../Mozo/MainWindow.py:202
+#: ../Mozo/MainWindow.py:201
 msgid "Item"
 msgstr ""
 
