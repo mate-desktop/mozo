@@ -1,39 +1,38 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Haval Abdulkarim <haval.abdulkarim@gmail.com>, 2014
-# Rasti K5 <rasti.khdhr@gmail.com>, 2016
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-27 23:17+0300\n"
-"PO-Revision-Date: 2017-09-23 20:27+0000\n"
-"Last-Translator: Rasti K5 <rasti.khdhr@gmail.com>\n"
-"Language-Team: Kurdish (Iraq) (http://www.transifex.com/mate/MATE/language/ku_IQ/)\n"
+"POT-Creation-Date: 2018-03-18 16:57+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Rasti K5 <rasti.khdhr@gmail.com>, 2018\n"
+"Language-Team: Kurdish (Iraq) (https://www.transifex.com/mate/teams/13566/ku_IQ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ku_IQ\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Mozo/MainWindow.py:174
+#: ../Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "ناو"
 
-#: ../Mozo/MainWindow.py:190
+#: ../Mozo/MainWindow.py:194
 msgid "Show"
 msgstr "پیشاندان"
 
-#: ../Mozo/MainWindow.py:198
+#: ../Mozo/MainWindow.py:202
 msgid "Item"
 msgstr "بڕگە"
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "لیستەی سەرەکی"
+msgstr "پێڕستی سەرەکی"
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
