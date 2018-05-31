@@ -1,3 +1,10 @@
+### mozo 1.21.0
+
+    sync with transifex
+    drop acinclude.m4 which is not needed anymore
+    Support new mate-menus api
+    just reindent python code
+
 ### mozo 1.20.0
 
   * Translations update
