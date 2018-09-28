@@ -9,8 +9,6 @@ config.py: config.py.in
 		-e s!\@prefix\@!$(prefix)!		\
 		-e s!\@datadir\@!$(datadir)!		\
 		-e s!\@pkgdatadir\@!$(pkgdatadir)!	\
-		-e s!\@libexecdir\@!$(libexecdir)!	\
-		-e s!\@libdir\@!$(libdir)!		\
 		-e s!\@PACKAGE\@!$(PACKAGE)!		\
 		-e s!\@VERSION\@!$(VERSION)!		\
 		-e s!\@GETTEXT_PACKAGE\@!$(GETTEXT_PACKAGE)!	\
