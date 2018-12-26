@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2018
+# David Ríos <drios9420@gmail.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-18 16:55+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-03-12 09:39+0000\n"
 "Last-Translator: David Ríos <drios9420@gmail.com>, 2018\n"
 "Language-Team: Spanish (Chile) (https://www.transifex.com/mate/teams/13566/es_CL/)\n"
 "MIME-Version: 1.0\n"
