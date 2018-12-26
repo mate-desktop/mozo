@@ -9,7 +9,9 @@ CLEANFILES += mozo
 
 DISTCLEANFILES = ChangeLog
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-icon-update
+DISTCHECK_CONFIGURE_FLAGS = \
+	--disable-icon-update \
+	CFLAGS='-Wno-deprecated-declarations'
 
 mozo: mozo.in
 	$(AM_V_GEN)sed -e s!\@PYTHON\@!@PYTHON@!	\
