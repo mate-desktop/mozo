@@ -3,13 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-18 16:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2018-05-31 21:27+0200\n"
+"PO-Revision-Date: 2018-03-12 09:38+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
 "Language-Team: Xhosa (https://www.transifex.com/mate/teams/13566/xh/)\n"
 "MIME-Version: 1.0\n"
@@ -18,15 +21,15 @@ msgstr ""
 "Language: xh\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../Mozo/MainWindow.py:178
+#: ../Mozo/MainWindow.py:176
 msgid "Name"
 msgstr "Igama"
 
-#: ../Mozo/MainWindow.py:194
+#: ../Mozo/MainWindow.py:193
 msgid "Show"
 msgstr ""
 
-#: ../Mozo/MainWindow.py:202
+#: ../Mozo/MainWindow.py:201
 msgid "Item"
 msgstr "Umba"
 

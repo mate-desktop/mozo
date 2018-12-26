@@ -4,8 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Joe Hansen <joedalton2@yahoo.dk>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Slimane AMIRI, 2018
 # 
 #, fuzzy
 msgid ""
@@ -14,74 +13,74 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-31 21:27+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
-"Language-Team: Danish (https://www.transifex.com/mate/teams/13566/da/)\n"
+"Last-Translator: Slimane AMIRI, 2018\n"
+"Language-Team: Kabyle (https://www.transifex.com/mate/teams/13566/kab/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
+"Language: kab\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../Mozo/MainWindow.py:176
 msgid "Name"
-msgstr "Navn"
+msgstr "Isem"
 
 #: ../Mozo/MainWindow.py:193
 msgid "Show"
-msgstr "Vis"
+msgstr ""
 
 #: ../Mozo/MainWindow.py:201
 msgid "Item"
-msgstr "Punkt"
+msgstr ""
 
 #: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
 msgid "Main Menu"
-msgstr "Hovedmenu"
+msgstr ""
 
 #: ../data/mozo.desktop.in.in.h:2
 msgid "Change which applications are shown on the main menu"
-msgstr "Tilret hvilke programmer der vises i hovedmenuen"
+msgstr ""
 
 #: ../data/mozo.ui.h:1
 msgid "_Revert to Original"
-msgstr "Gendan til original"
+msgstr ""
 
 #: ../data/mozo.ui.h:3
 msgid "Restore the default menu layout"
-msgstr "Genskab det oprindelige menuudseende"
+msgstr ""
 
 #: ../data/mozo.ui.h:4
 msgid "_Menus:"
-msgstr "_Menuer:"
+msgstr ""
 
 #: ../data/mozo.ui.h:5
 msgid "It_ems:"
-msgstr "Punkt_er:"
+msgstr ""
 
 #: ../data/mozo.ui.h:6
 msgid "_New Menu"
-msgstr "_Ny menu"
+msgstr ""
 
 #: ../data/mozo.ui.h:7
 msgid "Ne_w Item"
-msgstr "_Nyt punkt"
+msgstr ""
 
 #: ../data/mozo.ui.h:8
 msgid "New _Separator"
-msgstr "Ny _separator"
+msgstr ""
 
 #: ../data/mozo.ui.h:9
 msgid "Move Up"
-msgstr "Flyt op"
+msgstr ""
 
 #: ../data/mozo.ui.h:10
 msgid "Move Down"
-msgstr "Flyt ned"
+msgstr ""
 
 #: ../data/mozo.ui.h:11
 msgid "Revert Changes?"
-msgstr "Fortryd ændringer?"
+msgstr ""
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Gendan alle menuer til standardopsætninger?"
+msgstr ""
