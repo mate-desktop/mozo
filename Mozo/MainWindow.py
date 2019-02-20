@@ -593,7 +593,7 @@ class MainWindow:
         item = items[path][3]
         before = items[(path.get_indices()[0] - 1,)][3]
         if isinstance(item, MateMenu.TreeEntry):
-            self.editor.moveItem(item, item.get_parent(), before=before)
+            self.editor.moveItem(item.get_parent(), item, before=before)
         elif isinstance(item, MateMenu.TreeDirectory):
             self.editor.moveMenu(item, item.get_parent(), before=before)
         elif isinstance(item, MateMenu.TreeSeparator):
@@ -611,7 +611,7 @@ class MainWindow:
         item = items[path][3]
         after = items[path][3]
         if isinstance(item, MateMenu.TreeEntry):
-            self.editor.moveItem(item, item.get_parent(), after=after)
+            self.editor.moveItem(item.get_parent(), item, after=after)
         elif isinstance(item, MateMenu.TreeDirectory):
             self.editor.moveMenu(item, item.get_parent(), after=after)
         elif isinstance(item, MateMenu.TreeSeparator):
