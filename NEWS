@@ -1,3 +1,9 @@
+### mozo 1.22.0
+
+  * Translations update
+  * Fix menu entry can not move
+  * Initialize Travis CI support
+
 ### mozo 1.21.1
 
   * Translations update
