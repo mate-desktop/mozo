@@ -84,4 +84,4 @@ msgstr "Quere reverter os cambios?"
 
 #: ../data/mozo.ui.h:12
 msgid "Revert all menus to original settings?"
-msgstr "Quere reverter todos os menús á configuración orixinal?"
+msgstr "Quere reverter todos os menús aos axustes orixinais?"
