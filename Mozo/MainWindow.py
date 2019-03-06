@@ -535,7 +535,7 @@ class MainWindow:
                 path = (len(items) - 1,)
                 after = items[path][3]
             if isinstance(item, MateMenu.TreeEntry):
-                self.editor.moveItem(item, destination, before, after)
+                self.editor.moveItem(destination, item, before, after)
             elif isinstance(item, MateMenu.TreeDirectory):
                 if not self.editor.moveMenu(item, destination, before, after):
                     self.loadUpdates()
