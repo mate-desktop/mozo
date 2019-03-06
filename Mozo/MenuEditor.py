@@ -374,11 +374,9 @@ class MenuEditor:
 		if menu.get_parent() != new_parent:
 			dom = self.__getMenu(menu).dom
 			path = self.__getPath(menu)
-			root_path = path[0]
-			xml_root = self.__getXmlMenu(root_path, dom.documentElement, dom)
-			old_path = path[1:]
-			new_path = self.__getPath(new_parent)[1:] + [menu.get_menu_id()]
-			self.__addXmlMove(xml_root, '/'.join(old_path), '/'.join(new_path), dom)
+			xml_root = self.__getXmlMenu(path[0], dom.documentElement, dom)
+			new_path = self.__getPath(new_parent) + [menu.get_menu_id()]
+			self.__addXmlMove(xml_root, '/'.join(path), '/'.join(new_path), dom)
 		self.__positionItem(new_parent, menu, before, after)
 		self.__addUndo([self.__getMenu(new_parent),])
 		self.save()
@@ -521,6 +519,8 @@ class MenuEditor:
 		return None
 
 	def __getXmlMenu(self, path, element, dom):
+		if isinstance(path, str):
+			return element
 		for name in path:
 			found = self.__getXmlMenuPart(element, name)
 			if found is not None:
