@@ -309,7 +309,7 @@ class MainWindow:
             parent = menus[iter][2]
         file_path = os.path.join(util.getUserDirectoryPath(), util.getUniqueFileId('mozo-made', '.directory'))
         process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
-        GLib.timeout_add(100, self.waitForNewMenuProcess, process, parent.menu_id, file_path)
+        GLib.timeout_add(100, self.waitForNewMenuProcess, process, parent.get_menu_id(), file_path)
 
     def on_new_item_button_clicked(self, button):
         menu_tree = self.tree.get_object('menu_tree')
@@ -322,7 +322,7 @@ class MainWindow:
             parent = menus[iter][2]
         file_path = os.path.join(util.getUserItemPath(), util.getUniqueFileId('mozo-made', '.desktop'))
         process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
-        GLib.timeout_add(100, self.waitForNewItemProcess, process, parent.menu_id, file_path)
+        GLib.timeout_add(100, self.waitForNewItemProcess, process, parent.get_menu_id(), file_path)
 
     def on_new_separator_button_clicked(self, button):
         item_tree = self.tree.get_object('item_tree')
