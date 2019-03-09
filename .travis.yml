@@ -1,0 +1,92 @@
+# vim: set ts=2 sts=2 sw=2 expandtab :
+dist: xenial
+sudo: required
+language: bash
+services:
+  - docker
+
+before_install:
+  - curl -Ls -o docker-build https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/docker-build
+  - chmod +x docker-build
+
+install:
+  - sudo apt-get install -y python3-pip python3-setuptools
+  - sudo pip3 install --upgrade pip
+  - sudo pip install PyGithub
+  - ./docker-build --name ${DISTRO} --config .travis.yml --install
+
+script:
+  - ./docker-build --name ${DISTRO} --verbose --config .travis.yml --build autotools
+
+env:
+  - DISTRO="archlinux/base"
+  - DISTRO="debian:sid"
+  - DISTRO="fedora:29"
+  - DISTRO="ubuntu:18.10"
+
+##########################################################
+# THE FOLLOWING LINES IS USED BY docker-build
+##########################################################
+requires:
+  archlinux:
+    # Useful URL: https://git.archlinux.org/svntogit/community.git/tree/mozo
+    - gcc
+    - git
+    - gobject-introspection
+    - gtk3
+    - intltool
+    - make
+    - mate-common
+    - mate-menus
+    - python-gobject
+    - python2
+    - which
+
+  debian:
+    # Useful URL: https://github.com/mate-desktop/debian-packages
+    # Useful URL: https://salsa.debian.org/debian-mate-team/mozo
+    - gettext
+    - git
+    - gobject-introspection
+    - intltool
+    - libmate-menu-dev
+    - make
+    - mate-common
+    - python-gi-dev
+    - python2
+
+  fedora:
+    # Useful URL: https://src.fedoraproject.org/cgit/rpms/mozo.git
+    - desktop-file-utils
+    - gcc
+    - git
+    - make
+    - mate-common 
+    - mate-menus-devel
+    - pygobject3-devel
+    - python2-devel
+    - redhat-rpm-config
+
+  ubuntu:
+    - gettext
+    - git
+    - gobject-introspection
+    - intltool
+    - libmate-menu-dev
+    - make
+    - mate-common
+    - python-gi-dev
+    - python2
+
+variables:
+  - CFLAGS="-Wall -Werror=format-security"
+  - PYTHON=python2
+
+before_scripts:
+  - if [ ${DISTRO_NAME} == "debian" ];then
+  -     curl -Ls -o debian.sh https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/debian.sh
+  -     bash ./debian.sh
+  - fi
+
+after_scripts:
+  - make distcheck
