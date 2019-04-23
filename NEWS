@@ -1,3 +1,9 @@
+### mozo 1.22.1
+
+  * Translations update
+  * Fix creating new menus and items
+  * Fix moving a menu corrupting the menu
+
 ### mozo 1.22.0
 
   * Translations update
