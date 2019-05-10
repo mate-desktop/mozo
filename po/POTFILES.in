@@ -1,5 +1,4 @@
-[encoding: UTF-8]
 Mozo/MainWindow.py
 Mozo/MenuEditor.py
 data/mozo.desktop.in.in
-[type: gettext/glade]data/mozo.ui
+data/mozo.ui
