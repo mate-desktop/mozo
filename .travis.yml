@@ -52,6 +52,7 @@ requires:
   debian:
     # Useful URL: https://github.com/mate-desktop/debian-packages
     # Useful URL: https://salsa.debian.org/debian-mate-team/mozo
+    - autopoint
     - gettext
     - git
     - gobject-introspection
@@ -68,13 +69,14 @@ requires:
     - gcc
     - git
     - make
-    - mate-common 
+    - mate-common
     - mate-menus-devel
     - pygobject3-devel
     - python3-devel
     - redhat-rpm-config
 
   ubuntu:
+    - autopoint
     - gettext
     - git
     - gobject-introspection
