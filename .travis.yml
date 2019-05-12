@@ -16,7 +16,7 @@ install:
   - ./docker-build --name ${DISTRO} --config .travis.yml --install
 
 script:
-  - ./docker-build --name ${DISTRO} --verbose --config .travis.yml --build autotools
+  - ./docker-build --name ${DISTRO} --verbose --config .travis.yml --build meson --build autotools
 
 deploy:
   - provider: script
@@ -46,6 +46,7 @@ requires:
     - make
     - mate-common
     - mate-menus
+    - meson
     - python-gobject
     - which
 
@@ -60,6 +61,7 @@ requires:
     - libmate-menu-dev
     - make
     - mate-common
+    - meson
     - python-gi-dev
     - python3
 
@@ -71,6 +73,7 @@ requires:
     - make
     - mate-common
     - mate-menus-devel
+    - meson
     - pygobject3-devel
     - python3-devel
     - redhat-rpm-config
@@ -84,6 +87,7 @@ requires:
     - libmate-menu-dev
     - make
     - mate-common
+    - meson
     - python-gi-dev
     - python3
 
@@ -91,12 +95,6 @@ variables:
   - CFLAGS="-Wall -Werror=format-security"
 
 before_scripts:
-  - if [ ${DISTRO_NAME} == "debian" ];then
-  -     curl -Ls -o debian.sh https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/debian.sh
-  -     bash ./debian.sh
-  - fi
-
-  - cd ${START_DIR}
   - if [ ! -d mate-menus-build ]; then
   -     git clone --depth 1  https://github.com/mate-desktop/mate-menus.git mate-menus-build
   - fi
@@ -113,14 +111,22 @@ before_scripts:
   - make install
 
 after_scripts:
-  - make distcheck
+  - if [ ${BUILD_TYPE} == "autotools" ];then
+  -     if [ ${DISTRO_NAME} == "debian" ];then
+  -         curl -Ls -o debian.sh https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/debian.sh
+  -         bash ./debian.sh
+  -     fi
+  -     make distcheck
+  - elif [ -d _build ];then
+  -     ninja -C _build dist
+  - fi
 
 releases:
   draft: false
   prerelease: false
-  checksum: true
+  checksum: false
   file_glob: true
-  files: mozo-*.tar.xz
+  files: _build/meson-dist/mozo-*.tar.xz
   github_release:
     tags: true
     overwrite: true
