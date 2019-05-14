@@ -28,7 +28,7 @@ import os
 import gettext
 import subprocess
 import shutil
-import urllib
+import urllib.parse
 try:
     from Mozo import config
     gettext.bindtextdomain(config.GETTEXT_PACKAGE,config.localedir)
@@ -543,7 +543,7 @@ class MainWindow:
                 self.editor.moveSeparator(item, destination, before, after)
             context.finish(True, True, etime)
         elif str(selection.get_target()) == 'text/plain':
-            if selection.data is None:
+            if selection.get_data() is None:
                 return False
             menus, iter = self.tree.get_object('menu_tree').get_selection().get_selected()
             parent = menus[iter][2]
@@ -559,16 +559,16 @@ class MainWindow:
             else:
                 path = (len(items) - 1,)
                 after = items[path][3]
-            file_path = urllib.unquote(selection.data).strip()
+            file_path = urllib.parse.unquote(selection.get_data().decode("utf-8")).strip()
             if not file_path.startswith('file:'):
                 return
-            myfile = Gio.File(uri=file_path)
-            file_info = myfile.query_info(Gio.FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE)
+            myfile = Gio.File.new_for_uri(uri=file_path)
+            file_info = myfile.query_info(Gio.FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE, Gio.FileQueryInfoFlags.NONE)
             content_type = file_info.get_content_type()
             if content_type == 'application/x-desktop':
                 input_stream = myfile.read()
                 keyfile = GLib.KeyFile()
-                keyfile.load_from_data(input_stream.read())
+                keyfile.load_from_bytes(input_stream.read_bytes(1024*1024), GLib.KeyFileFlags.NONE)
                 self.editor.createItem(parent, before, after, KeyFile=keyfile)
             elif content_type in ('application/x-shellscript', 'application/x-executable'):
                 self.editor.createItem(parent, before, after,
