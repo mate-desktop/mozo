@@ -23,7 +23,7 @@ gi.require_version('MateMenu', '2.0')
 from gi.repository import GLib, Gio
 from gi.repository import Gtk, Gdk, GdkPixbuf
 from gi.repository import MateMenu
-import cgi
+import html
 import os
 import gettext
 import subprocess
@@ -238,13 +238,13 @@ class MainWindow:
     def loadMenu(self, iters, parent, depth=0):
         if depth == 0:
             icon = util.getIcon(parent)
-            iters[depth] = self.menu_store.append(None, (icon, cgi.escape(parent.get_name()), parent))
+            iters[depth] = self.menu_store.append(None, (icon, html.escape(parent.get_name()), parent))
         depth += 1
         for menu, show in self.editor.getMenus(parent):
             if show:
-                name = cgi.escape(menu.get_name())
+                name = html.escape(menu.get_name())
             else:
-                name = '<small><i>' + cgi.escape(menu.get_name()) + '</i></small>'
+                name = '<small><i>' + html.escape(menu.get_name()) + '</i></small>'
             icon = util.getIcon(menu)
             iters[depth] = self.menu_store.append(iters[depth-1], (icon, name, menu))
             self.loadMenu(iters, menu, depth)
@@ -258,14 +258,14 @@ class MainWindow:
                 name = '---'
             elif isinstance(item, MateMenu.TreeEntry):
                 if show:
-                    name = cgi.escape(item.get_app_info().get_display_name())
+                    name = html.escape(item.get_app_info().get_display_name())
                 else:
-                    name = '<small><i>' + cgi.escape(item.get_app_info().get_display_name()) + '</i></small>'
+                    name = '<small><i>' + html.escape(item.get_app_info().get_display_name()) + '</i></small>'
             else:
                 if show:
-                    name = cgi.escape(item.get_name())
+                    name = html.escape(item.get_name())
                 else:
-                    name = '<small><i>' + cgi.escape(item.get_name()) + '</i></small>'
+                    name = '<small><i>' + html.escape(item.get_name()) + '</i></small>'
             self.item_store.append((show, icon, name, item))
 
     #this is a little timeout callback to insert new items after
