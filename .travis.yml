@@ -117,16 +117,14 @@ after_scripts:
   -         bash ./debian.sh
   -     fi
   -     make distcheck
-  - elif [ -d _build ];then
-  -     ninja -C _build dist
   - fi
 
 releases:
   draft: false
   prerelease: false
-  checksum: false
+  checksum: true
   file_glob: true
-  files: _build/meson-dist/mozo-*.tar.xz
+  files: mozo-*.tar.xz
   github_release:
     tags: true
     overwrite: true
