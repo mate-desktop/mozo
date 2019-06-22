@@ -123,7 +123,6 @@ after_scripts:
   -         bash ./debian.sh
   -     fi
   -     make distcheck
-  -     tar tf mozo-*.tar.xz|grep po #just for view
   - fi
 
 releases:
