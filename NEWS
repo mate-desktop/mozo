@@ -1,5 +1,15 @@
 ### mozo 1.23.0
 
+  * Translations update
+  * Fix DeprecationWarning ABCs from 'collections'
+  * Fix DeprecationWarning: cgi.escape is deprecated
+  * Change url project's website
+  * use meson to build
+  * Migrate from intltool to gettext
+  * Fix drag and drop of .desktop file
+  * Fix creating new menus and items
+  * Fix moving a menu corrupting the menu
+
 ### mozo 1.22.0
 
   * Translations update
