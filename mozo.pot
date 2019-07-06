@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mozo package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-31 21:27+0200\n"
+"Project-Id-Version: mozo 1.23.0\n"
+"Report-Msgid-Bugs-To: https://mate-desktop.org\n"
+"POT-Creation-Date: 2019-07-06 15:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,66 +17,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../Mozo/MainWindow.py:176
+#: Mozo/MainWindow.py:176
 msgid "Name"
 msgstr ""
 
-#: ../Mozo/MainWindow.py:193
+#: Mozo/MainWindow.py:193
 msgid "Show"
 msgstr ""
 
-#: ../Mozo/MainWindow.py:201
+#: Mozo/MainWindow.py:201
 msgid "Item"
 msgstr ""
 
-#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+#: data/mozo.desktop.in.in:3 data/mozo.ui:49
 msgid "Main Menu"
 msgstr ""
 
-#: ../data/mozo.desktop.in.in.h:2
+#: data/mozo.desktop.in.in:4
 msgid "Change which applications are shown on the main menu"
 msgstr ""
 
-#: ../data/mozo.ui.h:1
+#: data/mozo.desktop.in.in:10
+msgid "application;main;menu;editor;customize;MATE;"
+msgstr ""
+
+#: data/mozo.desktop.in.in:12
+msgid "mozo"
+msgstr ""
+
+#: data/mozo.ui:16
 msgid "_Revert to Original"
 msgstr ""
 
-#: ../data/mozo.ui.h:3
+#: data/mozo.ui:89
 msgid "Restore the default menu layout"
 msgstr ""
 
-#: ../data/mozo.ui.h:4
+#: data/mozo.ui:147
 msgid "_Menus:"
 msgstr ""
 
-#: ../data/mozo.ui.h:5
+#: data/mozo.ui:200
 msgid "It_ems:"
 msgstr ""
 
-#: ../data/mozo.ui.h:6
+#: data/mozo.ui:292
 msgid "_New Menu"
 msgstr ""
 
-#: ../data/mozo.ui.h:7
+#: data/mozo.ui:346
 msgid "Ne_w Item"
 msgstr ""
 
-#: ../data/mozo.ui.h:8
+#: data/mozo.ui:368
 msgid "New _Separator"
 msgstr ""
 
-#: ../data/mozo.ui.h:9
+#: data/mozo.ui:464
 msgid "Move Up"
 msgstr ""
 
-#: ../data/mozo.ui.h:10
+#: data/mozo.ui:518
 msgid "Move Down"
 msgstr ""
 
-#: ../data/mozo.ui.h:11
+#: data/mozo.ui:595
 msgid "Revert Changes?"
 msgstr ""
 
-#: ../data/mozo.ui.h:12
+#: data/mozo.ui:670
 msgid "Revert all menus to original settings?"
 msgstr ""
