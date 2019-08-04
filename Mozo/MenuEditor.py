@@ -18,7 +18,6 @@
 
 import codecs
 import os
-import re
 import xml.dom.minidom
 import xml.parsers.expat
 import locale
@@ -167,25 +166,22 @@ class MenuEditor(object):
             return
         files = self.__undo.pop()
         redo = []
-        for file_path in files:
-            new_path = file_path.rsplit('.', 1)[0]
+        for undo_path in files[::-1]:
+            new_path = undo_path.rsplit('.', 1)[0]
             redo_path = util.getUniqueRedoFile(new_path)
 
-            f_file_path = codecs.open(new_path, 'r', 'utf-8')
-            f_new_path = codecs.open(new_path, 'rw', 'utf-8')
-            f_redo_path = codecs.open(redo_path, 'rw', 'utf-8')
-
-            data = f_new_path.read()
-            f_redo_path.write(data)
-            data = f_file_path.read()
-            f_new_path.write(data)
-
-            f_file_path.close()
-            f_new_path.close()
-            f_redo_path.close()
-
-            os.unlink(file_path)
+            # create redo file
+            with codecs.open(new_path, 'r', 'utf-8') as f_new:
+                with codecs.open(redo_path, 'w', 'utf-8') as f_redo:
+                    f_redo.write(f_new.read())
             redo.append(redo_path)
+
+            # restore undo file
+            with codecs.open(undo_path, 'r', 'utf-8') as f_undo:
+                with codecs.open(new_path, 'w', 'utf-8') as f_new:
+                    f_new.write(f_undo.read())
+            os.unlink(undo_path)
+
         # reload DOM to make changes stick
         for name in ('applications', 'settings'):
             menu = getattr(self, name)
@@ -201,21 +197,22 @@ class MenuEditor(object):
             return
         files = self.__redo.pop()
         undo = []
-        for file_path in files:
-            new_path = file_path.rsplit('.', 1)[0]
+        for redo_path in files[::-1]:
+            new_path = redo_path.rsplit('.', 1)[0]
             undo_path = util.getUniqueUndoFile(new_path)
-            f_file_path = codecs.open(new_path, 'r', 'utf-8')
-            f_new_path = codecs.open(new_path, 'rw', 'utf-8')
-            f_undo_path = codecs.open(undo_path, 'rw', 'utf-8')
-            data = f_new_path.read()
-            f_undo_path.write(data)
-            data = f_file_path.read()
-            f_new_path.write(data)
-            os.unlink(file_path)
+
+            # create undo file
+            with codecs.open(new_path, 'r', 'utf-8') as f_new:
+                with codecs.open(undo_path, 'w', 'utf-8') as f_undo:
+                    f_undo.write(f_new.read())
             undo.append(undo_path)
-            f_file_path.close()
-            f_new_path.close()
-            f_undo_path.close()
+
+            # restore redo file
+            with codecs.open(redo_path, 'r', 'utf-8') as f_redo:
+                with codecs.open(new_path, 'w', 'utf-8') as f_new:
+                    f_new.write(f_redo.read())
+            os.unlink(redo_path)
+
         #reload DOM to make changes stick
         for name in ('applications', 'settings'):
             menu = getattr(self, name)
@@ -376,14 +373,12 @@ class MenuEditor(object):
         file_path = item.get_desktop_file_path()
         keyfile = GLib.KeyFile()
         keyfile.load_from_file(file_path, util.KEY_FILE_FLAGS)
-
         util.fillKeyFile(keyfile, dict(Categories=[], Hidden=False))
 
-        app_info = item.get_app_info()
-        file_id = util.getUniqueFileId(app_info.get_name().replace(os.sep, '-'), '.desktop')
+        file_id = util.getUniqueFileId(os.path.basename(file_path).split(".desktop", 1)[0], ".desktop")
         out_path = os.path.join(util.getUserItemPath(), file_id)
 
-        contents, length = keyfile.to_data()
+        contents = keyfile.to_data()[0]
 
         with open(out_path, 'w') as f:
             f.write(contents)
@@ -397,15 +392,18 @@ class MenuEditor(object):
     def moveItem(self, item, new_parent, before=None, after=None):
         undo = []
         if item.get_parent() != new_parent:
-            #hide old item
-            self.deleteItem(item)
-            undo.append(item)
+            # create new item
             file_id = self.copyItem(item, new_parent)
+            # hide old item
+            self.deleteItem(item)
             item = ('Item', file_id)
-            undo.append(item)
         self.__positionItem(new_parent, item, before, after)
         undo.append(self.__getMenu(new_parent))
         self.__addUndo(undo)
+        # merge the undo entries created by the previous operations in the
+        # correct order so we can undo in one go
+        items = self.__undo.pop()[::-1] + self.__undo.pop()[::-1] + self.__undo.pop()[::-1]
+        self.__undo.append(items[::-1])
         self.save()
 
     def moveMenu(self, menu, new_parent, before=None, after=None):
@@ -653,7 +651,7 @@ class MenuEditor(object):
         else:
             file_id = util.getUniqueFileId(keyfile.get_string(GLib.KEY_FILE_DESKTOP_GROUP, 'Name'), '.desktop')
 
-        contents, length = keyfile.to_data()
+        contents = keyfile.to_data()[0]
 
         with open(os.path.join(util.getUserItemPath(), file_id), 'w') as f:
             f.write(contents)
@@ -673,7 +671,7 @@ class MenuEditor(object):
 
         util.fillKeyFile(keyfile, kwargs)
 
-        contents, length = keyfile.to_data()
+        contents = keyfile.to_data()[0]
 
         with open(os.path.join(util.getUserDirectoryPath(), file_id), 'w') as f:
             f.write(contents)
@@ -752,10 +750,6 @@ class MenuEditor(object):
     def __addItem(self, parent, file_id, dom):
         xml_parent = self.__getXmlMenu(self.__getPath(parent), dom.documentElement, dom)
         self.__addXmlFilename(xml_parent, dom, file_id, 'Include')
-
-    def moveItem(self, parent, item, before=None, after=None):
-        self.__positionItem(parent, item, before=before, after=after)
-        self.save()
 
     def __positionItem(self, parent, item, before=None, after=None):
         contents = self.getContents(parent)

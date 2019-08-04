@@ -98,7 +98,7 @@ class MainWindow:
         update_items = False
         update_type = None
         item_id = None
-        if iter:
+        if iter and items[iter][3].get_desktop_file_path():
             update_items = True
             if isinstance(items[iter][3], MateMenu.TreeDirectory):
                 item_id = os.path.split(items[iter][3].get_desktop_file_path())[1]
@@ -425,7 +425,7 @@ class MainWindow:
                 item = self.drag_data
                 new_parent = menus[path][2]
                 if isinstance(item, MateMenu.TreeEntry):
-                    self.editor.copyItem(item, new_parent)
+                    self.editor.moveItem(item, new_parent)
                 elif isinstance(item, MateMenu.TreeDirectory):
                     if not self.editor.moveMenu(item, new_parent):
                         self.loadUpdates()
@@ -593,7 +593,7 @@ class MainWindow:
         item = items[path][3]
         before = items[(path.get_indices()[0] - 1,)][3]
         if isinstance(item, MateMenu.TreeEntry):
-            self.editor.moveItem(item.get_parent(), item, before=before)
+            self.editor.moveItem(item, item.get_parent(), before=before)
         elif isinstance(item, MateMenu.TreeDirectory):
             self.editor.moveMenu(item, item.get_parent(), before=before)
         elif isinstance(item, MateMenu.TreeSeparator):
@@ -611,7 +611,7 @@ class MainWindow:
         item = items[path][3]
         after = items[path][3]
         if isinstance(item, MateMenu.TreeEntry):
-            self.editor.moveItem(item.get_parent(), item, after=after)
+            self.editor.moveItem(item, item.get_parent(), after=after)
         elif isinstance(item, MateMenu.TreeDirectory):
             self.editor.moveMenu(item, item.get_parent(), after=after)
         elif isinstance(item, MateMenu.TreeSeparator):
