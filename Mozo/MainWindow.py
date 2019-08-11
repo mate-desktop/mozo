@@ -53,11 +53,12 @@ class MainWindow:
     def __init__(self, datadir, version, argv):
         self.file_path = datadir
         self.version = version
-        self.editor = MenuEditor()
         Gtk.Window.set_default_icon_name('mozo')
         self.tree = Gtk.Builder()
         self.tree.set_translation_domain(GETTEXT_PACKAGE)
         self.tree.add_from_file(os.path.join(self.file_path, 'mozo.ui'))
+        self.editor = MenuEditor(undo_button=self.tree.get_object('undo_button'),
+                                 redo_button=self.tree.get_object('redo_button'))
         self.tree.connect_signals(self)
         self.setupMenuTree()
         self.setupItemTree()
@@ -617,13 +618,13 @@ class MainWindow:
         elif isinstance(item, MateMenu.TreeSeparator):
             self.editor.moveSeparator(item, item.get_parent(), after=after)
 
-    def on_mainwindow_undo(self, accelgroup, window, keyval, modifier):
+    def on_mainwindow_undo(self, *_args):
         self.editor.undo()
 
-    def on_mainwindow_redo(self, accelgroup, window, keyval, modifier):
+    def on_mainwindow_redo(self, *_args):
         self.editor.redo()
 
-    def on_help_button_clicked(self, *args):
+    def on_help_button_clicked(self, *_args):
         Gtk.show_uri(Gdk.Screen.get_default(), "help:mate-user-guide/menu-editor", Gtk.get_current_event_time())
 
     def on_revert_button_clicked(self, button):

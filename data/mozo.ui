@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.14"/>
   <object class="GtkUIManager" id="uimanager1">
@@ -53,6 +54,9 @@
     <signal name="delete-event" handler="on_delete_event" swapped="no"/>
     <signal name="destroy" handler="on_close_button_clicked" swapped="no"/>
     <signal name="style-updated" handler="on_style_updated" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox5">
         <property name="visible">True</property>
@@ -80,6 +84,40 @@
               </packing>
             </child>
             <child>
+              <object class="GtkButton" id="undo_button">
+                <property name="label">gtk-undo</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="can_default">True</property>
+                <property name="has_default">True</property>
+                <property name="receives_default">False</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="on_mainwindow_undo" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="redo_button">
+                <property name="label">gtk-redo</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="can_default">True</property>
+                <property name="has_default">True</property>
+                <property name="receives_default">False</property>
+                <property name="use_stock">True</property>
+                <signal name="clicked" handler="on_mainwindow_redo" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="revert_button">
                 <property name="label">gtk-revert-to-saved</property>
                 <property name="visible">True</property>
@@ -93,7 +131,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">1</property>
+                <property name="position">3</property>
               </packing>
             </child>
             <child>
@@ -110,7 +148,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">2</property>
+                <property name="position">4</property>
               </packing>
             </child>
           </object>
@@ -584,6 +622,8 @@
     </child>
     <action-widgets>
       <action-widget response="-11">help_button</action-widget>
+      <action-widget response="1">undo_button</action-widget>
+      <action-widget response="2">redo_button</action-widget>
       <action-widget response="0">revert_button</action-widget>
       <action-widget response="-7">close_button</action-widget>
     </action-widgets>
@@ -595,6 +635,9 @@
     <property name="title" translatable="yes">Revert Changes?</property>
     <property name="resizable">False</property>
     <property name="type_hint">dialog</property>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox6">
         <property name="visible">True</property>
