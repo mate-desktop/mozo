@@ -33,7 +33,10 @@ class Menu:
     dom = None
 
 class MenuEditor(object):
-    def __init__(self):
+
+    def __init__(self, undo_button, redo_button):
+        self.undo_button = undo_button
+        self.redo_button = redo_button
         self.locale = locale.getdefaultlocale()[0]
         self.__undo = []
         self.__redo = []
@@ -52,6 +55,7 @@ class MenuEditor(object):
         self.settings.tree.connect('changed', self.menuChanged)
         self.load()
         self.__loadMenus()
+        self.update_undo_redo_button_state()
 
     def __loadMenus(self):
         self.applications.path = os.path.join(util.getUserMenuPath(), self.applications.tree.props.menu_basename)
@@ -121,6 +125,7 @@ class MenuEditor(object):
             util.removeWhitespaceNodes(menu.dom)
         #reset undo/redo, no way to recover from this
         self.__undo, self.__redo = [], []
+        self.update_undo_redo_button_state()
         self.save()
 
     def revertTree(self, menu):
@@ -161,6 +166,10 @@ class MenuEditor(object):
             pass
         self.save()
 
+    def update_undo_redo_button_state(self):
+        self.redo_button.set_sensitive(len(self.__redo) > 0)
+        self.undo_button.set_sensitive(len(self.__undo) > 0)
+
     def undo(self):
         if len(self.__undo) == 0:
             return
@@ -200,6 +209,7 @@ class MenuEditor(object):
             util.removeWhitespaceNodes(menu.dom)
         if redo:
             self.__redo.append(redo)
+        self.update_undo_redo_button_state()
 
     def redo(self):
         if len(self.__redo) == 0:
@@ -240,6 +250,7 @@ class MenuEditor(object):
             util.removeWhitespaceNodes(menu.dom)
         if undo:
             self.__undo.append(undo)
+        self.update_undo_redo_button_state()
 
     def getMenus(self, parent=None):
         if parent is None:
@@ -520,6 +531,7 @@ class MenuEditor(object):
             with codecs.open(undo_path, 'w', 'utf-8') as f:
                 f.write(data)
             self.__undo[-1].append(undo_path)
+        self.update_undo_redo_button_state()
 
     def __getMenu(self, item):
         root = item.get_parent()
