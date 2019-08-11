@@ -411,17 +411,18 @@ class MenuEditor(object):
         undo = []
         if item.get_parent() != new_parent:
             # create new item
-            file_id = self.copyItem(item, new_parent)
+            self.copyItem(item, new_parent)
             # hide old item
             self.deleteItem(item)
-            item = ('Item', file_id)
-        self.__positionItem(new_parent, item, before, after)
+        else:
+            self.__positionItem(new_parent, item, before, after)
         undo.append(self.__getMenu(new_parent))
         self.__addUndo(undo)
-        # merge the undo entries created by the previous operations in the
-        # correct order so we can undo in one go
-        items = self.__undo.pop()[::-1] + self.__undo.pop()[::-1] + self.__undo.pop()[::-1]
-        self.__undo.append(items[::-1])
+        if item.get_parent() != new_parent:
+            # merge the undo entries created by the previous operations in the
+            # correct order so we can undo in one go
+            items = self.__undo.pop()[::-1] + self.__undo.pop()[::-1] + self.__undo.pop()[::-1]
+            self.__undo.append(items[::-1])
         self.save()
 
     def moveMenu(self, menu, new_parent, before=None, after=None):
