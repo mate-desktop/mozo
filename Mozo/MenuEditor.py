@@ -168,19 +168,27 @@ class MenuEditor(object):
         redo = []
         for undo_path in files[::-1]:
             new_path = undo_path.rsplit('.', 1)[0]
+            if not os.path.exists(undo_path):
+                continue
             redo_path = util.getUniqueRedoFile(new_path)
 
             # create redo file
-            with codecs.open(new_path, 'r', 'utf-8') as f_new:
-                with codecs.open(redo_path, 'w', 'utf-8') as f_redo:
-                    f_redo.write(f_new.read())
-            redo.append(redo_path)
+            try:
+                with codecs.open(new_path, 'r', 'utf-8') as f_new:
+                    with codecs.open(redo_path, 'w', 'utf-8') as f_redo:
+                        f_redo.write(f_new.read())
+                redo.append(redo_path)
+            except FileNotFoundError:
+                pass
 
             # restore undo file
-            with codecs.open(undo_path, 'r', 'utf-8') as f_undo:
-                with codecs.open(new_path, 'w', 'utf-8') as f_new:
-                    f_new.write(f_undo.read())
-            os.unlink(undo_path)
+            try:
+                with codecs.open(undo_path, 'r', 'utf-8') as f_undo:
+                    with codecs.open(new_path, 'w', 'utf-8') as f_new:
+                        f_new.write(f_undo.read())
+                os.unlink(undo_path)
+            except FileNotFoundError:
+                pass
 
         # reload DOM to make changes stick
         for name in ('applications', 'settings'):
@@ -190,7 +198,8 @@ class MenuEditor(object):
             except (IOError, xml.parsers.expat.ExpatError):
                 menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
             util.removeWhitespaceNodes(menu.dom)
-        self.__redo.append(redo)
+        if redo:
+            self.__redo.append(redo)
 
     def redo(self):
         if len(self.__redo) == 0:
@@ -199,19 +208,27 @@ class MenuEditor(object):
         undo = []
         for redo_path in files[::-1]:
             new_path = redo_path.rsplit('.', 1)[0]
+            if not os.path.exists(redo_path):
+                continue
             undo_path = util.getUniqueUndoFile(new_path)
 
             # create undo file
-            with codecs.open(new_path, 'r', 'utf-8') as f_new:
-                with codecs.open(undo_path, 'w', 'utf-8') as f_undo:
-                    f_undo.write(f_new.read())
-            undo.append(undo_path)
+            try:
+                with codecs.open(new_path, 'r', 'utf-8') as f_new:
+                    with codecs.open(undo_path, 'w', 'utf-8') as f_undo:
+                        f_undo.write(f_new.read())
+                undo.append(undo_path)
+            except FileNotFoundError:
+                pass
 
             # restore redo file
-            with codecs.open(redo_path, 'r', 'utf-8') as f_redo:
-                with codecs.open(new_path, 'w', 'utf-8') as f_new:
-                    f_new.write(f_redo.read())
-            os.unlink(redo_path)
+            try:
+                with codecs.open(redo_path, 'r', 'utf-8') as f_redo:
+                    with codecs.open(new_path, 'w', 'utf-8') as f_new:
+                        f_new.write(f_redo.read())
+                os.unlink(redo_path)
+            except FileNotFoundError:
+                pass
 
         #reload DOM to make changes stick
         for name in ('applications', 'settings'):
@@ -221,7 +238,8 @@ class MenuEditor(object):
             except (IOError, xml.parsers.expat.ExpatError):
                 menu.dom = xml.dom.minidom.parseString(util.getUserMenuXml(menu.tree))
             util.removeWhitespaceNodes(menu.dom)
-        self.__undo.append(undo)
+        if undo:
+            self.__undo.append(undo)
 
     def getMenus(self, parent=None):
         if parent is None:
