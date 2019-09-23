@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pablo Lezaeta Reyes [pˈaβ̞lo lˌe̞θaˈeta rˈejɛ] <prflr88@gmail.com>, 2019
+# prflr88 <prflr88@gmail.com>, 2019
 # David Ríos <drios9420@gmail.com>, 2019
 # 
 #, fuzzy
@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-31 21:27+0200\n"
+"POT-Creation-Date: 2019-04-23 15:36+0200\n"
 "PO-Revision-Date: 2019-03-16 19:59+0000\n"
 "Last-Translator: David Ríos <drios9420@gmail.com>, 2019\n"
 "Language-Team: Spanish (Chile) (https://www.transifex.com/mate/teams/13566/es_CL/)\n"
