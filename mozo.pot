@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the mozo package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo 1.23.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-07-06 15:07+0200\n"
+"POT-Creation-Date: 2019-11-19 11:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Mozo/MainWindow.py:176
+#: Mozo/MainWindow.py:177
 msgid "Name"
 msgstr ""
 
-#: Mozo/MainWindow.py:193
+#: Mozo/MainWindow.py:194
 msgid "Show"
 msgstr ""
 
-#: Mozo/MainWindow.py:201
+#: Mozo/MainWindow.py:202
 msgid "Item"
 msgstr ""
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:49
+#: data/mozo.desktop.in.in:3 data/mozo.ui:50
 msgid "Main Menu"
 msgstr ""
 
@@ -37,54 +36,56 @@ msgstr ""
 msgid "Change which applications are shown on the main menu"
 msgstr ""
 
-#: data/mozo.desktop.in.in:10
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr ""
 
-#: data/mozo.desktop.in.in:12
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/mozo.desktop.in.in:14
 msgid "mozo"
 msgstr ""
 
-#: data/mozo.ui:16
+#: data/mozo.ui:17
 msgid "_Revert to Original"
 msgstr ""
 
-#: data/mozo.ui:89
+#: data/mozo.ui:127
 msgid "Restore the default menu layout"
 msgstr ""
 
-#: data/mozo.ui:147
+#: data/mozo.ui:185
 msgid "_Menus:"
 msgstr ""
 
-#: data/mozo.ui:200
+#: data/mozo.ui:238
 msgid "It_ems:"
 msgstr ""
 
-#: data/mozo.ui:292
+#: data/mozo.ui:330
 msgid "_New Menu"
 msgstr ""
 
-#: data/mozo.ui:346
+#: data/mozo.ui:384
 msgid "Ne_w Item"
 msgstr ""
 
-#: data/mozo.ui:368
+#: data/mozo.ui:406
 msgid "New _Separator"
 msgstr ""
 
-#: data/mozo.ui:464
+#: data/mozo.ui:502
 msgid "Move Up"
 msgstr ""
 
-#: data/mozo.ui:518
+#: data/mozo.ui:556
 msgid "Move Down"
 msgstr ""
 
-#: data/mozo.ui:595
+#: data/mozo.ui:635
 msgid "Revert Changes?"
 msgstr ""
 
-#: data/mozo.ui:670
+#: data/mozo.ui:713
 msgid "Revert all menus to original settings?"
 msgstr ""
