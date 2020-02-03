@@ -1,3 +1,14 @@
+### mozo 1.23.1
+
+  * Translations update
+  * desktop file: add missing hints for translators
+  * sets the required version for gettext (0.19.8)
+  * Add Undo and Redo buttons
+  * moveItem: Remove redundant code, add missing check for move mode when merging entries
+  * Change DragAction to MOVE
+  * undo/redo: Handle missing files
+  * Fix item drag & drop creating copies, fix undo, redo and a crash when refreshing
+
 ### mozo 1.23.0
 
   * Translations update
