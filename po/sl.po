@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mozo package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -8,12 +8,11 @@
 # Damir Jerovšek <jierro@windowslive.com>, 2018
 # Damir Mevkić <damir.mevkic@gmail.com>, 2018
 # 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-31 21:27+0200\n"
+"Project-Id-Version: mozo 1.23.0\n"
+"Report-Msgid-Bugs-To: https://mate-desktop.org\n"
+"POT-Creation-Date: 2019-11-19 11:59+0100\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
 "Last-Translator: Damir Mevkić <damir.mevkic@gmail.com>, 2018\n"
 "Language-Team: Slovenian (https://www.transifex.com/mate/teams/13566/sl/)\n"
@@ -23,66 +22,78 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
-#: ../Mozo/MainWindow.py:176
+#: Mozo/MainWindow.py:177
 msgid "Name"
 msgstr "Ime"
 
-#: ../Mozo/MainWindow.py:193
+#: Mozo/MainWindow.py:194
 msgid "Show"
 msgstr "Pokaži"
 
-#: ../Mozo/MainWindow.py:201
+#: Mozo/MainWindow.py:202
 msgid "Item"
 msgstr "Predmet"
 
-#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+#: data/mozo.desktop.in.in:3 data/mozo.ui:50
 msgid "Main Menu"
 msgstr "Glavni meni"
 
-#: ../data/mozo.desktop.in.in.h:2
+#: data/mozo.desktop.in.in:4
 msgid "Change which applications are shown on the main menu"
 msgstr "Določitev programov, ki so prikazani v osnovnem meniju"
 
-#: ../data/mozo.ui.h:1
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localize the semicolons! The list MUST also end with a semicolon!
+#: data/mozo.desktop.in.in:11
+msgid "application;main;menu;editor;customize;MATE;"
+msgstr ""
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon
+#. file name)!
+#: data/mozo.desktop.in.in:14
+msgid "mozo"
+msgstr ""
+
+#: data/mozo.ui:17
 msgid "_Revert to Original"
 msgstr "_Povrni na prvotne vrednosti"
 
-#: ../data/mozo.ui.h:3
+#: data/mozo.ui:127
 msgid "Restore the default menu layout"
 msgstr "Povrni privzeto postavitev menija"
 
-#: ../data/mozo.ui.h:4
+#: data/mozo.ui:185
 msgid "_Menus:"
 msgstr "_Meniji:"
 
-#: ../data/mozo.ui.h:5
+#: data/mozo.ui:238
 msgid "It_ems:"
 msgstr "_Predmeti:"
 
-#: ../data/mozo.ui.h:6
+#: data/mozo.ui:330
 msgid "_New Menu"
 msgstr "Nov _meni"
 
-#: ../data/mozo.ui.h:7
+#: data/mozo.ui:384
 msgid "Ne_w Item"
 msgstr "_Nov predmet"
 
-#: ../data/mozo.ui.h:8
+#: data/mozo.ui:406
 msgid "New _Separator"
 msgstr "Nov _ločilnik"
 
-#: ../data/mozo.ui.h:9
+#: data/mozo.ui:502
 msgid "Move Up"
 msgstr "Premakni navzgor"
 
-#: ../data/mozo.ui.h:10
+#: data/mozo.ui:556
 msgid "Move Down"
 msgstr "Premakni navzdol"
 
-#: ../data/mozo.ui.h:11
+#: data/mozo.ui:635
 msgid "Revert Changes?"
 msgstr "Ali želite povrniti spremembe?"
 
-#: ../data/mozo.ui.h:12
+#: data/mozo.ui:713
 msgid "Revert all menus to original settings?"
 msgstr "Ali želite povrniti vse menije na privzete nastavitve?"
