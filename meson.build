@@ -1,5 +1,5 @@
 project('mozo',
-  version : '1.23.1',
+  version : '1.24.0',
   meson_version: '>= 0.47.0'
   )
 
