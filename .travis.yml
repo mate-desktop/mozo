@@ -13,14 +13,14 @@ install:
   - sudo apt-get install -y python3-pip python3-setuptools
   - sudo pip3 install --upgrade pip
   - sudo pip install PyGithub
-  - ./docker-build --name ${DISTRO} --config .travis.yml --install
+  - ./docker-build --name ${DISTRO} --config .build.yml --install
 
 script:
-  - ./docker-build --name ${DISTRO} --verbose --config .travis.yml --build meson --build scripts
+  - ./docker-build --name ${DISTRO} --verbose --config .build.yml --build meson --build scripts
 
 deploy:
   - provider: script
-    script: ./docker-build --verbose --config .travis.yml --release github
+    script: ./docker-build --verbose --config .build.yml --release github
     skip_cleanup: true
     on:
       tags: true
@@ -31,89 +31,3 @@ env:
   - DISTRO="debian:testing"
   - DISTRO="fedora:latest"
   - DISTRO="ubuntu:19.10"
-
-##########################################################
-# THE FOLLOWING LINES IS USED BY docker-build
-##########################################################
-requires:
-  archlinux:
-    # Useful URL: https://git.archlinux.org/svntogit/community.git/tree/mozo
-    - gcc
-    - git
-    - gtk3
-    - intltool
-    - make
-    - mate-common
-    - mate-menus
-    - meson
-    - python-gobject
-    - which
-
-  debian:
-    # Useful URL: https://github.com/mate-desktop/debian-packages
-    # Useful URL: https://salsa.debian.org/debian-mate-team/mozo
-    - autopoint
-    - gettext
-    - git
-    - intltool
-    - libmate-menu-dev
-    - make
-    - mate-common
-    - meson
-    - python-gi-dev
-    - python3
-
-  fedora:
-    # Useful URL: https://src.fedoraproject.org/cgit/rpms/mozo.git
-    - desktop-file-utils
-    - gcc
-    - git
-    - make
-    - mate-common
-    - mate-menus-devel
-    - meson
-    - pygobject3-devel
-    - python3-devel
-    - redhat-rpm-config
-
-  ubuntu:
-    - autopoint
-    - gettext
-    - git
-    - intltool
-    - libmate-menu-dev
-    - make
-    - mate-common
-    - meson
-    - python-gi-dev
-    - python3
-
-variables:
-  - CFLAGS="-Wall -Werror=format-security"
-
-build_scripts:
-  - ./autogen.sh
-  - ./configure
-  - make
-
-after_scripts:
-  - if [ ${BUILD_TYPE} == "scripts" ];then
-  -     if [ ${DISTRO_NAME} == "debian" ];then
-  -         curl -Ls -o debian.sh https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/debian.sh
-  -         bash ./debian.sh
-  -     fi
-  -     make distcheck
-  - fi
-
-releases:
-  draft: false
-  prerelease: false
-  checksum: true
-  file_glob: true
-  files: mozo-*.tar.xz
-  github_release:
-    tags: true
-    overwrite: true
-    base_version: 1.20.0
-    notify_servers:
-      - https://release.mate-desktop.org/release
