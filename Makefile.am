@@ -21,7 +21,10 @@ mozo: Makefile
 
 EXTRA_DIST = \
 	autogen.sh \
-	mozo.in
+	meson.build \
+	mozo.in \
+	post_install.py \
+	po/meson.build
 
 # Build ChangeLog from GIT  history
 ChangeLog:

@@ -13,7 +13,10 @@ pkgdata_DATA = mozo.ui
 
 CLEANFILES = $(desktop_DATA)
 
-EXTRA_DIST = $(pkgdata_DATA) $(man_MANS)
+EXTRA_DIST = \
+	meson.build \
+	$(pkgdata_DATA) \
+	$(man_MANS)
 
 install-data-hook: $(UPDATE_DESKTOP)
 
