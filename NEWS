@@ -1,5 +1,11 @@
 ### mozo 1.25.0
 
+  * Translations update
+  * i18n: Do not collect the translation for Icon
+  * Skip Collection directory
+  * Remove USE_MATE2_MACROS from autogen.sh (legacy)
+  * add meson build files to EXTRA_DIST
+
 ### mozo 1.24.0
 
   * bump version
