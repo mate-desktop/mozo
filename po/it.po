@@ -6,6 +6,7 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Giuseppe Pignataro <rogepix@gmail.com>, 2019
+# Alessandro Volturno <alelvb@inwind.it>, 2020
 # 
 msgid ""
 msgstr ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
 "POT-Creation-Date: 2019-11-19 11:59+0100\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Giuseppe Pignataro <rogepix@gmail.com>, 2019\n"
+"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +32,7 @@ msgstr "Mostra"
 
 #: Mozo/MainWindow.py:202
 msgid "Item"
-msgstr "Voce di menù"
+msgstr "Oggetto"
 
 #: data/mozo.desktop.in.in:3 data/mozo.ui:50
 msgid "Main Menu"
@@ -45,7 +46,7 @@ msgstr "Sceglie le applicazioni da mostrate nel menù"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr "applicazione;principale;menu;editor;personalizza;MATE;"
+msgstr "application;main;menu;editor;customize;MATE;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
@@ -67,7 +68,7 @@ msgstr "_Menù:"
 
 #: data/mozo.ui:238
 msgid "It_ems:"
-msgstr "Voc_i:"
+msgstr "Oggett_i:"
 
 #: data/mozo.ui:330
 msgid "_New Menu"
@@ -75,7 +76,7 @@ msgstr "_Nuovo menù"
 
 #: data/mozo.ui:384
 msgid "Ne_w Item"
-msgstr "Nuova _voce"
+msgstr "Nuovo _oggetto"
 
 #: data/mozo.ui:406
 msgid "New _Separator"
@@ -95,4 +96,4 @@ msgstr "Annullare i cambiamenti?"
 
 #: data/mozo.ui:713
 msgid "Revert all menus to original settings?"
-msgstr "Ripristinare le impostazioni predefinite di tutti i menù?"
+msgstr "Ripristinare tutti i menù alle impostazioni predefinite?"
