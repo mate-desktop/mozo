@@ -72,9 +72,9 @@ class MainWindow:
         self.tree.get_object('delete_button').set_sensitive(False)
         accelgroup = Gtk.AccelGroup()
         keyval, modifier = Gtk.accelerator_parse('<Ctrl>Z')
-        accelgroup.connect(keyval, modifier, Gtk.AccelFlags.VISIBLE, self.on_mainwindow_undo)
+        accelgroup.connect(keyval, modifier, Gtk.AccelFlags.VISIBLE, self.on_undo_button_clicked)
         keyval, modifier = Gtk.accelerator_parse('<Ctrl><Shift>Z')
-        accelgroup.connect(keyval, modifier, Gtk.AccelFlags.VISIBLE, self.on_mainwindow_redo)
+        accelgroup.connect(keyval, modifier, Gtk.AccelFlags.VISIBLE, self.on_redo_button_clicked)
         keyval, modifier = Gtk.accelerator_parse('F1')
         accelgroup.connect(keyval, modifier, Gtk.AccelFlags.VISIBLE, self.on_help_button_clicked)
         self.tree.get_object('mainwindow').add_accel_group(accelgroup)
@@ -618,10 +618,10 @@ class MainWindow:
         elif isinstance(item, MateMenu.TreeSeparator):
             self.editor.moveSeparator(item, item.get_parent(), after=after)
 
-    def on_mainwindow_undo(self, *_args):
+    def on_undo_button_clicked(self, *_args):
         self.editor.undo()
 
-    def on_mainwindow_redo(self, *_args):
+    def on_redo_button_clicked(self, *_args):
         self.editor.redo()
 
     def on_help_button_clicked(self, *_args):
