@@ -1,3 +1,9 @@
+### mozo 1.24.1
+
+  * Translations update
+  * i18n: Do not collect the translation for Icon
+  * add meson build files to EXTRA_DIST
+
 ### mozo 1.24.0
 
   * bump version
