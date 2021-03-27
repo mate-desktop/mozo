@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# eere leme <eerlemm@hotmail.com>, 2018
+# eere leme <eerlemm@hotmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo 1.23.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
 "POT-Creation-Date: 2019-11-19 11:59+0100\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: eere leme <eerlemm@hotmail.com>, 2018\n"
+"PO-Revision-Date: 2020-02-16 17:40+0000\n"
+"Last-Translator: eere leme <eerlemm@hotmail.com>, 2020\n"
 "Language-Team: French (Canada) (https://www.transifex.com/mate/teams/13566/fr_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

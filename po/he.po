@@ -4,16 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# בר בוכובזה <bokovzabox@gmail.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# בר בוכובזה <bokovzabox@gmail.com>, 2020
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2020
+# shy tzedaka <shaytzedaka123@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: mozo 1.23.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
 "POT-Creation-Date: 2019-11-19 11:59+0100\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: בר בוכובזה <bokovzabox@gmail.com>, 2018\n"
+"PO-Revision-Date: 2020-02-16 17:40+0000\n"
+"Last-Translator: shy tzedaka <shaytzedaka123@gmail.com>, 2020\n"
 "Language-Team: Hebrew (https://www.transifex.com/mate/teams/13566/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,13 +47,13 @@ msgstr "שנה את היישומים המופיעים בתפריט הראשי"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr ""
+msgstr "יישום;ראשי;תפריט;עורך;התאמה אישית;עריכה;MATE;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
 #: data/mozo.desktop.in.in:14
 msgid "mozo"
-msgstr ""
+msgstr "mozo"
 
 #: data/mozo.ui:17
 msgid "_Revert to Original"
@@ -91,7 +93,7 @@ msgstr "הזז למטה"
 
 #: data/mozo.ui:635
 msgid "Revert Changes?"
-msgstr "האם לבטל שינויים?"
+msgstr "לבטל את השינויים?"
 
 #: data/mozo.ui:713
 msgid "Revert all menus to original settings?"
