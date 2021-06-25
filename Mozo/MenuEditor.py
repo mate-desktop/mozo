@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #   Mozo Menu Editor - Simple fd.o Compliant Menu Editor
 #   Copyright (C) 2006  Travis Watkins, Heinrich Wendel
+#   Copyright (C) 2012-2021 MATE Developers
 #
 #   This library is free software; you can redistribute it and/or
 #   modify it under the terms of the GNU Library General Public
