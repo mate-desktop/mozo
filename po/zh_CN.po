@@ -4,16 +4,22 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Mingcong Bai <jeffbai@aosc.xyz>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Dianjin Wang <1132321739qq@gmail.com>, 2021
+# 玉堂白鹤 <yjwork@qq.com>, 2021
+# Skylee Ming-Tian Yang <i@skylee.xyz>, 2021
+# a73a47e368cc011d8f94528bd9d5d3f1_91fccdf <1b07f49e2a323989c85dd26d526f7bb9_871526>, 2021
+# OkayPJ <1535253694@qq.com>, 2021
+# Wenbin Lv <wenbin816@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.23.0\n"
+"Project-Id-Version: mozo 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-11-19 11:59+0100\n"
+"POT-Creation-Date: 2021-06-25 18:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>, 2018\n"
+"Last-Translator: Wenbin Lv <wenbin816@gmail.com>, 2021\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +27,19 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: Mozo/MainWindow.py:177
+#: Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "名称"
 
-#: Mozo/MainWindow.py:194
+#: Mozo/MainWindow.py:195
 msgid "Show"
 msgstr "显示"
 
-#: Mozo/MainWindow.py:202
+#: Mozo/MainWindow.py:203
 msgid "Item"
 msgstr "项目"
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:50
+#: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
 msgstr "主菜单"
 
@@ -45,54 +51,76 @@ msgstr "更改显示于主菜单的应用程序"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr ""
+msgstr "application;main;menu;editor;customize;MATE;应用程序;主程序;菜单;编辑器;定制;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mozo.desktop.in.in:14
-msgid "mozo"
-msgstr ""
-
-#: data/mozo.ui:17
-msgid "_Revert to Original"
-msgstr "复原到原始值(_R)"
-
-#: data/mozo.ui:127
-msgid "Restore the default menu layout"
-msgstr "恢复默认菜单布局"
-
-#: data/mozo.ui:185
-msgid "_Menus:"
-msgstr "菜单(_M)："
-
-#: data/mozo.ui:238
-msgid "It_ems:"
-msgstr "项数(_E)："
-
-#: data/mozo.ui:330
-msgid "_New Menu"
-msgstr "新建菜单(_N)"
-
-#: data/mozo.ui:384
-msgid "Ne_w Item"
-msgstr "新建项目(_W)"
-
-#: data/mozo.ui:406
-msgid "New _Separator"
-msgstr "新建分隔符(_S)"
-
-#: data/mozo.ui:502
-msgid "Move Up"
-msgstr "上移"
-
-#: data/mozo.ui:556
-msgid "Move Down"
-msgstr "下移"
-
-#: data/mozo.ui:635
+#: data/mozo.ui:67
 msgid "Revert Changes?"
 msgstr "要复原更改吗？"
 
-#: data/mozo.ui:713
+#: data/mozo.ui:85
+msgid "_Cancel"
+msgstr "取消(_C)"
+
+#: data/mozo.ui:100 data/mozo.ui:278
+msgid "_Revert"
+msgstr "还原(_R)"
+
+#: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
 msgstr "将全部菜单复原到原始设置吗？"
+
+#: data/mozo.ui:177
+msgid "_Revert to Original"
+msgstr "复原到原始值(_R)"
+
+#: data/mozo.ui:230
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: data/mozo.ui:246
+msgid "_Undo"
+msgstr "撤消(_U)"
+
+#: data/mozo.ui:262
+msgid "R_edo"
+msgstr "重做(_E)"
+
+#: data/mozo.ui:294
+msgid "_Close"
+msgstr "关闭(_C)"
+
+#: data/mozo.ui:335
+msgid "_Menus:"
+msgstr "菜单(_M)："
+
+#: data/mozo.ui:388
+msgid "_Items:"
+msgstr "项目(_I)："
+
+#: data/mozo.ui:455
+msgid "_New Menu"
+msgstr "新建菜单(_N)"
+
+#: data/mozo.ui:471
+msgid "Ne_w Item"
+msgstr "新建项目(_W)"
+
+#: data/mozo.ui:487
+msgid "New _Seperator"
+msgstr "新建分隔符(_S)"
+
+#: data/mozo.ui:502
+msgid "_Properties"
+msgstr "属性(_P)"
+
+#: data/mozo.ui:518
+msgid "_Delete"
+msgstr "删除(_D)"
+
+#: data/mozo.ui:549
+msgid "Move _Up"
+msgstr "向上移动(_U)"
+
+#: data/mozo.ui:565
+msgid "Move _Down"
+msgstr "向下移动(_D)"

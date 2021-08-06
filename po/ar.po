@@ -4,16 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# مهدي السطيفي <chinoune.mehdi@gmail.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Mosaab Alzoubi <moceap@hotmail.com>, 2021
+# مهدي السطيفي <chinoune.mehdi@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.23.0\n"
+"Project-Id-Version: mozo 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-11-19 11:59+0100\n"
+"POT-Creation-Date: 2021-06-25 18:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: مهدي السطيفي <chinoune.mehdi@gmail.com>, 2018\n"
+"Last-Translator: مهدي السطيفي <chinoune.mehdi@gmail.com>, 2021\n"
 "Language-Team: Arabic (https://www.transifex.com/mate/teams/13566/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +22,19 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: Mozo/MainWindow.py:177
+#: Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "الاسم"
 
-#: Mozo/MainWindow.py:194
+#: Mozo/MainWindow.py:195
 msgid "Show"
 msgstr "أظهر"
 
-#: Mozo/MainWindow.py:202
+#: Mozo/MainWindow.py:203
 msgid "Item"
 msgstr "عنصر"
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:50
+#: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
 msgstr "القائمة الرئيسة"
 
@@ -47,52 +48,74 @@ msgstr "غيّر التطبيقات التي ستظهر في القائمة ال
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mozo.desktop.in.in:14
-msgid "mozo"
-msgstr ""
-
-#: data/mozo.ui:17
-msgid "_Revert to Original"
-msgstr "ا_ستعِد الحالة الأصلية"
-
-#: data/mozo.ui:127
-msgid "Restore the default menu layout"
-msgstr "استعِد مخطط القائمة المبدئي"
-
-#: data/mozo.ui:185
-msgid "_Menus:"
-msgstr "_قوائم:"
-
-#: data/mozo.ui:238
-msgid "It_ems:"
-msgstr "ع_ناصر:"
-
-#: data/mozo.ui:330
-msgid "_New Menu"
-msgstr "قائمة _جديدة"
-
-#: data/mozo.ui:384
-msgid "Ne_w Item"
-msgstr "عنصر _جديد"
-
-#: data/mozo.ui:406
-msgid "New _Separator"
-msgstr "فا_صل جديد"
-
-#: data/mozo.ui:502
-msgid "Move Up"
-msgstr "انقل لأعلى"
-
-#: data/mozo.ui:556
-msgid "Move Down"
-msgstr "انقل لأسفل"
-
-#: data/mozo.ui:635
+#: data/mozo.ui:67
 msgid "Revert Changes?"
 msgstr "أأتراجع عن التغييرات؟"
 
-#: data/mozo.ui:713
+#: data/mozo.ui:85
+msgid "_Cancel"
+msgstr "أل_غ"
+
+#: data/mozo.ui:100 data/mozo.ui:278
+msgid "_Revert"
+msgstr "ا_عكس"
+
+#: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
 msgstr "أأسترجع كافة القوائم إلى الإعدادات الأصلية؟"
+
+#: data/mozo.ui:177
+msgid "_Revert to Original"
+msgstr "ا_ستعِد الحالة الأصلية"
+
+#: data/mozo.ui:230
+msgid "_Help"
+msgstr "_مساعدة"
+
+#: data/mozo.ui:246
+msgid "_Undo"
+msgstr "_تراجع"
+
+#: data/mozo.ui:262
+msgid "R_edo"
+msgstr ""
+
+#: data/mozo.ui:294
+msgid "_Close"
+msgstr "_إغلاق"
+
+#: data/mozo.ui:335
+msgid "_Menus:"
+msgstr "_قوائم:"
+
+#: data/mozo.ui:388
+msgid "_Items:"
+msgstr ""
+
+#: data/mozo.ui:455
+msgid "_New Menu"
+msgstr "قائمة _جديدة"
+
+#: data/mozo.ui:471
+msgid "Ne_w Item"
+msgstr "عنصر _جديد"
+
+#: data/mozo.ui:487
+msgid "New _Seperator"
+msgstr ""
+
+#: data/mozo.ui:502
+msgid "_Properties"
+msgstr "_خصائص"
+
+#: data/mozo.ui:518
+msgid "_Delete"
+msgstr "ا_حذف"
+
+#: data/mozo.ui:549
+msgid "Move _Up"
+msgstr "انقل لأ_على"
+
+#: data/mozo.ui:565
+msgid "Move _Down"
+msgstr "انقل لأ_سفل"

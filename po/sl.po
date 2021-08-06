@@ -4,17 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Damir Jerovšek <jierro@windowslive.com>, 2018
 # Damir Mevkić <damir.mevkic@gmail.com>, 2018
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Marko Šterman <marko.chamillionaire@gmail.com>, 2021
+# Damir Jerovšek <jierro@windowslive.com>, 2021
+# worm <thewormhole@gmail.com>, 2021
+# Helena S <ele@tutamail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.23.0\n"
+"Project-Id-Version: mozo 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-11-19 11:59+0100\n"
+"POT-Creation-Date: 2021-06-25 18:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Damir Mevkić <damir.mevkic@gmail.com>, 2018\n"
+"Last-Translator: Helena S <ele@tutamail.com>, 2021\n"
 "Language-Team: Slovenian (https://www.transifex.com/mate/teams/13566/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,19 +25,19 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
-#: Mozo/MainWindow.py:177
+#: Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "Ime"
 
-#: Mozo/MainWindow.py:194
+#: Mozo/MainWindow.py:195
 msgid "Show"
 msgstr "Pokaži"
 
-#: Mozo/MainWindow.py:202
+#: Mozo/MainWindow.py:203
 msgid "Item"
 msgstr "Predmet"
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:50
+#: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
 msgstr "Glavni meni"
 
@@ -48,52 +51,74 @@ msgstr "Določitev programov, ki so prikazani v osnovnem meniju"
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mozo.desktop.in.in:14
-msgid "mozo"
-msgstr ""
-
-#: data/mozo.ui:17
-msgid "_Revert to Original"
-msgstr "_Povrni na prvotne vrednosti"
-
-#: data/mozo.ui:127
-msgid "Restore the default menu layout"
-msgstr "Povrni privzeto postavitev menija"
-
-#: data/mozo.ui:185
-msgid "_Menus:"
-msgstr "_Meniji:"
-
-#: data/mozo.ui:238
-msgid "It_ems:"
-msgstr "_Predmeti:"
-
-#: data/mozo.ui:330
-msgid "_New Menu"
-msgstr "Nov _meni"
-
-#: data/mozo.ui:384
-msgid "Ne_w Item"
-msgstr "_Nov predmet"
-
-#: data/mozo.ui:406
-msgid "New _Separator"
-msgstr "Nov _ločilnik"
-
-#: data/mozo.ui:502
-msgid "Move Up"
-msgstr "Premakni navzgor"
-
-#: data/mozo.ui:556
-msgid "Move Down"
-msgstr "Premakni navzdol"
-
-#: data/mozo.ui:635
+#: data/mozo.ui:67
 msgid "Revert Changes?"
 msgstr "Ali želite povrniti spremembe?"
 
-#: data/mozo.ui:713
+#: data/mozo.ui:85
+msgid "_Cancel"
+msgstr "_Prekliči"
+
+#: data/mozo.ui:100 data/mozo.ui:278
+msgid "_Revert"
+msgstr "Pov_rni"
+
+#: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
 msgstr "Ali želite povrniti vse menije na privzete nastavitve?"
+
+#: data/mozo.ui:177
+msgid "_Revert to Original"
+msgstr "_Povrni na prvotne vrednosti"
+
+#: data/mozo.ui:230
+msgid "_Help"
+msgstr "_Pomoč"
+
+#: data/mozo.ui:246
+msgid "_Undo"
+msgstr "_Razveljavi"
+
+#: data/mozo.ui:262
+msgid "R_edo"
+msgstr ""
+
+#: data/mozo.ui:294
+msgid "_Close"
+msgstr "_Zapri"
+
+#: data/mozo.ui:335
+msgid "_Menus:"
+msgstr "_Meniji:"
+
+#: data/mozo.ui:388
+msgid "_Items:"
+msgstr ""
+
+#: data/mozo.ui:455
+msgid "_New Menu"
+msgstr "Nov _meni"
+
+#: data/mozo.ui:471
+msgid "Ne_w Item"
+msgstr "_Nov predmet"
+
+#: data/mozo.ui:487
+msgid "New _Seperator"
+msgstr ""
+
+#: data/mozo.ui:502
+msgid "_Properties"
+msgstr "_Lasnosti"
+
+#: data/mozo.ui:518
+msgid "_Delete"
+msgstr "_Izbriši"
+
+#: data/mozo.ui:549
+msgid "Move _Up"
+msgstr "Premakni _navzgor"
+
+#: data/mozo.ui:565
+msgid "Move _Down"
+msgstr "Premakni navz_dol"

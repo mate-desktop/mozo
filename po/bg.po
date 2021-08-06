@@ -4,17 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Любомир Василев, 2018
 # Georgi Georgiev (Жоро) <g.georgiev.shumen@gmail.com>, 2020
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Любомир Василев, 2021
+# Замфир Йончев <zamfir.yonchev@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.23.0\n"
+"Project-Id-Version: mozo 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-11-19 11:59+0100\n"
+"POT-Creation-Date: 2021-06-25 18:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Georgi Georgiev (Жоро) <g.georgiev.shumen@gmail.com>, 2020\n"
+"Last-Translator: Замфир Йончев <zamfir.yonchev@gmail.com>, 2021\n"
 "Language-Team: Bulgarian (https://www.transifex.com/mate/teams/13566/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,19 +23,19 @@ msgstr ""
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Mozo/MainWindow.py:177
+#: Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "Име"
 
-#: Mozo/MainWindow.py:194
+#: Mozo/MainWindow.py:195
 msgid "Show"
 msgstr "Показване"
 
-#: Mozo/MainWindow.py:202
+#: Mozo/MainWindow.py:203
 msgid "Item"
 msgstr "Стартер"
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:50
+#: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
 msgstr "Основно меню"
 
@@ -48,52 +49,74 @@ msgstr "Промяна на програмите в основното меню"
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr "приложение;главно;меню;редактор;персонализиране;МАТЕ;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mozo.desktop.in.in:14
-msgid "mozo"
-msgstr "mozo"
-
-#: data/mozo.ui:17
-msgid "_Revert to Original"
-msgstr "_Връщане към началните стойности"
-
-#: data/mozo.ui:127
-msgid "Restore the default menu layout"
-msgstr "Възстановяване на първоначалната подредба на менюто"
-
-#: data/mozo.ui:185
-msgid "_Menus:"
-msgstr "М_енюта:"
-
-#: data/mozo.ui:238
-msgid "It_ems:"
-msgstr "С_тартери:"
-
-#: data/mozo.ui:330
-msgid "_New Menu"
-msgstr "Ново _меню"
-
-#: data/mozo.ui:384
-msgid "Ne_w Item"
-msgstr "Нов _стартер"
-
-#: data/mozo.ui:406
-msgid "New _Separator"
-msgstr "Нов _разделител"
-
-#: data/mozo.ui:502
-msgid "Move Up"
-msgstr "Нагоре"
-
-#: data/mozo.ui:556
-msgid "Move Down"
-msgstr "Надолу"
-
-#: data/mozo.ui:635
+#: data/mozo.ui:67
 msgid "Revert Changes?"
 msgstr "Връщане на промените?"
 
-#: data/mozo.ui:713
+#: data/mozo.ui:85
+msgid "_Cancel"
+msgstr "_Отказ"
+
+#: data/mozo.ui:100 data/mozo.ui:278
+msgid "_Revert"
+msgstr "_Връщане"
+
+#: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
 msgstr "Връщане на всички менюта към първоначалните им стойности?"
+
+#: data/mozo.ui:177
+msgid "_Revert to Original"
+msgstr "_Връщане към началните стойности"
+
+#: data/mozo.ui:230
+msgid "_Help"
+msgstr "_Помощ"
+
+#: data/mozo.ui:246
+msgid "_Undo"
+msgstr "_Връщане"
+
+#: data/mozo.ui:262
+msgid "R_edo"
+msgstr ""
+
+#: data/mozo.ui:294
+msgid "_Close"
+msgstr "_Затваряне"
+
+#: data/mozo.ui:335
+msgid "_Menus:"
+msgstr "М_енюта:"
+
+#: data/mozo.ui:388
+msgid "_Items:"
+msgstr ""
+
+#: data/mozo.ui:455
+msgid "_New Menu"
+msgstr "Ново _меню"
+
+#: data/mozo.ui:471
+msgid "Ne_w Item"
+msgstr "Нов _стартер"
+
+#: data/mozo.ui:487
+msgid "New _Seperator"
+msgstr ""
+
+#: data/mozo.ui:502
+msgid "_Properties"
+msgstr "С_войства"
+
+#: data/mozo.ui:518
+msgid "_Delete"
+msgstr "_Изтриване"
+
+#: data/mozo.ui:549
+msgid "Move _Up"
+msgstr "Преместване на_долу"
+
+#: data/mozo.ui:565
+msgid "Move _Down"
+msgstr "Преместване на_горе"

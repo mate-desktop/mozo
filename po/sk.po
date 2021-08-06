@@ -4,17 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Ján Ďanovský <dagsoftware@yahoo.com>, 2018
 # Dušan Kazik <prescott66@gmail.com>, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+# Ján Ďanovský <dagsoftware@yahoo.com>, 2021
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Tibor Kaputa <tibbbi2@gmail.com>, 2021
+# peter, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.23.0\n"
+"Project-Id-Version: mozo 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-11-19 11:59+0100\n"
+"POT-Creation-Date: 2021-06-25 18:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Last-Translator: peter, 2021\n"
 "Language-Team: Slovak (https://www.transifex.com/mate/teams/13566/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,19 +24,19 @@ msgstr ""
 "Language: sk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: Mozo/MainWindow.py:177
+#: Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "Názov"
 
-#: Mozo/MainWindow.py:194
+#: Mozo/MainWindow.py:195
 msgid "Show"
 msgstr "Ukázať"
 
-#: Mozo/MainWindow.py:202
+#: Mozo/MainWindow.py:203
 msgid "Item"
 msgstr "Položka"
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:50
+#: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
 msgstr "Hlavné menu"
 
@@ -48,52 +50,74 @@ msgstr "Zmeniť, ktoré programy sú viditeľné v hlavnom menu"
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mozo.desktop.in.in:14
-msgid "mozo"
-msgstr ""
-
-#: data/mozo.ui:17
-msgid "_Revert to Original"
-msgstr "V_rátiť na originál"
-
-#: data/mozo.ui:127
-msgid "Restore the default menu layout"
-msgstr "Obnoviť ṕredvolené rozloženie menu"
-
-#: data/mozo.ui:185
-msgid "_Menus:"
-msgstr "_Menu:"
-
-#: data/mozo.ui:238
-msgid "It_ems:"
-msgstr "Po_ložky:"
-
-#: data/mozo.ui:330
-msgid "_New Menu"
-msgstr "_Nové menu"
-
-#: data/mozo.ui:384
-msgid "Ne_w Item"
-msgstr "No_vá položka"
-
-#: data/mozo.ui:406
-msgid "New _Separator"
-msgstr "Nový _oddeľovač"
-
-#: data/mozo.ui:502
-msgid "Move Up"
-msgstr "Presunúť hore"
-
-#: data/mozo.ui:556
-msgid "Move Down"
-msgstr "Presunúť dole"
-
-#: data/mozo.ui:635
+#: data/mozo.ui:67
 msgid "Revert Changes?"
 msgstr "Vrátiť zmeny?"
 
-#: data/mozo.ui:713
+#: data/mozo.ui:85
+msgid "_Cancel"
+msgstr "_Zrušiť"
+
+#: data/mozo.ui:100 data/mozo.ui:278
+msgid "_Revert"
+msgstr "O_bnoviť"
+
+#: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
 msgstr "Vrátiť pôvodné nastavenia všetkým menu?"
+
+#: data/mozo.ui:177
+msgid "_Revert to Original"
+msgstr "V_rátiť na originál"
+
+#: data/mozo.ui:230
+msgid "_Help"
+msgstr "_Nápoveda"
+
+#: data/mozo.ui:246
+msgid "_Undo"
+msgstr "_Vrátiť"
+
+#: data/mozo.ui:262
+msgid "R_edo"
+msgstr ""
+
+#: data/mozo.ui:294
+msgid "_Close"
+msgstr "Zat_voriť"
+
+#: data/mozo.ui:335
+msgid "_Menus:"
+msgstr "_Menu:"
+
+#: data/mozo.ui:388
+msgid "_Items:"
+msgstr ""
+
+#: data/mozo.ui:455
+msgid "_New Menu"
+msgstr "_Nové menu"
+
+#: data/mozo.ui:471
+msgid "Ne_w Item"
+msgstr "No_vá položka"
+
+#: data/mozo.ui:487
+msgid "New _Seperator"
+msgstr ""
+
+#: data/mozo.ui:502
+msgid "_Properties"
+msgstr "_Vlastnosti"
+
+#: data/mozo.ui:518
+msgid "_Delete"
+msgstr "_Vymazať"
+
+#: data/mozo.ui:549
+msgid "Move _Up"
+msgstr "Presunúť _nahor"
+
+#: data/mozo.ui:565
+msgid "Move _Down"
+msgstr "Presunúť _nadol"

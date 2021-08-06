@@ -4,18 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Adolfo Jayme-Barrientos, 2018
-# Stefano Karapetsas <stefano@karapetsas.com>, 2018
-# Joel Barrios <darkshram@gmail.com>, 2019
-# Toni Estévez <toni.estevez@gmail.com>, 2019
+# Adolfo Jayme Barrientos, 2021
+# Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Emiliano Fascetti, 2021
+# Joel Barrios <darkshram@gmail.com>, 2021
+# Toni Estévez <toni.estevez@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.23.0\n"
+"Project-Id-Version: mozo 1.25.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2019-11-19 11:59+0100\n"
+"POT-Creation-Date: 2021-06-25 18:36+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Toni Estévez <toni.estevez@gmail.com>, 2019\n"
+"Last-Translator: Toni Estévez <toni.estevez@gmail.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,19 +24,19 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Mozo/MainWindow.py:177
+#: Mozo/MainWindow.py:178
 msgid "Name"
 msgstr "Nombre"
 
-#: Mozo/MainWindow.py:194
+#: Mozo/MainWindow.py:195
 msgid "Show"
 msgstr "Mostrar"
 
-#: Mozo/MainWindow.py:202
+#: Mozo/MainWindow.py:203
 msgid "Item"
 msgstr "Elemento"
 
-#: data/mozo.desktop.in.in:3 data/mozo.ui:50
+#: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
 msgstr "Menú principal"
 
@@ -49,52 +50,74 @@ msgstr "Cambie las aplicaciones que se muestran en el menú principal"
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr "aplicación;principal;menú;editor;personalizar;MATE;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: data/mozo.desktop.in.in:14
-msgid "mozo"
-msgstr "mozo"
+#: data/mozo.ui:67
+msgid "Revert Changes?"
+msgstr "¿Quiere deshacer los cambios?"
 
-#: data/mozo.ui:17
+#: data/mozo.ui:85
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: data/mozo.ui:100 data/mozo.ui:278
+msgid "_Revert"
+msgstr "_Revertir"
+
+#: data/mozo.ui:142
+msgid "Revert all menus to original settings?"
+msgstr "¿Quiere restablecer la configuración original de todos los menús?"
+
+#: data/mozo.ui:177
 msgid "_Revert to Original"
-msgstr "_Revertir al original"
+msgstr "_Restablecer el original"
 
-#: data/mozo.ui:127
-msgid "Restore the default menu layout"
-msgstr "Restaurar la distribución predeterminada del menú"
+#: data/mozo.ui:230
+msgid "_Help"
+msgstr "Ay_uda"
 
-#: data/mozo.ui:185
+#: data/mozo.ui:246
+msgid "_Undo"
+msgstr "_Deshacer"
+
+#: data/mozo.ui:262
+msgid "R_edo"
+msgstr "Re_hacer"
+
+#: data/mozo.ui:294
+msgid "_Close"
+msgstr "_Cerrar"
+
+#: data/mozo.ui:335
 msgid "_Menus:"
 msgstr "_Menús:"
 
-#: data/mozo.ui:238
-msgid "It_ems:"
-msgstr "_Elementos:"
+#: data/mozo.ui:388
+msgid "_Items:"
+msgstr "_Elementos"
 
-#: data/mozo.ui:330
+#: data/mozo.ui:455
 msgid "_New Menu"
 msgstr "Menú _nuevo"
 
-#: data/mozo.ui:384
+#: data/mozo.ui:471
 msgid "Ne_w Item"
-msgstr "Ele_mento nuevo"
+msgstr "Elemento n_uevo"
 
-#: data/mozo.ui:406
-msgid "New _Separator"
-msgstr "_Separador nuevo"
+#: data/mozo.ui:487
+msgid "New _Seperator"
+msgstr "Separador nue_vo"
 
 #: data/mozo.ui:502
-msgid "Move Up"
-msgstr "Subir"
+msgid "_Properties"
+msgstr "_Propiedades"
 
-#: data/mozo.ui:556
-msgid "Move Down"
-msgstr "Bajar"
+#: data/mozo.ui:518
+msgid "_Delete"
+msgstr "_Eliminar"
 
-#: data/mozo.ui:635
-msgid "Revert Changes?"
-msgstr "¿Quiere revertir los cambios?"
+#: data/mozo.ui:549
+msgid "Move _Up"
+msgstr "_Subir"
 
-#: data/mozo.ui:713
-msgid "Revert all menus to original settings?"
-msgstr "¿Quiere revertir todos los menús a su configuración original?"
+#: data/mozo.ui:565
+msgid "Move _Down"
+msgstr "_Bajar"
