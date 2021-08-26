@@ -100,7 +100,7 @@ class MainWindow:
         update_items = False
         update_type = None
         item_id = None
-        if iter and items[iter][3].get_desktop_file_path():
+        if iter and (isinstance(items[iter][3], MateMenu.TreeSeparator) or items[iter][3].get_desktop_file_path()):
             update_items = True
             if isinstance(items[iter][3], MateMenu.TreeDirectory):
                 item_id = os.path.split(items[iter][3].get_desktop_file_path())[1]
