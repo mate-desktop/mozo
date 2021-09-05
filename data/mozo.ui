@@ -484,7 +484,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="new_separator_button">
-                        <property name="label" translatable="yes">New _Seperator</property>
+                        <property name="label" translatable="yes">New _Separator</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
