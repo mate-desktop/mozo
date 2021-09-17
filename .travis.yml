@@ -23,7 +23,7 @@ script:
 
 notifications:
   irc:
-    if: (tag OR branch = master) AND
+    if: (tag OR branch = "1.26") AND
         repo = mate-desktop/mozo
     channels:
       - "irc.libera.chat#mate-dev"

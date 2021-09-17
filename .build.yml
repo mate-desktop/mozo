@@ -64,10 +64,6 @@ build_scripts:
 
 after_scripts:
   - if [ ${BUILD_TYPE} == "scripts" ];then
-  -     if [ ${DISTRO_NAME} == "debian" ];then
-  -         curl -Ls -o debian.sh https://github.com/mate-desktop/mate-dev-scripts/raw/master/travis/debian.sh
-  -         bash ./debian.sh
-  -     fi
   -     make distcheck
   - fi
 
