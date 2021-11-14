@@ -1,3 +1,10 @@
+### mozo 1.26.1
+
+  * Translations update
+  * mozo-ui: fix typo in button label
+  * make the collection menu item removeable
+  * fix adding and removing seperator item
+
 ### mozo 1.26.0
 
   * Translations update
