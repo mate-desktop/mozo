@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2021
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Pere Orga <gotrunks@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
+"POT-Creation-Date: 2021-09-18 17:15+0200\n"
+"PO-Revision-Date: 2021-09-22 18:39+0000\n"
 "Last-Translator: Pere Orga <gotrunks@gmail.com>, 2021\n"
 "Language-Team: Catalan (https://www.transifex.com/mate/teams/13566/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -101,8 +101,8 @@ msgid "Ne_w Item"
 msgstr "Element no_u"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "_Separador nou"
 
 #: data/mozo.ui:502
 msgid "_Properties"

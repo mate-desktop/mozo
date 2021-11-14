@@ -4,20 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# 65f2af3cfa184c075942a0418b98d2de_d688669, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Matheus Macabu <mkbu95@gmail.com>, 2021
 # Aldo Oliveira <america103@gmail.com>, 2021
 # Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2021
+# 65f2af3cfa184c075942a0418b98d2de_d688669, 2021
 # Samuel Henrique <samueloph@debian.org>, 2021
 # Herick Vinicius <herick.gustavo@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
+"POT-Creation-Date: 2021-09-18 17:15+0200\n"
+"PO-Revision-Date: 2021-09-22 18:39+0000\n"
 "Last-Translator: Herick Vinicius <herick.gustavo@gmail.com>, 2021\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/mate/teams/13566/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -105,8 +105,8 @@ msgid "Ne_w Item"
 msgstr "No_vo Item"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "Novo _Separador"
 
 #: data/mozo.ui:502
 msgid "_Properties"

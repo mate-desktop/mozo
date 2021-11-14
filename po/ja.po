@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Rockers <sumorock@hotmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # ABE Tsunehiko, 2021
+# Rockers <sumorock@hotmail.com>, 2021
 # Green, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
+"POT-Creation-Date: 2021-09-18 17:15+0200\n"
+"PO-Revision-Date: 2021-09-22 18:39+0000\n"
 "Last-Translator: Green, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/mate/teams/13566/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -102,8 +102,8 @@ msgid "Ne_w Item"
 msgstr "新しいアイテム(_W)"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr "新しい区切り(_S)"
+msgid "New _Separator"
+msgstr "新しいセパレータ(_S)"
 
 #: data/mozo.ui:502
 msgid "_Properties"

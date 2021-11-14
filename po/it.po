@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Giuseppe Pignataro <rogepix@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # clefebvre <clement.lefebvre@linuxmint.com>, 2021
 # Dario Di Nucci <linkin88mail@gmail.com>, 2021
+# Giuseppe Pignataro <rogepix@gmail.com>, 2021
 # Alessandro Volturno <alelvb@inwind.it>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
+"POT-Creation-Date: 2021-09-18 17:15+0200\n"
+"PO-Revision-Date: 2021-09-22 18:39+0000\n"
 "Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2021\n"
 "Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
 "MIME-Version: 1.0\n"
@@ -103,8 +103,8 @@ msgid "Ne_w Item"
 msgstr "Nuovo oggetto"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr "Nuovo _Separatore"
+msgid "New _Separator"
+msgstr "Nuovo _separatore"
 
 #: data/mozo.ui:502
 msgid "_Properties"

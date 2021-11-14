@@ -10,10 +10,10 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
-"PO-Revision-Date: 2018-03-12 09:38+0000\n"
+"POT-Creation-Date: 2021-09-18 17:15+0200\n"
+"PO-Revision-Date: 2021-09-22 18:39+0000\n"
 "Last-Translator: heskjestad <cato@heskjestad.xyz>, 2021\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/mate/teams/13566/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr "Hovedmeny"
 
 #: data/mozo.desktop.in.in:4
 msgid "Change which applications are shown on the main menu"
-msgstr "Endrie hvilke programmer som vises i hovedmenyen"
+msgstr "Endre hvilke programmer som vises i hovedmenyen"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -101,7 +101,7 @@ msgid "Ne_w Item"
 msgstr "N_y oppføring"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
+msgid "New _Separator"
 msgstr "Ny _separator"
 
 #: data/mozo.ui:502
