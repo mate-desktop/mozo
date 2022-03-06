@@ -4,7 +4,7 @@ desktop_in = configuration_data()
 desktop_in.set('VERSION', meson.project_version())
 
 desktop_file = 'mozo.desktop'
-i18n.merge_file(desktop_file,
+i18n.merge_file(
   input: configure_file(
     input: desktop_file + '.in.in',
     output: desktop_file + '.in',
