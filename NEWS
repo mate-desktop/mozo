@@ -1,3 +1,9 @@
+### mozo 1.26.2
+
+  * Translations update
+  * meson build: drop desktop-file argument
+  * only require gtk version 3.12 instead of 3.24
+
 ### mozo 1.26.1
 
   * Translations update
