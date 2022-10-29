@@ -4,10 +4,10 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Seong-ho Cho <darkcircle.0426@gmail.com>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
-# 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2021
-# Jung Hee Lee <daemul72@gmail.com>, 2021
+# 1763f4a4329a2376c933c5e919a36cbc_341ca53 <1f851310383599d03339229d772e1290_119292>, 2021
+# JungHee Lee <daemul72@gmail.com>, 2021
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
 "POT-Creation-Date: 2021-09-18 17:15+0200\n"
 "PO-Revision-Date: 2021-09-22 18:39+0000\n"
-"Last-Translator: Jung Hee Lee <daemul72@gmail.com>, 2021\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>, 2022\n"
 "Language-Team: Korean (https://www.transifex.com/mate/teams/13566/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,6 +48,7 @@ msgstr "주 메뉴의 프로그램 표시를 바꿉니다"
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
 msgstr ""
+"application;프로그램;main;메인;menu;메뉴;editor;에디터;편집기;customize;사용자;정의;설정;개별;MATE;마테;"
 
 #: data/mozo.ui:67
 msgid "Revert Changes?"
@@ -79,7 +80,7 @@ msgstr "되돌리기(_U)"
 
 #: data/mozo.ui:262
 msgid "R_edo"
-msgstr ""
+msgstr "다시 실행(_E)"
 
 #: data/mozo.ui:294
 msgid "_Close"
@@ -91,7 +92,7 @@ msgstr "메뉴(_M):"
 
 #: data/mozo.ui:388
 msgid "_Items:"
-msgstr ""
+msgstr "항목(_I):"
 
 #: data/mozo.ui:455
 msgid "_New Menu"
