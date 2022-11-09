@@ -6,14 +6,15 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Микола Ткач <chistomov@gmail.com>, 2021
+# Sergiy <sergiy@gorichenko.com>, 2022
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
+"POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Микола Ткач <chistomov@gmail.com>, 2021\n"
+"Last-Translator: Sergiy <sergiy@gorichenko.com>, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,17 +40,18 @@ msgstr "Головне меню"
 
 #: data/mozo.desktop.in.in:4
 msgid "Change which applications are shown on the main menu"
-msgstr "Вибір програм, що показуються у головному меню"
+msgstr "Змініть перелік програм для показу в головному меню"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr "додаток; головне; меню; редактор; налаштування;;MATE;"
+msgstr ""
+"програма; доданок; додаток; головне; меню; редактор; налаштування;;MATE;"
 
 #: data/mozo.ui:67
 msgid "Revert Changes?"
-msgstr "Повернути зміни?"
+msgstr "Скасувати зміни?"
 
 #: data/mozo.ui:85
 msgid "_Cancel"
@@ -77,7 +79,7 @@ msgstr "Пов_ернути"
 
 #: data/mozo.ui:262
 msgid "R_edo"
-msgstr ""
+msgstr "По_вторити"
 
 #: data/mozo.ui:294
 msgid "_Close"
@@ -89,19 +91,19 @@ msgstr "_Меню:"
 
 #: data/mozo.ui:388
 msgid "_Items:"
-msgstr ""
+msgstr "_Елементи:"
 
 #: data/mozo.ui:455
 msgid "_New Menu"
-msgstr "_Створити меню"
+msgstr "_Нове меню"
 
 #: data/mozo.ui:471
 msgid "Ne_w Item"
-msgstr "С_творити елемент"
+msgstr "Н_овий елемент"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "Новий _розділювач"
 
 #: data/mozo.ui:502
 msgid "_Properties"
@@ -109,7 +111,7 @@ msgstr "В_ластивості"
 
 #: data/mozo.ui:518
 msgid "_Delete"
-msgstr "В_илучити"
+msgstr "В_идалити"
 
 #: data/mozo.ui:549
 msgid "Move _Up"

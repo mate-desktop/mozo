@@ -8,9 +8,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
+"POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
 "Language-Team: Spanish (Uruguay) (https://www.transifex.com/mate/teams/13566/es_UY/)\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es_UY\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: Mozo/MainWindow.py:178
 msgid "Name"
@@ -99,7 +99,7 @@ msgid "Ne_w Item"
 msgstr ""
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
+msgid "New _Separator"
 msgstr ""
 
 #: data/mozo.ui:502

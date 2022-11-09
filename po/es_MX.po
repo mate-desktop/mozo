@@ -4,23 +4,23 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# jorge becerril <jrbecster@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Luis Medina <luis.medina@sacc.com.mx>, 2021
+# jorge becerril <jrbecster@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
+"POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Luis Medina <luis.medina@sacc.com.mx>, 2021\n"
+"Last-Translator: jorge becerril <jrbecster@gmail.com>, 2021\n"
 "Language-Team: Spanish (Mexico) (https://www.transifex.com/mate/teams/13566/es_MX/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es_MX\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: Mozo/MainWindow.py:178
 msgid "Name"
@@ -101,8 +101,8 @@ msgid "Ne_w Item"
 msgstr "Ele_mento nuevo:"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "_Separador nuevo:"
 
 #: data/mozo.ui:502
 msgid "_Properties"

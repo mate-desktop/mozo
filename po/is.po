@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Sveinn í Felli <sv1@fellsnet.is>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Sveinn í Felli <sv1@fellsnet.is>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
+"POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>, 2021\n"
 "Language-Team: Icelandic (https://www.transifex.com/mate/teams/13566/is/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -100,8 +100,8 @@ msgid "Ne_w Item"
 msgstr "Nýtt _atriði"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "Nýr að_greinir"
 
 #: data/mozo.ui:502
 msgid "_Properties"

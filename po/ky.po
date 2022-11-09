@@ -8,9 +8,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
+"POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
 "Last-Translator: 41e38594a6ab66d45dbd71e8e44a0b16_36d21e8, 2021\n"
 "Language-Team: Kyrgyz (https://www.transifex.com/mate/teams/13566/ky/)\n"
@@ -99,8 +99,8 @@ msgid "Ne_w Item"
 msgstr "_Жаңы элемент"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "Жаңы _бөлгүч"
 
 #: data/mozo.ui:502
 msgid "_Properties"

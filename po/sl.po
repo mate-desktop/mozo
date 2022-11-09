@@ -4,20 +4,21 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Damir Mevkić <damir.mevkic@gmail.com>, 2018
+# Damir Mevkić 52K <damir.mevkic@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Marko Šterman <marko.chamillionaire@gmail.com>, 2021
-# Damir Jerovšek <jierro@windowslive.com>, 2021
 # worm <thewormhole@gmail.com>, 2021
 # Helena S <ele@tutamail.com>, 2021
+# Damir Jerovšek <jierro@windowslive.com>, 2021
+# Martin Srebotnjak <miles@filmsi.net>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mozo 1.25.0\n"
+"Project-Id-Version: mozo 1.26.0\n"
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
-"POT-Creation-Date: 2021-06-25 18:36+0200\n"
+"POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Helena S <ele@tutamail.com>, 2021\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>, 2021\n"
 "Language-Team: Slovenian (https://www.transifex.com/mate/teams/13566/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +50,7 @@ msgstr "Določitev programov, ki so prikazani v osnovnem meniju"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr ""
+msgstr "program;glavni;meni;urejevalnik;prilagodi;MATE;"
 
 #: data/mozo.ui:67
 msgid "Revert Changes?"
@@ -81,7 +82,7 @@ msgstr "_Razveljavi"
 
 #: data/mozo.ui:262
 msgid "R_edo"
-msgstr ""
+msgstr "P_onovi"
 
 #: data/mozo.ui:294
 msgid "_Close"
@@ -93,7 +94,7 @@ msgstr "_Meniji:"
 
 #: data/mozo.ui:388
 msgid "_Items:"
-msgstr ""
+msgstr "_Elementi:"
 
 #: data/mozo.ui:455
 msgid "_New Menu"
@@ -104,8 +105,8 @@ msgid "Ne_w Item"
 msgstr "_Nov predmet"
 
 #: data/mozo.ui:487
-msgid "New _Seperator"
-msgstr ""
+msgid "New _Separator"
+msgstr "Nov _ločilnik"
 
 #: data/mozo.ui:502
 msgid "_Properties"
