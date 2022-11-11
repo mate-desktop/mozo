@@ -1,3 +1,16 @@
+### mozo 1.27.0
+
+  * tx: sync with transifex
+  * configure.ac: The macro 'AC_HELP_STRING' is obsolete
+  * tx: update resource
+  * only require gtk version 3.12 instead of 3.24
+  * tx: migrate config file
+  * meson build: drop desktop-file argument
+  * tx: update resource
+  * mozo-ui: fix typo in button label
+  * make the collection menu item removeable
+  * fix adding and removing seperator item
+
 ### mozo 1.26.0
 
   * Translations update
