@@ -26,18 +26,20 @@ from gi.repository import Gtk, Gdk, GdkPixbuf
 from gi.repository import MateMenu
 import html
 import os
-import gettext
+import locale
 import subprocess
 import shutil
 import urllib.parse
+from locale import gettext as _
+
 try:
     from Mozo import config
-    gettext.bindtextdomain(config.GETTEXT_PACKAGE,config.localedir)
-    gettext.textdomain(config.GETTEXT_PACKAGE)
+    locale.bindtextdomain(config.GETTEXT_PACKAGE,config.localedir)
+    locale.textdomain(config.GETTEXT_PACKAGE)
     GETTEXT_PACKAGE = config.GETTEXT_PACKAGE
 except:
     GETTEXT_PACKAGE = "mozo"
-_ = gettext.gettext
+
 from Mozo.MenuEditor import MenuEditor
 from Mozo import util
 
