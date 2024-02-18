@@ -1,6 +1,10 @@
+### mozo 1.28.0
+
+  * Translations update
+
 ### mozo 1.27.0
 
-  * tx: sync with transifex
+  * Translations update
   * configure.ac: The macro 'AC_HELP_STRING' is obsolete
   * tx: update resource
   * only require gtk version 3.12 instead of 3.24
