@@ -4,8 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Stefano Karapetsas <stefano@karapetsas.com>, 2021
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2021
+# Tan, Kian-ting, 2023
 # 
 msgid ""
 msgstr ""
@@ -13,108 +12,108 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
 "POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>, 2021\n"
-"Language-Team: Serbian (https://app.transifex.com/mate/teams/13566/sr/)\n"
+"Last-Translator: Tan, Kian-ting, 2023\n"
+"Language-Team: Chinese (Min Nan) (https://app.transifex.com/mate/teams/13566/nan/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: nan\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: Mozo/MainWindow.py:178
 msgid "Name"
-msgstr "Назив"
+msgstr "名"
 
 #: Mozo/MainWindow.py:195
 msgid "Show"
-msgstr "Покажи"
+msgstr ""
 
 #: Mozo/MainWindow.py:203
 msgid "Item"
-msgstr "Ставка"
+msgstr ""
 
 #: data/mozo.desktop.in.in:3 data/mozo.ui:207
 msgid "Main Menu"
-msgstr "Главни изборник"
+msgstr ""
 
 #: data/mozo.desktop.in.in:4
 msgid "Change which applications are shown on the main menu"
-msgstr "Одредите програме који се приказују у главном изборнику"
+msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr "програм;главни;изборник;уређивач;прилагоди;Мејт;"
+msgstr ""
 
 #: data/mozo.ui:67
 msgid "Revert Changes?"
-msgstr "Да повратим измене?"
+msgstr ""
 
 #: data/mozo.ui:85
 msgid "_Cancel"
-msgstr "_Откажи"
+msgstr "取消 (_C)"
 
 #: data/mozo.ui:100 data/mozo.ui:278
 msgid "_Revert"
-msgstr "_Врати"
+msgstr "復歸 (_R)"
 
 #: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
-msgstr "Да повратим све изборнике на изворна подешавања?"
+msgstr ""
 
 #: data/mozo.ui:177
 msgid "_Revert to Original"
-msgstr "_Врати на изворно"
+msgstr ""
 
 #: data/mozo.ui:230
 msgid "_Help"
-msgstr "По_моћ"
+msgstr ""
 
 #: data/mozo.ui:246
 msgid "_Undo"
-msgstr "Опо_зови"
+msgstr ""
 
 #: data/mozo.ui:262
 msgid "R_edo"
-msgstr "_Понови"
+msgstr ""
 
 #: data/mozo.ui:294
 msgid "_Close"
-msgstr "_Затвори"
+msgstr ""
 
 #: data/mozo.ui:335
 msgid "_Menus:"
-msgstr "_Изборници:"
+msgstr ""
 
 #: data/mozo.ui:388
 msgid "_Items:"
-msgstr "_Ставке:"
+msgstr ""
 
 #: data/mozo.ui:455
 msgid "_New Menu"
-msgstr "_Нови изборник"
+msgstr ""
 
 #: data/mozo.ui:471
 msgid "Ne_w Item"
-msgstr "Нова _ставка"
+msgstr ""
 
 #: data/mozo.ui:487
 msgid "New _Separator"
-msgstr "Нови _раздвајач"
+msgstr ""
 
 #: data/mozo.ui:502
 msgid "_Properties"
-msgstr "_Својства"
+msgstr ""
 
 #: data/mozo.ui:518
 msgid "_Delete"
-msgstr "_Обриши"
+msgstr "Thâi掉 (_D)"
 
 #: data/mozo.ui:549
 msgid "Move _Up"
-msgstr "Помери _горе"
+msgstr "Suá kàu頂懸 (_U)"
 
 #: data/mozo.ui:565
 msgid "Move _Down"
-msgstr "Помери _доле"
+msgstr ""

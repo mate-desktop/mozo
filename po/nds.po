@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
+# Benedikt Straub <benedikt-straub@web.de>, 2023
 # 
 msgid ""
 msgstr ""
@@ -12,8 +13,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://mate-desktop.org\n"
 "POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
-"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
-"Language-Team: Low German (https://www.transifex.com/mate/teams/13566/nds/)\n"
+"Last-Translator: Benedikt Straub <benedikt-straub@web.de>, 2023\n"
+"Language-Team: Low German (https://app.transifex.com/mate/teams/13566/nds/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,7 +45,7 @@ msgstr "Programme de Hööftmenü todeelen"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: data/mozo.desktop.in.in:11
 msgid "application;main;menu;editor;customize;MATE;"
-msgstr ""
+msgstr "Anwennen;Höövd;Menü;Bewarker;Anpassen;MATE;"
 
 #: data/mozo.ui:67
 msgid "Revert Changes?"
@@ -56,7 +57,7 @@ msgstr "_Avbreken"
 
 #: data/mozo.ui:100 data/mozo.ui:278
 msgid "_Revert"
-msgstr "_Umdreihn"
+msgstr "_Torüggsetten"
 
 #: data/mozo.ui:142
 msgid "Revert all menus to original settings?"
@@ -76,11 +77,11 @@ msgstr "_Torüggnehmen"
 
 #: data/mozo.ui:262
 msgid "R_edo"
-msgstr ""
+msgstr "Tor_ügghalen"
 
 #: data/mozo.ui:294
 msgid "_Close"
-msgstr "_Sluten"
+msgstr "Di_chtmaken"
 
 #: data/mozo.ui:335
 msgid "_Menus:"
@@ -88,7 +89,7 @@ msgstr "_Menüs:"
 
 #: data/mozo.ui:388
 msgid "_Items:"
-msgstr ""
+msgstr "D_ingens:"
 
 #: data/mozo.ui:455
 msgid "_New Menu"
@@ -116,4 +117,4 @@ msgstr "Nah _boven verschuven"
 
 #: data/mozo.ui:565
 msgid "Move _Down"
-msgstr ""
+msgstr "Na _unnern verschuven"

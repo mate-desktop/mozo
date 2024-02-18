@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Allan Nordhøy <epost@anotheragency.no>, 2021
-# heskjestad <cato@heskjestad.xyz>, 2021
+# Kaci Heskjestad, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # 
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "POT-Creation-Date: 2022-10-29 15:31+0200\n"
 "PO-Revision-Date: 2018-03-12 09:38+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2021\n"
-"Language-Team: Norwegian Bokmål (https://www.transifex.com/mate/teams/13566/nb/)\n"
+"Language-Team: Norwegian Bokmål (https://app.transifex.com/mate/teams/13566/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
