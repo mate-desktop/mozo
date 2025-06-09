@@ -76,6 +76,7 @@
         <property name="margin-bottom">6</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
+        <property name="border-width">1</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox">
             <property name="can-focus">False</property>
@@ -204,6 +205,7 @@
   </object>
   <object class="GtkDialog" id="mainwindow">
     <property name="can-focus">False</property>
+    <property name="border-width">5</property>
     <property name="title" translatable="yes">Main Menu</property>
     <property name="default-width">675</property>
     <property name="default-height">530</property>
@@ -215,10 +217,6 @@
     <child internal-child="vbox">
       <object class="GtkBox">
         <property name="can-focus">False</property>
-        <property name="margin-start">6</property>
-        <property name="margin-end">6</property>
-        <property name="margin-top">6</property>
-        <property name="margin-bottom">6</property>
         <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
@@ -316,6 +314,9 @@
           <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="margin-top">5</property>
+            <property name="margin-left">5</property>
+            <property name="margin-right">5</property>
             <child>
               <object class="GtkPaned">
                 <property name="visible">True</property>
