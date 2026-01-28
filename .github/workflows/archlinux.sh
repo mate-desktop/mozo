@@ -11,17 +11,22 @@ infoend() {
 # Required packages on Archlinux
 requires=(
 	ccache # Use ccache to speed up build
+	clang  # Build with clang on Archlinux
 	meson  # Used for meson build
 )
 
+# https://gitlab.archlinux.org/archlinux/packaging/packages/mozo
 requires+=(
+	autoconf-archive
 	gcc
+	gettext
 	git
 	gtk3
-	intltool
 	make
 	mate-common
 	mate-menus
+	mate-panel
+	python
 	python-gobject
 	which
 )
