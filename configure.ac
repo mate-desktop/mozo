@@ -5,6 +5,7 @@ AC_INIT(mozo, 1.28.0, https://mate-desktop.org)
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 AC_CONFIG_SRCDIR(mozo.in)
 AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_MACRO_DIRS([m4])
 AM_INIT_AUTOMAKE([1.7 dist-xz no-dist-gzip check-news])
 AM_MAINTAINER_MODE
 
