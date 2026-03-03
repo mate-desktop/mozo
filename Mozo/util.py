@@ -18,6 +18,7 @@
 #   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 import os
+import re
 import xml.dom.minidom
 import gi
 gi.require_version('Gtk', '3.0')
@@ -40,6 +41,15 @@ def fillKeyFile(keyfile, items):
             keyfile.set_string_list(DESKTOP_GROUP, key, item)
         elif isinstance(item, str):
             keyfile.set_string(DESKTOP_GROUP, key, item)
+
+def sanitizeFileName(name):
+    name = name.strip()
+    name = re.sub(r'[/\\<>:"|?*\x00-\x1f]', '-', name)
+    name = name.replace(' ', '-')
+    name = name.strip('.')
+    if not name:
+        name = 'mozo-made'
+    return name
 
 def getUniqueFileId(name, extension):
     append = 0

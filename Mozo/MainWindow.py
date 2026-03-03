@@ -270,11 +270,26 @@ class MainWindow:
                     name = '<small><i>' + html.escape(item.get_name()) + '</i></small>'
             self.item_store.append((show, icon, name, item))
 
+    def _renameToNameBased(self, file_path, extension):
+        try:
+            keyfile = GLib.KeyFile()
+            keyfile.load_from_file(file_path, util.KEY_FILE_FLAGS)
+            name = keyfile.get_string(GLib.KEY_FILE_DESKTOP_GROUP, 'Name')
+            name = util.sanitizeFileName(name)
+        except Exception:
+            return file_path
+        new_file_id = util.getUniqueFileId(name, extension)
+        new_path = os.path.join(os.path.split(file_path)[0], new_file_id)
+        if new_path != file_path:
+            os.rename(file_path, new_path)
+        return new_path
+
     #this is a little timeout callback to insert new items after
     #mate-desktop-item-edit has finished running
     def waitForNewItemProcess(self, process, parent_id, file_path):
         if process.poll() is not None:
             if os.path.isfile(file_path):
+                file_path = self._renameToNameBased(file_path, '.desktop')
                 self.editor.insertExternalItem(os.path.split(file_path)[1], parent_id)
             return False
         return True
@@ -286,6 +301,7 @@ class MainWindow:
             if os.path.isfile(broken_path):
                 os.rename(broken_path, file_path)
             if os.path.isfile(file_path):
+                file_path = self._renameToNameBased(file_path, '.directory')
                 self.editor.insertExternalMenu(os.path.split(file_path)[1], parent_id)
             return False
         return True
