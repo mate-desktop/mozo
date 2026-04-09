@@ -6,7 +6,7 @@
 # Translators:
 # Rockers <sumorock@hotmail.com>, 2018
 # ABE Tsunehiko, 2021
-# Green <usergreen@users.osdn.me>, 2021
+# green <usergreen@users.osdn.me>, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # 
 msgid ""
