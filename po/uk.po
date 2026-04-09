@@ -6,7 +6,7 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # Микола Ткач <chistomov@gmail.com>, 2021
-# Serhii <sergiy@gorichenko.com>, 2022
+# Sergiy <sergiy@gorichenko.com>, 2022
 # Anton Gladky <gladk@debian.org>, 2022
 # 
 msgid ""
