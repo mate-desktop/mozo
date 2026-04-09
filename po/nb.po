@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Allan Nordhøy <epost@anotheragency.no>, 2021
-# Kaci Heskjestad, 2021
+# heskjestad, 2021
 # Stefano Karapetsas <stefano@karapetsas.com>, 2021
 # 
 msgid ""
