@@ -28,6 +28,7 @@ import html
 import os
 import gettext
 import subprocess
+import filecmp
 import shutil
 import urllib.parse
 try:
@@ -307,9 +308,14 @@ class MainWindow:
         return True
 
     #this callback keeps you from editing the same item twice
-    def waitForEditProcess(self, process, file_path):
+    def waitForEditProcess(self, process, file_path, original_path):
         if process.poll() is not None:
             self.edit_pool.remove(file_path)
+            if original_path is not None and os.path.isfile(file_path):
+                if filecmp.cmp(file_path, original_path, shallow=False):
+                    os.remove(file_path)
+                    self.editor._MenuEditor__undo.pop()
+                    self.editor.update_undo_redo_button_state()
             return False
         return True
 
@@ -394,15 +400,18 @@ class MainWindow:
             file_path = os.path.join(util.getUserDirectoryPath(), os.path.split(item.get_desktop_file_path())[1])
             file_type = 'Menu'
 
+        copied = False
         if not os.path.isfile(file_path):
             shutil.copy(item.get_desktop_file_path(), file_path)
             self.editor._MenuEditor__addUndo([(file_type, os.path.split(file_path)[1]),])
+            copied = True
         else:
             self.editor._MenuEditor__addUndo([item,])
         if file_path not in self.edit_pool:
             self.edit_pool.append(file_path)
+            original_path = item.get_desktop_file_path() if copied else None
             process = subprocess.Popen(['mate-desktop-item-edit', file_path], env=os.environ)
-            GLib.timeout_add(100, self.waitForEditProcess, process, file_path)
+            GLib.timeout_add(100, self.waitForEditProcess, process, file_path, original_path)
 
     def on_menu_tree_cursor_changed(self, treeview):
         selection = treeview.get_selection()
