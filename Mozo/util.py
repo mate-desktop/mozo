@@ -22,6 +22,10 @@ import re
 import xml.dom.minidom
 import gi
 gi.require_version('Gtk', '3.0')
+try:
+    gi.require_version('GioUnix', '2.0')
+except ValueError:
+    pass
 gi.require_version('MateMenu', '2.0')
 from collections.abc import Sequence
 from gi.repository import GLib, Gtk, Gdk, GdkPixbuf

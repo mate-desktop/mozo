@@ -23,6 +23,10 @@ import xml.dom.minidom
 import xml.parsers.expat
 import locale
 import gi
+try:
+    gi.require_version('GioUnix', '2.0')
+except ValueError:
+    pass
 gi.require_version('MateMenu', '2.0')
 from gi.repository import MateMenu, GLib
 from Mozo import util
