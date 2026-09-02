@@ -24,7 +24,7 @@ import xml.parsers.expat
 import locale
 import gi
 gi.require_version('MateMenu', '2.0')
-from gi.repository import MateMenu, GLib
+from gi.repository import MateMenu, GLib, Gio
 from Mozo import util
 
 class Menu:
@@ -371,8 +371,8 @@ class MenuEditor(object):
 
     def editItem(self, item, icon, name, comment, command, use_term, parent=None, final=True):
         #if nothing changed don't make a user copy
-        app_info = item.get_app_info()
-        if icon == app_info.get_icon() and name == app_info.get_display_name() and comment == item.get_comment() and command == item.get_exec() and use_term == item.get_launch_in_terminal():
+        app_info = Gio.DesktopAppInfo.new(item.get_desktop_file_id())
+        if app_info is not None and icon == app_info.get_icon() and name == app_info.get_display_name() and comment == item.get_comment() and command == item.get_exec() and use_term == item.get_launch_in_terminal():
             return
         #hack, item.get_parent() seems to fail a lot
         if not parent:
@@ -577,7 +577,9 @@ class MenuEditor(object):
 
     def __isVisible(self, item):
         if isinstance(item, MateMenu.TreeEntry):
-            app_info = item.get_app_info()
+            app_info = Gio.DesktopAppInfo.new(item.get_desktop_file_id())
+            if app_info is None:
+                return not item.get_is_excluded()
             return not (item.get_is_excluded() or app_info.get_nodisplay())
         menu = self.__getMenu(item)
         if menu == self.applications:
