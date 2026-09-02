@@ -24,7 +24,7 @@ import gi
 gi.require_version('Gtk', '3.0')
 gi.require_version('MateMenu', '2.0')
 from collections.abc import Sequence
-from gi.repository import GLib, Gtk, Gdk, GdkPixbuf
+from gi.repository import GLib, Gtk, Gdk, GdkPixbuf, Gio
 from gi.repository import MateMenu
 
 DESKTOP_GROUP = GLib.KEY_FILE_DESKTOP_GROUP
@@ -149,8 +149,8 @@ def getIcon(item):
     if isinstance(item, MateMenu.TreeDirectory):
         gicon = item.get_icon()
     elif isinstance(item, MateMenu.TreeEntry):
-        app_info = item.get_app_info()
-        gicon = app_info.get_icon()
+        app_info = Gio.DesktopAppInfo.new(item.get_desktop_file_id())
+        gicon = app_info.get_icon() if app_info else None
     elif isinstance(item, str):
         iconName = item
     if iconName and not '/' in iconName and iconName[-3:] in ('png', 'svg', 'xpm'):

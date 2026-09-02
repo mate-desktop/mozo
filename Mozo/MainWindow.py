@@ -263,10 +263,12 @@ class MainWindow:
             if isinstance(item, MateMenu.TreeSeparator):
                 name = '---'
             elif isinstance(item, MateMenu.TreeEntry):
+                app_info = Gio.DesktopAppInfo.new(item.get_desktop_file_id())
+                display_name = app_info.get_display_name() if app_info else item.get_desktop_file_id()
                 if show:
-                    name = html.escape(item.get_app_info().get_display_name())
+                    name = html.escape(display_name)
                 else:
-                    name = '<small><i>' + html.escape(item.get_app_info().get_display_name()) + '</i></small>'
+                    name = '<small><i>' + html.escape(display_name) + '</i></small>'
             else:
                 if show:
                     name = html.escape(item.get_name())
