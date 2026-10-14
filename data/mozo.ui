@@ -25,12 +25,12 @@
   <object class="GtkImage" id="move-down-icon">
     <property name="visible">True</property>
     <property name="can-focus">False</property>
-    <property name="icon-name">down</property>
+    <property name="icon-name">go-down</property>
   </object>
   <object class="GtkImage" id="move-up-icon">
     <property name="visible">True</property>
     <property name="can-focus">False</property>
-    <property name="icon-name">up</property>
+    <property name="icon-name">go-up</property>
   </object>
   <object class="GtkImage" id="new-item-icon">
     <property name="visible">True</property>
