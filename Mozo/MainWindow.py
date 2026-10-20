@@ -510,7 +510,7 @@ class MainWindow:
     def on_item_tree_popup_menu(self, item_tree, event=None):
         model, iter = item_tree.get_selection().get_selected()
         if event:
-            #don't show if it's not the right mouse button
+            # don't show if it's not the right mouse button
             if event.button != 3:
                 return
             button = event.button
@@ -520,16 +520,24 @@ class MainWindow:
                 path, col, cellx, celly = info
                 item_tree.grab_focus()
                 item_tree.set_cursor(path, col, 0)
+            else:
+                # Do nothing if clicked on empty space
+                return
         else:
+            if iter is None:
+                return
             path = model.get_path(iter)
             button = 0
             event_time = 0
             item_tree.grab_focus()
             item_tree.set_cursor(path, item_tree.get_columns()[0], 0)
+
         popup = self.tree.get_object('edit_menu')
-        popup.popup(None, None, None, None, button, event_time)
-        #without this shift-f10 won't work
-        return True
+        if popup is not None:
+            popup.popup(None, None, None, None, button, event_time)
+            # without this shift-f10 won't work
+            return True
+        return False
 
     def on_item_tree_drag_data_get(self, treeview, context, selection, target_id, etime):
         items, iter = treeview.get_selection().get_selected()
